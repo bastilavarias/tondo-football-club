@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-container>
-      <v-card flat>
+      <v-card flat color="transparent">
         <v-row>
           <v-col cols="12" md="6">
             <div class="primary--text text-center">
@@ -20,7 +20,7 @@
             </v-row>
             <div class="mb-10"></div>
             <p class="text-center">
-              <span class="grey--text">Tondo FC against Deportivo Matu Live at Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias maiores possimus quae vero? A consequatur consequuntur, eligendi incidunt nihil sit?</span>
+              <span class="black--text">Tondo FC against Deportivo Matu Live at Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias maiores possimus quae vero? A consequatur consequuntur, eligendi incidunt nihil sit?</span>
             </p>
           </v-col>
           <v-col cols="12" md="6">

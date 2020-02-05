@@ -19,5 +19,6 @@
 <style>
   #app {
     font-family: "Roboto Condensed", sans-serif;
+    background-color: #ffffff;
   }
 </style>

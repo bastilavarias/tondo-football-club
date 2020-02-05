@@ -7,22 +7,10 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-menu open-on-hover offset-y>
-        <template v-slot:activator="{ on }">
-          <v-btn
-            v-on="on"
-            text
-            class="text-capitalize white--text"
-            :to="{ name: 'index' }"
-            exact
-            active-class="nav-bar-button-active"
-          >
-            <span class="mr-1">Home</span>
-            <v-icon small>mdi-chevron-down</v-icon>
-          </v-btn>
-        </template>
-        <nav-bar-home-menu></nav-bar-home-menu>
-      </v-menu>
+      <v-btn text class="text-capitalize white--text" :to="{ name: 'index' }"
+             exact active-class="nav-bar-button-active"
+      >Home
+      </v-btn>
       <v-menu open-on-hover offset-y>
         <template v-slot:activator="{ on }">
           <v-btn

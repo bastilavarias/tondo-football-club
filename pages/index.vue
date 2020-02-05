@@ -3,7 +3,13 @@
     <landing-page></landing-page>
     <div class="mb-5"></div>
     <upcoming-match></upcoming-match>
+    <v-container>
+      <v-divider></v-divider>
+    </v-container>
     <featured-articles></featured-articles>
+    <v-container>
+      <v-divider></v-divider>
+    </v-container>
     <about-us></about-us>
     <mission-and-vision></mission-and-vision>
     <youtube-embed youtube-id="Ee5XXUkTo9A" title="Cultural Architects Of Tondo"></youtube-embed>

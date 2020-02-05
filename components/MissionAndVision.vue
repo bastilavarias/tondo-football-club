@@ -27,10 +27,10 @@
     };
 </script>
 
-<style scoped>
-  #mission-and-vision {
-    background-color: #D02026;
-    min-height: 8rem;
-    color: #F5F5F5;
-  }
-</style>
+<!--<style scoped>-->
+<!--  /*#mission-and-vision {*/-->
+<!--  /*  background-color: #D02026;*/-->
+<!--  /*  min-height: 8rem;*/-->
+<!--  /*  color: #F5F5F5;*/-->
+<!--  /*}*/-->
+<!--</style>-->

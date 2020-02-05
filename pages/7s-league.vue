@@ -4,7 +4,7 @@
       <div style="margin-bottom: 4rem;"></div>
       <v-card>
         <v-list-item>
-          <v-list-item-avatar :size="150">
+          <v-list-item-avatar :size="150" tile>
             <v-img :src="require('../assets/philam7s.png')"></v-img>
           </v-list-item-avatar>
           <v-card-text>
@@ -16,11 +16,11 @@
                laboriosam laborum magnam mollitia natus omnis optio possimus provident quaerat, quia soluta unde?</p>
           </v-card-text>
         </v-list-item>
-        <v-card-title>Upcoming Match</v-card-title>
+        <v-card-title>Tondo FC's Upcoming Match</v-card-title>
         <v-container>
           <game-schedule-item></game-schedule-item>
         </v-container>
-        <v-card-title>Game Schedules</v-card-title>
+        <v-card-title>Tondo FC's Match Schedules</v-card-title>
         <v-tabs
           v-model="tab"
           background-color="transparent"
