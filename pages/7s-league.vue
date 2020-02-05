@@ -17,15 +17,9 @@
           </v-card-text>
         </v-list-item>
         <v-card-title>Upcoming Match</v-card-title>
-        <v-row align="center" justify="space-around">
-          <v-avatar :size="125">
-            <v-img :src="require('../assets/tondoFootballClubLogo.png')"></v-img>
-          </v-avatar>
-          <h1 class="display-3 font-weight-bold">VS</h1>
-          <v-avatar :size="125">
-            <v-img :src="require('../assets/logos/deportivoMatu.jpg')"></v-img>
-          </v-avatar>
-        </v-row>
+        <v-container>
+          <game-schedule-item></game-schedule-item>
+        </v-container>
         <v-card-title>Game Schedules</v-card-title>
         <v-tabs
           v-model="tab"
@@ -41,15 +35,20 @@
           </v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab">
-          <v-tab-item
-            v-for="item in items"
-            :key="item"
-          >
-            <v-card
-              flat
-            >
-              <v-card-text class="text-capitalize">{{ text }}</v-card-text>
-            </v-card>
+          <v-tab-item>
+            <v-card-text>
+              <game-schedule-item></game-schedule-item>
+              <v-divider></v-divider>
+              <div class="mb-1"></div>
+              <game-schedule-item></game-schedule-item>
+              <v-divider></v-divider>
+              <div class="mb-1"></div>
+              <game-schedule-item></game-schedule-item>
+              <v-divider></v-divider>
+              <div class="mb-1"></div>
+              <game-schedule-item></game-schedule-item>
+              <div class="mb-1"></div>
+            </v-card-text>
           </v-tab-item>
         </v-tabs-items>
       </v-card>
@@ -58,9 +57,10 @@
 </template>
 
 <script>
+    import GameScheduleItem from "../components/GameScheduleItem";
     export default {
         name: "seven-s-league",
-
+        components: {GameScheduleItem},
         data() {
             return {
                 tab: null,

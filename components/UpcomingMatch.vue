@@ -4,7 +4,10 @@
       <v-card flat>
         <v-row>
           <v-col cols="12" md="6">
-            <h5 class="primary--text text-center">UPCOMING MATCH AT 7s LEAGUE</h5>
+            <div class="primary--text text-center">
+              <h4>UPCOMING MATCH AT 7s LEAGUE</h4>
+              <h5>Tondo FC VS Deportivo Matu</h5>
+            </div>
             <div class="mb-10"></div>
             <v-row align="center" justify="space-around">
               <v-avatar :size="125">
