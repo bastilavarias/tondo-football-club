@@ -7,7 +7,7 @@
             Tondo Football Club
           </h1>
           <h6 class="subtitle-1 font-italic">
-            "Lorem ipsum dolor sit amet."
+            "Changing Lives"
           </h6>
         </div>
       </v-container>
