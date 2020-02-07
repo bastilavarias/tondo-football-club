@@ -1,34 +1,9 @@
 <template>
-  <div style="position: relative">
-    <landing-page></landing-page>
-    <div class="mb-5"></div>
-    <upcoming-match></upcoming-match>
-    <v-container>
-      <v-divider></v-divider>
-    </v-container>
-    <featured-articles></featured-articles>
-    <v-container>
-      <v-divider></v-divider>
-    </v-container>
-    <about-us></about-us>
-    <mission-and-vision></mission-and-vision>
-    <youtube-embed youtube-id="Ee5XXUkTo9A" title="Cultural Architects Of Tondo"></youtube-embed>
-  </div>
+  <v-btn :to="{ name: 'about-us' }">Go to about us</v-btn>
 </template>
 
 <script>
-    import AboutUs from "../components/AboutUs";
-    import MissionAndVision from "../components/MissionAndVision";
-    import YoutubeEmbed from "../components/YoutubeEmbed";
-    import LandingPage from "../components/LandingPage";
-    import FeaturedArticles from "../components/FeaturedArticles";
-    import UpcomingMatch from "../components/UpcomingMatch";
-
     export default {
         name: "home",
-        components: {
-            UpcomingMatch,
-            FeaturedArticles, LandingPage, YoutubeEmbed, MissionAndVision, AboutUs
-        }
     };
 </script>
