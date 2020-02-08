@@ -4,7 +4,6 @@
       <v-avatar :size="50">
         <v-img :src="require('../../assets/logos/tondoFC.png')"></v-img>
       </v-avatar>
-      <span class="title">Tondo FC</span>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>

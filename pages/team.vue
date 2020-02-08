@@ -3,8 +3,8 @@
     <v-parallax :src="require('../assets/banners/team.jpg')" height="450">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 class="display-4 font-weight-bold">Our Team</h1>
-          <div class="mb-5 mb-md-0"></div>
+          <h1 class="display-4 font-weight-bold">Team</h1>
+          <div class="mb-2"></div>
           <div class="custom-short-separator mx-auto"></div>
         </v-col>
       </v-row>
@@ -30,12 +30,12 @@
       </v-row>
     </v-container>
     <generic-content-holder class="bg-dirty-white" title="Tondo FC Players"
-                            is-centered has-separator>
+                            is-centered has-separator font-type="display-1">
       <div class="mb-10"></div>
       <v-container>
         <v-row>
           <template v-for="n in 8">
-            <v-col cols="12" sm="6" md="3" :key="n">
+            <v-col cols="12" sm="4" md="3" :key="n">
               <player-item></player-item>
             </v-col>
           </template>

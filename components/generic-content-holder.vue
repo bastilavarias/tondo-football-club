@@ -1,7 +1,7 @@
 <template>
-  <div :class="`${className} pt-10`">
-    <h1 :class="`display-1 font-weight-bold ${isCentered ? 'text-center' : 'text-left' }`">{{ title }}</h1>
-    <template v-if="hasSeparator">
+  <div :class="`${className} ${fontType === 'display-1' ? 'pt-10' : ''}`">
+    <h1 :class="`font-weight-bold ${isCentered ? 'text-center' : 'text-left' } ${fontType}`">{{ title }}</h1>
+    <template v-if=" hasSeparator">
       <div class="mb-2"></div>
       <div :class="`custom-short-separator ${isCentered ? 'mx-auto' : ''}`"></div>
     </template>
@@ -31,6 +31,11 @@
 
             hasSeparator: {
                 type: Boolean,
+                required: false
+            },
+
+            fontType: {
+                type: String,
                 required: false
             }
         }

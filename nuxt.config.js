@@ -56,7 +56,7 @@ module.exports = {
     theme: {
       themes: {
         light: {
-          primary: "#D02026",
+          primary: "#c0392b",
         }
       }
     }

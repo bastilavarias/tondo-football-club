@@ -3,7 +3,7 @@
 }
 
 .custom-short-separator {
-  background-color: #D02026;
+  background-color: #c0392b;
   height: .5rem;
   width: 5rem;
 }
@@ -34,7 +34,7 @@
 }
 
 .nav-bar-menu-button-active {
-  border-left: .2rem solid #D02026;
+  border-left: .2rem solid #c0392b;
   font-size: .1rem;
 }
 

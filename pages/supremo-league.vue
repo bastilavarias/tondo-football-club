@@ -3,7 +3,7 @@
     <v-parallax :src="require('../assets/banners/supremoLeague.jpg')" height="450">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 :class="`${isOnMobile ? 'display-3' : 'display-4'} font-weight-bold`">Supremo League</h1>
+          <h1 :class="`${isOnMobile ? 'display-2' : 'display-3'} font-weight-bold`">Supremo League</h1>
           <div class="mb-2"></div>
           <div class="custom-short-separator mx-auto"></div>
         </v-col>
@@ -12,39 +12,59 @@
     <div class="mb-10"></div>
     <v-container>
       <v-row>
-        <v-col cols="12" md="3" lg="2">
-          <v-avatar :size="150" tile class="mx-auto">
+        <v-col cols="12" md="3" xl="2">
+          <v-avatar :size="200" tile>
             <v-img :src="require('../assets/logos/supremoLeague.png')"></v-img>
           </v-avatar>
         </v-col>
-        <v-col cols="12" md="9" lg="10">
-          <h1 class="display-1">The Supremo League</h1>
-          <p class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab facilis ipsa itaque
-                                maiores nam necessitatibus quae. Accusantium aliquam architecto aut dolore dolores
-                                dolorum earum eligendi explicabo, impedit libero mollitia neque, nisi odit pariatur
-                                quidem sit tenetur. Aliquam aspernatur facere harum id illum laudantium nostrum
-                                officiis possimus sed velit. Dolorem, sed?</p>
+        <v-col cols="12" md="9" xl="10">
+          <generic-content-holder class="white" title="The Supremo League"
+                                  font-type="display-1" has-separator>
+            <v-container>
+              <p class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at beatae commodi
+                                    est et eum illo incidunt laborum, nesciunt nobis, numquam pariatur possimus quaerat,
+                                    quam quis rem saepe sapiente sed! Ducimus ex fugit hic, iste magni necessitatibus
+                                    non odit optio quibusdam rem, repellat, saepe sapiente. Amet itaque minus mollitia
+                                    tempore?</p>
+            </v-container>
+          </generic-content-holder>
         </v-col>
       </v-row>
       <generic-content-holder class="white" title="Upcoming Match"
-                              :is-centered="isOnMobile">
+                              :is-centered="isOnMobile" font-type="title">
         <v-container>
-          <match-schedule-item></match-schedule-item>
+          <span class="overline grey--text mb-0">February 20, 2020</span>
         </v-container>
+        <match-schedule-item :schedule-details="{}"></match-schedule-item>
       </generic-content-holder>
       <generic-content-holder class="white" title="Schedules"
-                              :is-centered="isOnMobile">
+                              :is-centered="isOnMobile" font-type="title">
         <v-container>
-          <template v-for="n in 6">
-            <match-schedule-item :key="n"></match-schedule-item>
-          </template>
+          <span class="overline grey--text">April 2020</span>
         </v-container>
+        <template v-for="n in 3">
+          <match-schedule-item :key="n"></match-schedule-item>
+          <template v-if="n < 3">
+            <div class="mb-1"></div>
+          </template>
+        </template>
+        <v-container>
+          <span class="overline grey--text">May 2020</span>
+        </v-container>
+        <template v-for="n in 3">
+          <match-schedule-item :key="n"></match-schedule-item>
+          <template v-if="n < 3">
+            <div class="mb-1"></div>
+          </template>
+        </template>
+
       </generic-content-holder>
       <generic-content-holder class="white" title="Partners"
-                              :is-centered="isOnMobile">
+                              :is-centered="isOnMobile" font-type="title">
       </generic-content-holder>
     </v-container>
-    <generic-content-holder class-name="bg-dirty-white" title="Supremo League Gallery" is-centered has-separator>
+    <generic-content-holder class-name="bg-dirty-white" title="Supremo League Gallery" is-centered has-separator
+                            font-type="display-1">
       <div class="mb-10"></div>
       <generic-gallery></generic-gallery>
     </generic-content-holder>
