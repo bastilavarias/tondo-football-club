@@ -21,37 +21,40 @@
                                 officia qui, quo, reprehenderit tempore voluptas voluptates?</p>
         </v-col>
         <v-col cols="12" md="4">
-          <v-img :src="require('../assets/team/markDennisBalbin.jpg')" width="80%" height="auto"
-                 class="mx-auto"></v-img>
+          <v-card class="d-inline-block mx-auto" :height="isOnMobile ? '300' : '200'">
+            <v-avatar tile size="100%">
+              <v-img :src="require('../assets/team/markDennisBalbin.jpg')"></v-img>
+            </v-avatar>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
-    <div class="bg-dirty-white" style="min-height: 5rem;">
+    <generic-content-holder class="bg-dirty-white" title="Tondo FC Players"
+                            is-centered has-separator>
+      <div class="mb-10"></div>
       <v-container>
         <v-row>
-          <v-col cols="12">
-            <div class="text-center">
-              <h1 class="display-1">Tondo FC Players</h1>
-              <div class="mb-2"></div>
-              <div class="custom-short-separator mx-auto"></div>
-            </div>
-          </v-col>
-          <template v-for="n in 12">
+          <template v-for="n in 8">
             <v-col cols="12" sm="6" md="3" :key="n">
               <player-item></player-item>
             </v-col>
           </template>
         </v-row>
       </v-container>
-    </div>
+    </generic-content-holder>
   </section>
 </template>
 
 <script>
     import PlayerItem from "../components/player-item";
+    import GenericContentHolder from "../components/generic-content-holder";
+    import utilities from "../plugins/utilities";
 
     export default {
         name: "team",
-        components: {PlayerItem}
+
+        components: {GenericContentHolder, PlayerItem},
+
+        mixins: [utilities]
     };
 </script>
