@@ -40,29 +40,25 @@
         <v-container>
           <span class="overline grey--text mb-0">February 20, 2020</span>
         </v-container>
-        <match-schedule-item :schedule-details="{}"></match-schedule-item>
+        <seven-s-match-item :match-details="{}"></seven-s-match-item>
       </generic-content-holder>
+      <div class="mb-5"></div>
       <generic-content-holder class="white" title="Tondo FC's Schedules"
                               :is-centered="isOnMobile" font-type="title">
         <v-container>
           <span class="overline grey--text">April 2020</span>
         </v-container>
         <template v-for="n in 3">
-          <match-schedule-item :key="n"></match-schedule-item>
-          <template v-if="n < 3">
-            <div class="mb-1"></div>
-          </template>
+          <seven-s-match-item :key="n"></seven-s-match-item>
+          <div class="mb-1"></div>
         </template>
         <v-container>
           <span class="overline grey--text">May 2020</span>
         </v-container>
         <template v-for="n in 3">
-          <match-schedule-item :key="n"></match-schedule-item>
-          <template v-if="n < 3">
-            <div class="mb-1"></div>
-          </template>
+          <seven-s-match-item :key="n"></seven-s-match-item>
+          <div class="mb-1"></div>
         </template>
-
       </generic-content-holder>
       <generic-content-holder class="white" title="Partners"
                               :is-centered="isOnMobile" font-type="title">
@@ -78,16 +74,15 @@
 
 <script>
     import MainNavBar from "../layouts/partials/main-nav-bar";
-    import MatchItem from "../components/match-item";
-    import MatchScheduleItem from "../components/match-schedule-item";
     import GenericGallery from "../components/generic-gallery";
     import GenericContentHolder from "../components/generic-content-holder";
     import utilities from "../plugins/utilities";
+    import SevenSMatchItem from "../components/7s-match-item";
 
     export default {
         name: "seven-s-league",
 
-        components: {GenericContentHolder, GenericGallery, MatchScheduleItem, MatchItem, MainNavBar},
+        components: {SevenSMatchItem, GenericContentHolder, GenericGallery, MainNavBar},
 
         mixins: [utilities]
     };

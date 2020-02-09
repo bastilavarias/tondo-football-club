@@ -3,10 +3,11 @@
     <vue-gallery :images="images" :index="currentIndex" @close="currentIndex = null"></vue-gallery>
     <v-row no-gutters>
       <template v-for="(imageSource, index) in images">
-        <v-col cols="6" sm="4" md="3" :key="index">
-          <v-img
-            @click="currentIndex = index" :src="imageSource" :height="isOnMobile ? '150' : '300'" width="100%" class="mx-auto shadow-1"></v-img>
-        </v-col>
+          <v-col cols="6" sm="4" md="3" :key="index">
+            <v-img
+              @click="currentIndex = index" :src="imageSource" :height="isOnMobile ? '150' : '300'" width="100%"
+              class="mx-auto shadow-1"></v-img>
+          </v-col>
       </template>
     </v-row>
   </div>

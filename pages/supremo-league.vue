@@ -30,39 +30,38 @@
           </generic-content-holder>
         </v-col>
       </v-row>
+      <generic-content-holder class="white" title="League Table"
+                              :is-centered="isOnMobile" font-type="title">
+        <v-container>
+          <league-table :key="n"></league-table>
+        </v-container>
+      </generic-content-holder>
+      <div class="mb-10"></div>
       <generic-content-holder class="white" title="Upcoming Match"
                               :is-centered="isOnMobile" font-type="title">
         <v-container>
-          <span class="overline grey--text mb-0">February 20, 2020</span>
+          <v-card>
+            <v-img :src="require('../assets/posters/84919703_651988492009420_6689470159758819328_o.jpg')"></v-img>
+          </v-card>
         </v-container>
-        <match-schedule-item :schedule-details="{}"></match-schedule-item>
       </generic-content-holder>
+      <div class="mb-10"></div>
       <generic-content-holder class="white" title="Schedules"
                               :is-centered="isOnMobile" font-type="title">
-        <v-container>
-          <span class="overline grey--text">April 2020</span>
-        </v-container>
-        <template v-for="n in 3">
-          <match-schedule-item :key="n"></match-schedule-item>
-          <template v-if="n < 3">
-            <div class="mb-1"></div>
-          </template>
-        </template>
         <v-container>
           <span class="overline grey--text">May 2020</span>
         </v-container>
         <template v-for="n in 3">
-          <match-schedule-item :key="n"></match-schedule-item>
-          <template v-if="n < 3">
-            <div class="mb-1"></div>
-          </template>
+          <seven-s-match-item :key="n"></seven-s-match-item>
+          <div class="mb-1"></div>
         </template>
-
       </generic-content-holder>
+      <div class="mb-10"></div>
       <generic-content-holder class="white" title="Partners"
                               :is-centered="isOnMobile" font-type="title">
       </generic-content-holder>
     </v-container>
+    <div class="mb-10"></div>
     <generic-content-holder class-name="bg-dirty-white" title="Supremo League Gallery" is-centered has-separator
                             font-type="display-1">
       <div class="mb-10"></div>
@@ -72,15 +71,16 @@
 </template>
 
 <script>
-    import MatchScheduleItem from "../components/match-schedule-item";
     import utilities from "../plugins/utilities";
     import GenericContentHolder from "../components/generic-content-holder";
     import GenericGallery from "../components/generic-gallery";
+    import SevenSMatchItem from "../components/7s-match-item";
+    import LeagueTable from "../components/league-table";
 
     export default {
         name: "supremo-league",
 
-        components: {GenericGallery, GenericContentHolder, MatchScheduleItem},
+        components: {LeagueTable, SevenSMatchItem, GenericGallery, GenericContentHolder},
 
         mixins: [utilities]
     };
