@@ -27,7 +27,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-gallery.js', mode: 'client' }
+    {src: "~/plugins/vue-gallery.js", mode: "client"},
+    {src: "~/plugins/vue-magic-grid.js", mode: "client"}
   ],
   /*
   ** Nuxt.js dev-modules

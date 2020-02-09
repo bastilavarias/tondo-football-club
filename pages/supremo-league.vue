@@ -31,14 +31,14 @@
         </v-col>
       </v-row>
       <generic-content-holder class="white" title="League Table"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
         <v-container>
           <league-table :key="n"></league-table>
         </v-container>
       </generic-content-holder>
       <div class="mb-10"></div>
       <generic-content-holder class="white" title="Upcoming Match"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
         <v-container>
           <v-card>
             <v-img :src="require('../assets/posters/84919703_651988492009420_6689470159758819328_o.jpg')"></v-img>
@@ -47,7 +47,7 @@
       </generic-content-holder>
       <div class="mb-10"></div>
       <generic-content-holder class="white" title="Schedules"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
         <v-container>
           <span class="overline grey--text">May 2020</span>
         </v-container>
@@ -58,7 +58,7 @@
       </generic-content-holder>
       <div class="mb-10"></div>
       <generic-content-holder class="white" title="Partners"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
       </generic-content-holder>
     </v-container>
     <div class="mb-10"></div>

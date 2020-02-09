@@ -30,21 +30,21 @@
           </generic-content-holder>
         </v-col>
       </v-row>
-      <generic-content-holder class="white" title="Tondo FC's Standing" :is-centered="isOnMobile" font-type="title">
-        <p :class="`subtitle-1 ${isOnMobile ? 'text-center' : ''}`">
+      <generic-content-holder class="white" title="Tondo FC's Standing" font-type="title">
+        <p class="subtitle-1">
           <span class="primary--text">0 Wins</span> / 0 Losses
         </p>
       </generic-content-holder>
       <generic-content-holder class="white" title="Tondo FC's Upcoming Match"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
         <v-container>
           <span class="overline grey--text mb-0">February 20, 2020</span>
         </v-container>
         <seven-s-match-item :match-details="{}"></seven-s-match-item>
       </generic-content-holder>
-      <div class="mb-5"></div>
+      <div class="mb-10"></div>
       <generic-content-holder class="white" title="Tondo FC's Schedules"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
         <v-container>
           <span class="overline grey--text">April 2020</span>
         </v-container>
@@ -60,9 +60,11 @@
           <div class="mb-1"></div>
         </template>
       </generic-content-holder>
+      <div class="mb-10"></div>
       <generic-content-holder class="white" title="Partners"
-                              :is-centered="isOnMobile" font-type="title">
+                              font-type="title">
       </generic-content-holder>
+      <div class="mb-10"></div>
     </v-container>
     <generic-content-holder class-name="bg-dirty-white" title="Tondo FC's 7S Gallery" is-centered has-separator
                             font-type="display-1">
