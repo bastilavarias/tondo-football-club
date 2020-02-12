@@ -16,6 +16,7 @@
     "express": "^4.16.4",
     "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
+    "vue-carousel": "^0.18.0",
     "vue-gallery": "^2.0.1",
     "vue-magic-grid": "0.0.4",
     "vue2-animate": "^2.1.3"

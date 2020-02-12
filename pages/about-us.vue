@@ -13,47 +13,33 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <generic-content-holder class-name="white" title="The Tondo Football Club" has-separator font-type="display-1">
+          <generic-content-holder class-name="white" title="The Tondo Football Club" has-separator
+                                  font-type="display-1">
             <v-container>
-              <p class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores deserunt
-                                    dignissimos in
-                                    nostrum perspiciatis quisquam vero, voluptas. Commodi deleniti, ea facilis harum
-                                    libero omnis ratione. A
-                                    adipisci aliquid aspernatur consectetur deleniti ea earum est et ipsum iusto laborum
-                                    modi neque nihil
-                                    pariatur, porro quae repellat vel vitae voluptas voluptate.</p>
+              <p class="subtitle-1">{{ content.about }}
+
+              </p>
             </v-container>
           </generic-content-holder>
         </v-col>
         <v-col cols="12" md="6">
           <generic-content-holder class-name="white" title="Our Mission" has-separator font-type="display-1">
             <v-container>
-              <p class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores deserunt
-                                    dignissimos in
-                                    nostrum perspiciatis quisquam vero, voluptas. Commodi deleniti, ea facilis harum
-                                    libero omnis ratione. A
-                                    adipisci aliquid aspernatur consectetur deleniti ea earum est et ipsum iusto laborum
-                                    modi neque nihil
-                                    pariatur, porro quae repellat vel vitae voluptas voluptate.</p>
+              <p class="subtitle-1">{{ content.mission }}</p>
             </v-container>
           </generic-content-holder>
         </v-col>
         <v-col cols="12" md="6">
           <generic-content-holder class-name="white" title="Our Vision" has-separator font-type="display-1">
             <v-container>
-              <p class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores deserunt
-                                    dignissimos in
-                                    nostrum perspiciatis quisquam vero, voluptas. Commodi deleniti, ea facilis harum
-                                    libero omnis ratione. A
-                                    adipisci aliquid aspernatur consectetur deleniti ea earum est et ipsum iusto laborum
-                                    modi neque nihil
-                                    pariatur, porro quae repellat vel vitae voluptas voluptate.</p>
+              <p class="subtitle-1">{{content.vision}}</p>
             </v-container>
           </generic-content-holder>
         </v-col>
       </v-row>
     </v-container>
-    <generic-content-holder class="bg-dirty-white" title="Cultural Architects Of Tondo" has-separator is-centered font-type="display-1">
+    <generic-content-holder class="bg-dirty-white" title="Cultural Architects Of Tondo" has-separator is-centered
+                            font-type="display-1">
       <div class="mb-10"></div>
       <v-container>
         <iframe width="100%" :height="isOnMobile ? '400' : '500'" src="https://www.youtube.com/embed/Ee5XXUkTo9A"
@@ -70,12 +56,25 @@
     import GenericContentHolder from "../components/generic-content-holder";
     import utilities from "../plugins/utilities";
 
+    const content = {
+        about: "Football club that develops grass root football program. The heartbeat of Tondo football community. Developing a winning culture that inspires one another.",
+        mission: "Empowering the youth to take part in the grassroots football program and teach them life skills and values that will give them winning mentality in sports and in life.",
+        vision: "To be a sustainable football club that gives access to the youth to help transform their lives into better citizens and future role models of the community and build that winning culture."
+
+    };
+
     export default {
         name: "about-us",
 
         components: {GenericContentHolder, MainNavBar},
 
-        mixins: [utilities]
+        mixins: [utilities],
+
+        data() {
+            return {
+                content
+            };
+        }
     };
 </script>
 

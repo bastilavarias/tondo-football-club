@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white" hide-on-scroll>
+  <v-app-bar app color="transparent" hide-on-scroll flat>
     <v-toolbar-title>
       <v-avatar :size="50">
         <v-img :src="require('../../assets/logos/tondoFC.png')"></v-img>
@@ -16,11 +16,23 @@
         <template v-slot:activator="{ on }">
           <v-btn depressed class="nav-bar-button" exact active-class="nav-bar-button-active" v-on="on"
           >
-            <span>Matches</span>
+            <span>Fixtures & Results</span>
             <v-icon color="primary">mdi-chevron-down</v-icon>
           </v-btn>
         </template>
-        <nav-bar-matches-menu></nav-bar-matches-menu>
+        <nav-bar-fixtures-and-results-menu></nav-bar-fixtures-and-results-menu>
+      </v-menu>
+      <v-menu offset-y open-on-hover transition="slide-y-transition"
+              bottom
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn depressed class="nav-bar-button" exact active-class="nav-bar-button-active" v-on="on"
+          >
+            <span>Match Schedules</span>
+            <v-icon color="primary">mdi-chevron-down</v-icon>
+          </v-btn>
+        </template>
+        <nav-bar-match-schedules-menu></nav-bar-match-schedules-menu>
       </v-menu>
       <v-menu offset-y open-on-hover transition="slide-y-transition"
               bottom
@@ -36,9 +48,6 @@
       </v-menu>
       <v-btn depressed class="nav-bar-button" :to="{ name: 'team' }" exact active-class="nav-bar-button-active">
         Team
-      </v-btn>
-      <v-btn depressed class="nav-bar-button" exact active-class="nav-bar-button-active">
-        Store
       </v-btn>
       <v-btn depressed class="nav-bar-button" exact active-class="nav-bar-button-active" :to="{name: 'articles'}">
         Articles
@@ -60,12 +69,16 @@
 </template>
 
 <script>
-    import NavBarMatchesMenu from "../../components/nav-bar-matches-menu";
+    import NavBarMatchSchedulesMenu from "../../components/nav-bar-match-schedules";
     import NavBarProgramsMenu from "../../components/nav-bar-programs-menu";
     import NavBarAboutUsMenu from "../../components/nav-bar-about-us-menu";
+    import NavBarFixturesAndResultsMenu from "../../components/nav-bar-fixtures-and-results-menu";
 
     export default {
         name: "main-nav-bar",
-        components: {NavBarAboutUsMenu, NavBarProgramsMenu, NavBarMatchesMenu}
+        components: {
+            NavBarMatchSchedulesMenu,
+            NavBarFixturesAndResultsMenu, NavBarAboutUsMenu, NavBarProgramsMenu
+        }
     };
 </script>

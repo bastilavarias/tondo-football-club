@@ -28,6 +28,7 @@ module.exports = {
   */
   plugins: [
     {src: "~/plugins/vue-gallery.js", mode: "client"},
+    {src: "~/plugins/vue-carousel.js", mode: "client"},
     {src: "~/plugins/vue-magic-grid.js", mode: "client"}
   ],
   /*

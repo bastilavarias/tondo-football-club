@@ -1,0 +1,45 @@
+<template>
+  <div id="match-schedule-item" class="py-1 px-1">
+    <v-row dense>
+      <v-col cols="12" md="2" align-self="center">
+        <v-row justify="center" align="center">
+          <span class="font-italic">Feb 02 - 10: 00 AM</span>
+        </v-row>
+      </v-col>
+      <v-col cols="12" md="7" align-self="center">
+        <v-row justify="center" align="center">
+          <div>
+            <v-avatar :size="50">
+              <v-img :src="require('../assets/logos/tondoFC.png')"></v-img>
+            </v-avatar>
+            <span class="subtitle-1 black--text">Team Name</span>
+          </div>
+          <span class="caption mx-2 primary--text font-weight-bold">VS</span>
+          <div>
+            <span class="subtitle-1 black--text">Team Name</span>
+            <v-avatar :size="50">
+              <v-img :src="require('../assets/logos/teamMatu.png')"></v-img>
+            </v-avatar>
+          </div>
+        </v-row>
+      </v-col>
+      <v-col cols="12" md="3" align-self="center">
+        <v-row justify="center" align="center">
+          <span>@Lorem ipsum dolor sit amet, consectetur</span>
+        </v-row>
+      </v-col>
+    </v-row>
+  </div>
+</template>
+
+<script>
+  export default {
+      name: "match-schedule-item"
+  }
+</script>
+
+<style scoped>
+  #match-schedule-item {
+    border-bottom: 1px solid #f2f2f2;
+  }
+</style>
