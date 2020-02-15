@@ -2,12 +2,6 @@
   background-color: #ffffff;
 }
 
-.custom-short-separator {
-  background-color: #c0392b;
-  height: .5rem;
-  width: 5rem;
-}
-
 .nav-bar-button {
   text-transform: capitalize;
   font-weight: bold;
@@ -19,31 +13,6 @@
 
 .nav-bar-button::after {
   color: transparent
-}
-
-.nav-bar-button-active {
-  border-bottom: .2rem solid #D02026;
-}
-
-.nav-bar-button-active::before {
-  color: transparent;
-}
-
-.nav-bar-button-active::active {
-  color: transparent;
-}
-
-.nav-bar-menu-button-active {
-  border-left: .2rem solid #c0392b;
-  font-size: .1rem;
-}
-
-.nav-bar-menu-button-active::after {
-  color: transparent;
-}
-
-.nav-bar-menu-button-active::before {
-  color: transparent;
 }
 
 .bg-dirty-white {

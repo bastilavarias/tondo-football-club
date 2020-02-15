@@ -1,5 +1,7 @@
 <template>
   <section>
+    <generic-parallax title="The Supremo Futsal League" subtitle="#1 Football League in Manila"
+                      :image="require('../../assets/banners/photo-of-men-playing-soccer-during-daytime-3651674.jpg')"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
       <generic-about-us :title="content.title" :about="content.about"
@@ -92,6 +94,7 @@
     import MatchResult from "../../components/match-result";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
+    import GenericParallax from "../../components/generic-parallax";
 
     const content = {
         title: "Supremo Futsal League",
@@ -102,6 +105,7 @@
     export default {
         name: "supremo-league",
         components: {
+            GenericParallax,
             MatchScheduleItemPreview,
             MatchScheduleItem, MatchResult, LeagueTable, GenericContentHolder, GenericGallery, GenericAboutUs},
         data() {
