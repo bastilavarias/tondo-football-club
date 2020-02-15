@@ -6,7 +6,7 @@
     <v-container>
       <generic-about-us title="About 7s League"
                         about="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at beatae commodi est et eum illo incidunt laborum, nesciunt nobis, numquam pariatur possimus quaerat, quam quis rem saepe sapiente sed! Ducimus ex fugit hic, iste magni necessitatibus non odit optio quibusdam rem, repellat, saepe sapiente. Amet itaque minus mollitia tempore?"
-                        :image="require('../../assets/logos/7sLeague.PNG')"></generic-about-us>
+                        :image="require('../../assets/logos/7sLeague.png')"></generic-about-us>
       <v-row dense>
         <v-col cols="12" md="10">
           <v-card class="mb-5">
