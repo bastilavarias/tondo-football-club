@@ -1,10 +1,8 @@
 <template>
   <section>
-    <generic-parallax title="Team" :image="require('../assets/banners/aboutUs.jpg')"></generic-parallax>
+    <generic-parallax title="Team" subtitle="Know more about the" :image="require('../assets/banners/aboutUs.jpg')"></generic-parallax>
     <div :style="`background-image: url('${require('../assets/backgrounds/pattern-gray-background.png')}')`">
       <v-container>
-        <generic-content-holder title="Our Players" has-separator is-centered></generic-content-holder>
-        <div class="mb-10"></div>
         <v-row dense>
           <template v-for="n in 6">
             <v-col cols="12" sm="6" md="3" :key="n">

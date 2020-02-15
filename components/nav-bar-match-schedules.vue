@@ -16,10 +16,6 @@
         {
             to: {name: "match-schedules-7s-football-league"},
             name: "7s Football League"
-        },
-        {
-            to: {name: "match-schedules-supremo-futsal-league"},
-            name: "Supremo Futsal League"
         }
     ];
 

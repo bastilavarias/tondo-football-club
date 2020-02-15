@@ -2,7 +2,7 @@
   <div>
     <v-card max-width="500" class="mx-auto" flat>
       <v-avatar tile size="100%">
-        <v-img src="https://image.shutterstock.com/image-vector/soccer-player-graphic-trail-600w-552274498.jpg"></v-img>
+        <v-img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></v-img>
       </v-avatar>
     </v-card>
     <div class="mb-1"></div>

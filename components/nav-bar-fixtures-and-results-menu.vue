@@ -16,10 +16,6 @@
         {
             to: {name: "fixtures-and-results-7s-football-league"},
             name: "7s Football League"
-        },
-        {
-            to: {name: "fixtures-and-results-supremo-futsal-league"},
-            name: "Supremo Futsal League"
         }
     ];
 

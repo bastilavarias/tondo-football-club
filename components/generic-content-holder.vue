@@ -1,10 +1,11 @@
 <template>
-  <div :class="`${className} ${fontType === 'display-1' ? 'pt-10' : ''}`">
-    <h1 :class="`font-weight-bold ${isCentered ? 'text-center' : 'text-left' } ${fontType}`">{{ title }}</h1>
-    <template v-if=" hasSeparator">
-      <div class="mb-2"></div>
-      <div :class="`custom-short-separator ${isCentered ? 'mx-auto' : ''}`"></div>
-    </template>
+  <div :style="`background-image: url('${image}')`" class="content-background pt-10">
+    <div style="color: #ffffff;" class="text-center">
+     <v-container>
+       <h1 class="display-2 font-weight-bold mb-10">{{title}}</h1>
+       <p class="subtitle-1">{{subtitle}}</p>
+     </v-container>
+    </div>
     <slot></slot>
   </div>
 </template>
@@ -14,30 +15,29 @@
         name: "generic-content-holder",
 
         props: {
-            className: {
-                type: String,
-                required: false
-            },
-
             title: {
                 type: String,
-                required: false
+                required: true
             },
 
-            isCentered: {
-                type: Boolean,
-                required: false
-            },
-
-            hasSeparator: {
-                type: Boolean,
-                required: false
-            },
-
-            fontType: {
+            subtitle: {
                 type: String,
-                required: false
+                required: true
+            },
+
+            image: {
+                required: true
             }
         }
     };
 </script>
+
+<style scoped>
+  .content-background {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+</style>

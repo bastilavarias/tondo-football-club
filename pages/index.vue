@@ -22,16 +22,14 @@
                   </div>
                 </v-row>
               </v-container>
+              <v-card>
+              </v-card>
             </div>
             <div class="dark-overlay"></div>
           </div>
         </vue-slide>
       </template>
     </vue-carousel>
-    <v-container>
-
-      <h1>Upcoming Matches</h1>
-    </v-container>
   </section>
 </template>
 
@@ -61,7 +59,7 @@
   .landing-image {
     background-image: url("https://images.pexels.com/photos/978695/pexels-photo-978695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

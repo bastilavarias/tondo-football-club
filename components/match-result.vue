@@ -1,7 +1,12 @@
 <template>
   <div id="match-result">
     <v-row dense>
-      <v-col cols="12" md="10" align-self="center">
+      <v-col cols="12" md="2" align-self="center">
+        <v-row justify="center" align="center">
+          <span class="font-weight-bold caption grey--text">Feb 02, 2020</span>
+        </v-row>
+      </v-col>
+      <v-col cols="12" md="8" align-self="center">
         <v-row justify="space-around" align="center">
           <div>
             <span class="caption font-weight-bold black--text">Tondo FC</span>
@@ -24,7 +29,7 @@
       </v-col>
       <v-col cols="12" md="2" align-self="center">
         <v-row justify="center" align="center">
-          <v-btn color="primary text-capitalize" text small :block="isOnMobile">Details</v-btn>
+          <v-btn color="primary" class="text-capitalize" text small :block="isOnMobile">Details</v-btn>
         </v-row>
       </v-col>
     </v-row>
