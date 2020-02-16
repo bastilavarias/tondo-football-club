@@ -61,6 +61,14 @@ module.exports = {
           primary: "#c0392b",
         }
       }
+    },
+    breakpoint: {
+      thresholds: {
+        xs: 319,
+        sm: 424,
+        md: 767,
+        lg: 1023,
+      }
     }
   },
   /*

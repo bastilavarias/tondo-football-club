@@ -14,5 +14,6 @@
     export default {
         name: "default-layout",
         components: {MainNavBar, MainFooter},
+
     };
 </script>

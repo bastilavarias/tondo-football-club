@@ -7,7 +7,8 @@
           <div class="landing-content">
             <v-container>
               <div class="text-left">
-                <h1 class="title font-weight-thin">Welcome to the official website of</h1>
+                <h1 class="title font-weight-thin">Welcome to the official website
+                                                   of</h1>
                 <h1 class="display-3 display-md-4 font-weight-bold mb-5">Tondo Football Club</h1>
                 <v-btn class="text-capitalize mr-2" color="primary" x-large depressed>
                   See More
@@ -30,6 +31,8 @@
 </template>
 
 <script>
+    import "../../assets/css/animation.css";
+
     export default {
         name: "home-landing-page",
 
@@ -39,9 +42,13 @@
                     "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/82041784_625095584698711_6729586146440904704_o.jpg?_nc_cat=103&_nc_oc=AQm0EuCpT2g_8VATEsOiqaafYopKcJIrYTUORjDgv7Rfbn7GOQoJs5ldPNcHVNfY0u0&_nc_ht=scontent.fmnl5-1.fna&oh=33da2893a88aa91242752c283d6cebb5&oe=5EB6E685",
                     "https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
                 ],
-                currentIndex: null
+                currentIndex: null,
+                shouldShowContentMessage: false
             };
         },
+
+        created() {
+        }
     };
 </script>
 
@@ -57,9 +64,9 @@
   }
 
   .dark-overlay {
-    -webkit-box-shadow: inset 10px -85px 300px 200px rgba(0,0,0,0.8);
-    -moz-box-shadow: inset 10px -85px 300px 200px rgba(0,0,0,0.8);
-    box-shadow: inset 10px -85px 300px 200px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 10px -85px 300px 200px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 10px -85px 300px 200px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 10px -85px 300px 200px rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;

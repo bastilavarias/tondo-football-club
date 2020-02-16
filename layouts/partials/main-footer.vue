@@ -20,7 +20,8 @@
           <template v-for="(link, index) in content.socialLinks">
             <v-btn icon class="white--text"
                    :href="link.url"
-                   target="_blank">
+                   target="_blank"
+                    :key="index">
               <v-icon>{{link.iconName}}</v-icon>
             </v-btn>
           </template>
@@ -73,7 +74,6 @@
 
 <style scoped>
   #main-footer {
-    background-image: url("../../assets/backgrounds/footer.png");
     width: 100%;
     height: 100%;
     background-position: center;

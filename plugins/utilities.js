@@ -6,6 +6,10 @@ export default {
 
     isOnMobile() {
       return this.screenBreakPoint === "xs" || this.screenBreakPoint === "sm";
+    },
+
+    test() {
+      return this.$vuetify.breakpoint;
     }
   },
 

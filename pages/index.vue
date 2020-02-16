@@ -1,17 +1,16 @@
 <template>
   <section>
     <home-landing-page></home-landing-page>
-    <home-upcoming-matches></home-upcoming-matches>
+    <home-upcoming-match-schedules-and-results></home-upcoming-match-schedules-and-results>
   </section>
 </template>
 
 <script>
     import HomeLandingPage from "../components/home/landing-page";
-    import HomeUpcomingMatchTimer from "../components/home/upcoming-match-timer";
-    import HomeUpcomingMatches from "../components/home/upcoming-matches";
+    import HomeUpcomingMatchSchedulesAndResults from "../components/home/upcoming-match-schedules-and-results";
 
     export default {
         name: "home",
-        components: {HomeUpcomingMatches, HomeUpcomingMatchTimer, HomeLandingPage}
+        components: {HomeUpcomingMatchSchedulesAndResults, HomeLandingPage}
     };
 </script>
