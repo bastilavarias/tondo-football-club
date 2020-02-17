@@ -18,6 +18,7 @@
     export default {
         name: "home-upcoming-matches",
         components: {HomeUpcomingMatchItem, HomeMatchResultItem},
+
         computed: {
             navigationNextIcon() {
                 return `<svg class="vue-carousel-icon primary--text" viewBox="0 0 24 24">

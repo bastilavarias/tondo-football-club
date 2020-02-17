@@ -4,8 +4,9 @@
       <div class="flex-grow-1"></div>
       <div class="text-center">
         <span class="d-block caption">
-          <span class="caption">7s Football League<v-avatar :size="15" class="ml-1"><v-img
-            :src="require('../../assets/logos/7sLeague.png')"></v-img></v-avatar></span>
+          <span class="caption">
+            {{leagueName}}<v-avatar :size="15" class="ml-1"><v-img
+            :src="leagueLogo"></v-img></v-avatar></span>
 
         </span>
         <span class="d-block title text-uppercase primary--text font-weight-bold">Upcoming match</span>
@@ -14,23 +15,23 @@
     </v-card-title>
     <v-row justify="center" align="center">
       <div>
-        <span class="title font-weight-bold">Tondo FC</span>
-        <v-avatar :size="75">
-          <v-img :src="require('../../assets/logos/tondoFC.png')"></v-img>
+        <v-avatar :size="65">
+          <v-img :src="teamA.logo"></v-img>
         </v-avatar>
+        <span class="title font-weight-bold">{{teamA.name}}</span>
       </div>
       <div class="text-center">
-        <span class="primary--text font-weight-bold">VS</span>
+        <span class="primary--text font-weight-bold display-1 mx-5">VS</span>
       </div>
       <div>
-        <v-avatar :size="75">
-          <v-img :src="require('../../assets/logos/tondoFC.png')"></v-img>
+        <span class="title font-weight-bold">{{teamB.name}}</span>
+        <v-avatar :size="65">
+          <v-img :src="teamB.logo"></v-img>
         </v-avatar>
-        <span class="title font-weight-bold">Tondo FC</span>
       </div>
     </v-row>
-    <v-card-text class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, pariatur!
+    <v-card-text class="text-center text-capitalize">
+      Live at {{venue}}, {{date}} {{time}}
     </v-card-text>
   </v-card>
 </template>
@@ -44,9 +45,46 @@
         components: {MatchScheduleItem},
         mixins: [utilities],
 
+        props: {
+            leagueName: {
+                type: String,
+                required: true
+            },
+
+            leagueLogo: {
+                type: String,
+                required: true
+            },
+
+            date: {
+                type: String,
+                required: true
+            },
+
+            time: {
+                type: String,
+                required: true
+            },
+
+            teamA: {
+                type: Object,
+                required: true
+            },
+
+            teamB: {
+                type: Object,
+                required: true
+            },
+
+            venue: {
+                type: String,
+                required: true
+            }
+        },
+
         data() {
             return {
-                tab: null
+                tab: null,
             };
         }
 

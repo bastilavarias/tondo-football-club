@@ -1,15 +1,13 @@
 <template>
-  <vue-carousel :per-page="1" center-mode :paginationEnabled="false" autoplay easing="ease"
-                :autoplayTimeout="5000">
-    <template v-for="(image, index) in images">
+  <vue-carousel :per-page="1" center-mode :paginationEnabled="false" autoplay easing="ease" :autoplayTimeout="4000">
+    <template v-for="(image, index) in information.featured.banners">
       <vue-slide :key="index">
-        <div class="landing-image" :style="`background-image: url(${image})`">
+        <div class="landing-image" :style="`background-image: url('${image}')`">
           <div class="landing-content">
             <v-container>
               <div class="text-left">
-                <h1 class="title font-weight-thin">Welcome to the official website
-                                                   of</h1>
-                <h1 class="display-3 display-md-4 font-weight-bold mb-5">Tondo Football Club</h1>
+                <h1 class="title font-weight-thin text-capitalize">{{information.featured.message.subtitle}}</h1>
+                <h1 class="display-3 display-md-4 font-weight-bold mb-5 text-capitalize">{{information.featured.message.title}}</h1>
                 <v-btn class="text-capitalize mr-2" color="primary" x-large depressed>
                   See More
                   <v-icon small>mdi-chevron-right</v-icon>
@@ -32,23 +30,19 @@
 
 <script>
     import "../../assets/css/animation.css";
+    import information from "../../information";
 
     export default {
         name: "home-landing-page",
 
         data: function () {
             return {
-                images: [
-                    "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/82041784_625095584698711_6729586146440904704_o.jpg?_nc_cat=103&_nc_oc=AQm0EuCpT2g_8VATEsOiqaafYopKcJIrYTUORjDgv7Rfbn7GOQoJs5ldPNcHVNfY0u0&_nc_ht=scontent.fmnl5-1.fna&oh=33da2893a88aa91242752c283d6cebb5&oe=5EB6E685",
-                    "https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                ],
                 currentIndex: null,
                 shouldShowContentMessage: false
             };
         },
 
-        created() {
-        }
+        mixins: [information]
     };
 </script>
 

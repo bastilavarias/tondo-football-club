@@ -1,7 +1,7 @@
 <template>
   <section>
-    <generic-parallax title="7s Football League" subtitle="Fixtures & Results"
-                      :image="require('../../assets/banners/photo-of-men-playing-soccer-during-daytime-3651674.jpg')"></generic-parallax>
+    <generic-parallax :title="bannerContent.title" :subtitle="bannerContent.subtitle"
+                      :image="bannerContent.image"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
       <generic-about-us title="About 7s League"
@@ -11,34 +11,13 @@
         <v-col cols="12" md="10">
           <v-card class="mb-5">
             <v-card-title>League Table</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
-            </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <league-table></league-table>
-              </v-tab-item>
-            </v-tabs-items>
+            <league-table></league-table>
           </v-card>
           <v-card>
             <v-card-title>Match Results</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
-            </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <v-card-text>
-                  <match-result></match-result>
-                  <match-result></match-result>
-                  <match-result></match-result>
-                </v-card-text>
-              </v-tab-item>
-            </v-tabs-items>
-
+            <match-result></match-result>
+            <match-result></match-result>
+            <match-result></match-result>
           </v-card>
         </v-col>
         <v-col cols="12" md="2">
@@ -56,6 +35,12 @@
     import MatchResult from "../../components/match-result";
     import GenericQuickLinks from "../../components/generic-quick-links";
     import GenericAboutUs from "../../components/generic-about-us";
+
+    const bannerContent = {
+        title: "7s Football League",
+        subtitle: "Fixtures & Results",
+        image: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-0/p640x640/86860256_658189931389276_5610456430906703872_o.jpg?_nc_cat=111&_nc_oc=AQnYgBw_KJ3DI720lIcvpukhrMzTHaiMUUQ-_DfAm3RPulWE3iLJolhuW_uU1koqRHc&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=6&oh=c26b23a83772a921cce04db6d12d2a48&oe=5EC112A0"
+    };
 
     const quickLinks = [
         {
@@ -78,7 +63,8 @@
         data() {
             return {
                 quickLinks,
-                tab: null
+                tab: null,
+                bannerContent
             };
         }
     };

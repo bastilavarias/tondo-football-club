@@ -22,7 +22,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ["vuetify/dist/vuetify.css"],
   /*
   ** Plugins to load before mounting the App
   */

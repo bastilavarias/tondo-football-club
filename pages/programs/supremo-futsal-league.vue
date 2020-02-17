@@ -47,9 +47,6 @@
           <v-card color="transparent" flat>
             <v-card-title>Upcoming Match</v-card-title>
             <v-card-text>
-              <match-schedule-item></match-schedule-item>
-              <match-schedule-item></match-schedule-item>
-              <match-schedule-item></match-schedule-item>
             </v-card-text>
           </v-card>
         </v-col>
