@@ -7,7 +7,6 @@
             <v-avatar :size="150" tile>
               <v-img
                 :src="image"
-
               ></v-img>
             </v-avatar>
           </div>

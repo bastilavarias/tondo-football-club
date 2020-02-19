@@ -74,7 +74,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <generic-content-holder :image="require('../../assets/backgrounds/background-red.jpg')" title="Sport Gallery"
+    <generic-content-holder :image="require('../../assets/backgrounds/background-red.jpg')" title="League Highlights"
                             :subtitle="content.about">
       <generic-gallery></generic-gallery>
     </generic-content-holder>

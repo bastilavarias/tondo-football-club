@@ -18,7 +18,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: {color: "#c0392b"},
+  loading: {color: "#882021"},
   /*
   ** Global CSS
   */
@@ -58,7 +58,8 @@ module.exports = {
     theme: {
       themes: {
         light: {
-          primary: "#c0392b",
+          primary: "#882021",
+          secondary: "#003E82"
         }
       }
     },

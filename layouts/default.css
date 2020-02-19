@@ -15,14 +15,9 @@
   color: transparent
 }
 
-.bg-dirty-white {
-  background-color: #F2F2F2;
-}
-
-.bg-primary {
-  background-color: #c0392b;
-}
-
-.custom-short-separator {
-
+.separator {
+  background-color: #882021;
+  width: 4rem;
+  height: .5rem;
+  margin: 1rem auto 2rem auto;
 }
