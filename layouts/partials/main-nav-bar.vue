@@ -8,7 +8,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`"
-             :to="{ name: 'index' }" exact color="white"
+             :to="{ name: 'index' }" exact
       >
         Home
       </v-btn>
@@ -16,7 +16,7 @@
               bottom
       >
         <template v-slot:activator="{ on }">
-          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact color="white"
+          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact
                  v-on="on"
           >
             <span>Fixtures & Results</span>
@@ -29,7 +29,8 @@
               bottom
       >
         <template v-slot:activator="{ on }">
-          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact color="white"
+          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact
+
                  v-on="on"
           >
             <span>Match Schedules</span>
@@ -42,7 +43,8 @@
               bottom
       >
         <template v-slot:activator="{ on }">
-          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact color="white"
+          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact
+
                  v-on="on"
           >
             <span>Programs</span>
@@ -51,11 +53,11 @@
         </template>
         <nav-bar-programs-menu></nav-bar-programs-menu>
       </v-menu>
-      <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" color="white"
+      <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`"
              :to="{ name: 'team' }" exact>
         Team
       </v-btn>
-      <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" color="white"
+      <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`"
              :to="{name: 'articles'}">
         Articles
       </v-btn>
@@ -63,7 +65,7 @@
               bottom
       >
         <template v-slot:activator="{ on }">
-          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" v-on="on" color="white"
+          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" v-on="on"
           >
             <span>About Us</span>
             <v-icon :color="isScrolled ? 'primary' : 'white'">mdi-chevron-down</v-icon>
