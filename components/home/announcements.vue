@@ -1,12 +1,11 @@
 <template>
   <vue-carousel :per-page="1" center-mode :paginationEnabled="false" :navigationClickTargetSize="0"
-                class="vue-carousel" autoplay loop paginationEnabled paginationActiveColor="#882021" paginationColor="#efefef">
+                class="vue-carousel" autoplay loop paginationEnabled paginationActiveColor="#882021"
+                paginationColor="#efefef">
     <template v-for="(announcement, index) in announcements">
       <vue-slide :key="index">
-        <div style="height: 31.25rem; width: 100%;">
-          <home-announcement-item :poster="announcement.poster"
-                                  :content="announcement.content"></home-announcement-item>
-        </div>
+        <home-announcement-item :poster="announcement.poster"
+                                :content="announcement.content"></home-announcement-item>
       </vue-slide>
     </template>
   </vue-carousel>
@@ -32,5 +31,10 @@
 <style lang="scss">
   .VueCarousel-pagination {
     transform: translateY(-150%) translateX(0) !important;
+  }
+
+  .VueCarousel {
+    margin-bottom: 0;
+    padding: 0;
   }
 </style>

@@ -1,11 +1,13 @@
 <template>
-  <div class="holder" :style="`background-image: url('${poster}')`">
-    <div class="announcement-content">
-      <v-container>
-        <h1 class="white--text display-1 font-weight-bold d-block text-center">{{content.title}}</h1>
-      </v-container>
+  <v-card height="500" max-height="500" tile>
+    <div class="holder" :style="`background-image: url('${poster}')`">
+      <div class="announcement-content">
+        <v-container>
+          <h1 class="white--text display-1 font-weight-bold d-block text-center">{{content.title}}</h1>
+        </v-container>
+      </div>
     </div>
-  </div>
+  </v-card>
 </template>
 
 <script>

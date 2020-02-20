@@ -31,7 +31,6 @@
 
 <script>
     import MainNavBar from "../layouts/partials/main-nav-bar";
-    import GenericContentHolder from "../components/generic-content-holder";
     import utilities from "../plugins/utilities";
     import GenericParallax from "../components/generic-parallax";
     import GenericObjectives from "../components/generic-objectives";
@@ -40,7 +39,7 @@
     export default {
         name: "about-us",
 
-        components: {GenericObjectives, GenericParallax, GenericContentHolder, MainNavBar},
+        components: {GenericObjectives, GenericParallax, MainNavBar},
 
         mixins: [utilities, information]
     };

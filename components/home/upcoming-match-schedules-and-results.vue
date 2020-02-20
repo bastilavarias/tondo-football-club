@@ -1,21 +1,20 @@
 <template>
-  <div class="primary">
-    <v-row no-gutters>
-      <v-col cols="12" md="6">
-        <home-announcements></home-announcements>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-row no-gutters>
-          <v-col cols="12">
-            <home-supremo-league-upcoming-matches></home-supremo-league-upcoming-matches>
-          </v-col>
-          <v-col cols="12">
-            <home-seven-s-league-upcoming-match-item :details="sevenSFootballLeague.details" :team="sevenSFootballLeague.team"></home-seven-s-league-upcoming-match-item>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </div>
+  <v-row no-gutters>
+    <v-col cols="12" md="6">
+      <home-announcements></home-announcements>
+    </v-col>
+    <v-col cols="12" md="6">
+      <v-row no-gutters>
+        <v-col cols="12">
+          <home-supremo-league-upcoming-matches></home-supremo-league-upcoming-matches>
+        </v-col>
+        <v-col cols="12">
+          <home-seven-s-league-upcoming-match-item :details="sevenSFootballLeague.details"
+                                                   :team="sevenSFootballLeague.team"></home-seven-s-league-upcoming-match-item>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

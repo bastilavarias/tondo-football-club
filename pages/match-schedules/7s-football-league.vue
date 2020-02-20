@@ -32,7 +32,6 @@
 </template>
 <script>
     import GenericParallax from "../../components/generic-parallax";
-    import GenericContentHolder from "../../components/generic-content-holder";
     import GenericQuickLinks from "../../components/generic-quick-links";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
@@ -101,7 +100,7 @@
     export default {
         components: {
             MatchScheduleItemPreview,
-            MatchScheduleItem, GenericQuickLinks, GenericContentHolder, GenericParallax
+            MatchScheduleItem, GenericQuickLinks, GenericParallax
         },
 
         data() {

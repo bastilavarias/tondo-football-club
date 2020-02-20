@@ -1,5 +1,6 @@
 import featured from "./featured";
 import tondoFootballClub from "./tondoFootballClub";
+import supremoFutsalLeague from "./supremoFutsalLeague";
 
 export default {
 
@@ -7,7 +8,8 @@ export default {
     return {
       information: {
         featured,
-        tondoFootballClub
+        tondoFootballClub,
+        supremoFutsalLeague
       }
     };
   }

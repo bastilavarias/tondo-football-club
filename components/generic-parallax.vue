@@ -13,14 +13,10 @@
 </template>
 
 <script>
-    import GenericContentHolder from "./generic-content-holder";
     import utilities from "../plugins/utilities";
 
     export default {
         name: "generic-parallax",
-
-        components: {GenericContentHolder},
-
         props: {
             title: {
                 type: String,
@@ -61,9 +57,9 @@
   }
 
   .dark-overlay-inset {
-    -webkit-box-shadow: inset 10px -85px 300px 105px rgba(0,0,0,0.8);
-    -moz-box-shadow: inset 10px -85px 300px 105px rgba(0,0,0,0.8);
-    box-shadow: inset 10px -85px 300px 105px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 10px -85px 300px 105px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 10px -85px 300px 105px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 10px -85px 300px 105px rgba(0, 0, 0, 0.8);
     z-index: 2;
   }
 

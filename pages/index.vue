@@ -1,12 +1,12 @@
-  <template>
+<template>
   <section>
     <home-landing-page></home-landing-page>
     <home-upcoming-match-schedules-and-results></home-upcoming-match-schedules-and-results>
-    <generic-objectives title="Objectives"></generic-objectives>
+    <generic-objectives></generic-objectives>
     <home-featured-article></home-featured-article>
-    <generic-content-holder :image="require('../assets/banners/kids.jpg')" title="Featured Photos">
-      <generic-gallery></generic-gallery>
-    </generic-content-holder>
+    <generic-gallery :background-image="require('../assets/banners/kids.jpg')"
+                     title="Featured Photos"></generic-gallery>
+    <home-players></home-players>
   </section>
 </template>
 
@@ -16,14 +16,14 @@
     import GenericObjectives from "../components/generic-objectives";
     import GenericGallery from "../components/generic-gallery";
     import GenericAboutUs from "../components/generic-about-us";
-    import GenericContentHolder from "../components/generic-content-holder";
     import HomeFeaturedArticle from "../components/home/featured-aticle";
+    import HomePlayers from "../components/home/players";
 
     export default {
         name: "home",
         components: {
+            HomePlayers,
             HomeFeaturedArticle,
-            GenericContentHolder,
             GenericAboutUs,
             GenericGallery, GenericObjectives, HomeUpcomingMatchSchedulesAndResults, HomeLandingPage
         }

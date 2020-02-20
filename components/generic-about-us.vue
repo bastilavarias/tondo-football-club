@@ -16,7 +16,7 @@
           md="10"
         >
           <v-card-title>{{title}}</v-card-title>
-          <v-card-text>{{about}}</v-card-text>
+          <v-card-text>{{message}}</v-card-text>
         </v-col>
       </v-row>
     </v-container>
@@ -37,9 +37,14 @@
                 required: true
             },
 
-            about: {
+            message: {
                 type: String,
                 required: true
+            },
+
+            about: {
+                type: String,
+                required: false
             },
         }
     };

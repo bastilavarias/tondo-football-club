@@ -29,13 +29,12 @@
 </template>
 
 <script>
-    import GenericContentHolder from "../components/generic-content-holder";
     import utilities from "../plugins/utilities";
     import ArticleItemView from "../components/article-item-view";
 
     export default {
         name: "articles",
-        components: {ArticleItemView, GenericContentHolder},
+        components: {ArticleItemView},
 
         data() {
             return {

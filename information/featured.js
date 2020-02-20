@@ -84,8 +84,8 @@ export default {
       sevenSFootballLeague: {
         details: {
           name: "7s Football League",
-          date: "02/22",
-          time: "15:00"
+          date: "Feb 22",
+          time: "4:30 PM"
         },
         team: {
           a: {

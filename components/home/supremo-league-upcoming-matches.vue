@@ -1,5 +1,5 @@
 <template>
-  <div class="white">
+  <v-card height="300" tile color="transparent" tile>
     <v-container>
       <v-list-item>
         <v-list-item-avatar :size="75">
@@ -36,7 +36,7 @@
         </vue-carousel>
       </div>
     </v-container>
-  </div>
+  </v-card>
 </template>
 
 <script>

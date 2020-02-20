@@ -1,12 +1,6 @@
 <template>
-  <div class="py-10">
+  <generic-holder title="Objectives">
     <v-container>
-      <div class="text-center mb-10" v-if="title">
-        <h1 class="display-1 font-weight-bold">
-          {{title}}
-        </h1>
-        <div class="separator"></div>
-      </div>
       <v-row>
         <template v-for="(objective, index) in information.tondoFootballClub.objectives">
           <v-col cols="12" :sm="index === 2 ? '12' : '6'" md="4" :key="index">
@@ -24,22 +18,16 @@
         </template>
       </v-row>
     </v-container>
-  </div>
+  </generic-holder>
 </template>
 
 <script>
     import information from "../information";
+    import GenericHolder from "./generic/holder";
 
     export default {
         name: "generic-objectives",
-
-        props: {
-            title: {
-                type: String,
-                required: false
-            }
-        },
-
+        components: {GenericHolder},
         mixins: [information]
     };
 </script>

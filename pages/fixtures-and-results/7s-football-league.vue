@@ -31,7 +31,6 @@
 <script>
     import LeagueTable from "../../components/league-table";
     import GenericParallax from "../../components/generic-parallax";
-    import GenericContentHolder from "../../components/generic-content-holder";
     import MatchResult from "../../components/match-result";
     import GenericQuickLinks from "../../components/generic-quick-links";
     import GenericAboutUs from "../../components/generic-about-us";
@@ -57,7 +56,7 @@
         components: {
             GenericAboutUs,
             GenericQuickLinks,
-            MatchResult, GenericContentHolder, GenericParallax, LeagueTable
+            MatchResult, GenericParallax, LeagueTable
         },
 
         data() {

@@ -4,21 +4,25 @@
                       :image="require('../../assets/banners/photo-of-men-playing-soccer-during-daytime-3651674.jpg')"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
-      <generic-about-us :title="content.title" :about="content.about"
-                        :image="require('../../assets/logos/supremoLeague.png')"></generic-about-us>
+      <generic-about-us :title="about.title" :message="about.message"
+                        :image="about.logo"></generic-about-us>
       <v-row>
         <v-col cols="12">
           <v-card>
             <v-card-title>League Table</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
+            <v-tabs v-model="leagueTableTab" grow show-arrows>
+              <template v-for="(category, index) in categories">
+                <v-tab :key="index">
+                  <span class="text-uppercase">U{{category.age}} {{category.gender}}</span>
+                </v-tab>
+              </template>
             </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <league-table></league-table>
-              </v-tab-item>
+            <v-tabs-items v-model="leagueTableTab">
+              <template v-for="(category, index) in categories">
+                <v-tab-item :key="index">
+                  <supremo-league-table :team-list="getTeamList(category)"></supremo-league-table>
+                </v-tab-item>
+              </template>
             </v-tabs-items>
           </v-card>
         </v-col>
@@ -74,10 +78,8 @@
         </v-col>
       </v-row>
     </v-container>
-    <generic-content-holder :image="require('../../assets/backgrounds/background-red.jpg')" title="League Highlights"
-                            :subtitle="content.about">
-      <generic-gallery></generic-gallery>
-    </generic-content-holder>
+    <generic-gallery title="League Gallery"
+                     :background-image="require('../../assets/backgrounds/background-red.jpg')"></generic-gallery>
   </section>
 
 </template>
@@ -86,30 +88,59 @@
 
     import GenericAboutUs from "../../components/generic-about-us";
     import GenericGallery from "../../components/generic-gallery";
-    import GenericContentHolder from "../../components/generic-content-holder";
     import LeagueTable from "../../components/league-table";
     import MatchResult from "../../components/match-result";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
     import GenericParallax from "../../components/generic-parallax";
-
-    const content = {
-        title: "Supremo Futsal League",
-        about: "A year round football activities that will happen in different basketball courts for Futsal league and in Don Bosco Tondo football field for the football league. \n" +
-            "Develop the players capability in playing and will increase the popularity of the sport within Tondo and in Manila. Targeting thousands of community members to participate."
-    };
+    import information from "../../information";
+    import SupremoLeagueTable from "../../components/supremo-league/league-table";
 
     export default {
         name: "supremo-league",
         components: {
+            SupremoLeagueTable,
             GenericParallax,
             MatchScheduleItemPreview,
-            MatchScheduleItem, MatchResult, LeagueTable, GenericContentHolder, GenericGallery, GenericAboutUs},
+            MatchScheduleItem, MatchResult, LeagueTable, GenericGallery, GenericAboutUs
+        },
+
         data() {
             return {
-                content,
-                tab: null
+                tab: null,
+                leagueTableTab: 0
             };
+        },
+
+        mixins: [information],
+
+        computed: {
+            supremoFutsalLeague() {
+                return this.information.supremoFutsalLeague;
+            },
+
+            about() {
+                return this.supremoFutsalLeague.about;
+            },
+
+            team() {
+                return this.supremoFutsalLeague.team;
+            },
+
+            categories() {
+                return this.team.categories;
+            },
+
+            selectedCategory() {
+                return this.categories.find((_, index) => index === this.leagueTableTab);
+            }
+        },
+
+        methods: {
+            getTeamList({age, gender}) {
+                const list = this.team.list.filter(team => team.details.category.age === age && team.details.category.gender === gender);
+                return list;
+            }
         }
     };
 </script>

@@ -1,13 +1,19 @@
 <template>
-  <div>
+  <div :style="`background-image: url('${backgroundImage}')`" class="pt-10 holder shadow">
+    <div style="color: #ffffff;" class="text-center">
+      <v-container>
+        <h1 class="display-2 font-weight-bold mb-10">{{title}}</h1>
+        <p class="subtitle-1" v-if="subtitle">{{subtitle}}</p>
+      </v-container>
+    </div>
     <vue-gallery :images="images" :index="currentIndex" @close="currentIndex = null"></vue-gallery>
     <v-row no-gutters>
       <template v-for="(imageSource, index) in images">
-          <v-col cols="6" sm="4" md="3" :key="index">
-            <v-img
-              @click="currentIndex = index" :src="imageSource" :height="isOnMobile ? '150' : '300'" width="100%"
-              class="mx-auto shadow-1"></v-img>
-          </v-col>
+        <v-col cols="6" sm="4" md="3" :key="index">
+          <v-img
+            @click="currentIndex = index" :src="imageSource" :height="isOnMobile ? '150' : '300'" width="100%"
+            class="mx-auto shadow-1"></v-img>
+        </v-col>
       </template>
     </v-row>
   </div>
@@ -18,6 +24,25 @@
 
     export default {
         name: "generic-gallery",
+
+        props: {
+            backgroundImage: {
+                required: true
+            },
+
+            title: {
+                required: true,
+                type: String
+
+            },
+
+            subtitle: {
+                required: false,
+                type: String
+
+            },
+
+        },
 
         data: function () {
             return {
@@ -47,5 +72,11 @@
     border: 1px solid #ebebeb;
     margin: 5px;
     display: inline-block;
+  }
+
+  .shadow {
+    -webkit-box-shadow: inset 0px 0px 300px 200px rgba(192, 57, 43, 0.8);
+    -moz-box-shadow: inset 0px 0px 300px 200px rgba(192, 57, 43, 0.8);
+    box-shadow: inset 0px 0px 300px 200px rgba(192, 57, 43, 0.8);
   }
 </style>
