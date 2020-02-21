@@ -19,7 +19,10 @@ export default {
         },
         events: [
           {
-            under: 10,
+            category: {
+              age: 10,
+              gender: "Open"
+            },
             matches: [
               {
                 team: {
@@ -44,7 +47,10 @@ export default {
             ]
           },
           {
-            under: 12,
+            category: {
+              age: 10,
+              gender: "Open"
+            },
             matches: [
               {
                 team: {
@@ -85,7 +91,9 @@ export default {
         details: {
           name: "7s Football League",
           date: "Feb 22",
-          time: "4:30 PM"
+          time: "4:30 PM",
+          venue: "Mckinley hills",
+          logo: imageCDN.logo.sevenSFootballLeague
         },
         team: {
           a: {

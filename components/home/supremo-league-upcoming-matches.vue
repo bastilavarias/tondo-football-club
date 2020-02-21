@@ -1,5 +1,5 @@
 <template>
-  <v-card height="300" tile color="transparent" tile>
+  <v-card height="300"  color="white" tile flat>
     <v-container>
       <v-list-item>
         <v-list-item-avatar :size="75">
@@ -26,7 +26,7 @@
                       :navigationPrevLabel="navigationPreviousIcon">
           <template v-for="(event, index) in league.events">
             <vue-slide :key="index">
-              <p class="subtitle-2 font-weight-bold mb-0 secondary--text">U{{event.under}}</p>
+              <p class="subtitle-2 font-weight-bold mb-0 secondary--text text-capitalize">U{{event.category.age}} {{event.category.gender}}</p>
               <template v-for="(match, index) in event.matches">
                 <supremo-league-upcoming-match-item :key="index" :team-a="match.team.a" :team-b="match.team.b"
                                                     :time="match.time"></supremo-league-upcoming-match-item>
