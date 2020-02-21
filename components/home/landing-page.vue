@@ -9,7 +9,7 @@
             See More
             <v-icon small>mdi-chevron-right</v-icon>
           </v-btn>
-          <v-btn class="text-capitalize white--text" color="primary" x-large outlined large depressed>
+          <v-btn class="text-capitalize" color="white" x-large outlined large depressed>
             About Us
             <v-icon small>mdi-chevron-right</v-icon>
           </v-btn>

@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app :color="isScrolled ? 'white' : 'transparent'" flat hide-on-scroll>
+  <v-app-bar app :color="isScrolled ? 'white' : 'transparent'" flat>
     <v-toolbar-title>
       <v-avatar :size="50">
         <v-img :src="require('../../assets/logos/tondoFC.png')"></v-img>
@@ -59,7 +59,7 @@
       </v-btn>
       <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`"
              :to="{name: 'articles'}">
-        Articles
+        Nosi Balasi
       </v-btn>
       <v-menu offset-y open-on-hover transition="slide-y-transition"
               bottom

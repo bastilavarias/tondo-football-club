@@ -33,7 +33,7 @@
     import utilities from "../../plugins/utilities";
 
     export default {
-        name: "home-featured-article",
+        name: "article-featured",
 
         mixins: [utilities]
     };
