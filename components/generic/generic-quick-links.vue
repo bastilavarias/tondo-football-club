@@ -20,7 +20,7 @@
 
 <script>
     export default {
-        name: "generic-quick-links",
+        name: "quick-links",
 
         props: {
             links: {

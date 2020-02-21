@@ -25,7 +25,7 @@
 
 <script>
     export default {
-        name: "generic-about-us",
+        name: "about-us",
 
         props: {
             image: {

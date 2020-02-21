@@ -31,8 +31,8 @@
   </section>
 </template>
 <script>
-    import GenericParallax from "../../components/generic-parallax";
-    import GenericQuickLinks from "../../components/generic-quick-links";
+    import GenericParallax from "../../components/generic/generic-parallax";
+    import GenericQuickLinks from "../../components/generic/generic-quick-links";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
 

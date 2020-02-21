@@ -20,10 +20,10 @@
 </template>
 
 <script>
-    import utilities from "../plugins/utilities";
+    import utilities from "../../plugins/utilities";
 
     export default {
-        name: "generic-gallery",
+        name: "gallery",
 
         props: {
             backgroundImage: {

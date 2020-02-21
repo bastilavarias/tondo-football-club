@@ -5,7 +5,7 @@
     <div class="mb-10"></div>
     <v-container>
       <generic-about-us title="About 7s League"
-                        about="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at beatae commodi est et eum illo incidunt laborum, nesciunt nobis, numquam pariatur possimus quaerat, quam quis rem saepe sapiente sed! Ducimus ex fugit hic, iste magni necessitatibus non odit optio quibusdam rem, repellat, saepe sapiente. Amet itaque minus mollitia tempore?"
+                        message="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at beatae commodi est et eum illo incidunt laborum, nesciunt nobis, numquam pariatur possimus quaerat, quam quis rem saepe sapiente sed! Ducimus ex fugit hic, iste magni necessitatibus non odit optio quibusdam rem, repellat, saepe sapiente. Amet itaque minus mollitia tempore?"
                         :image="require('../../assets/logos/7sLeague.png')"></generic-about-us>
       <v-row dense>
         <v-col cols="12" md="10">
@@ -30,10 +30,10 @@
 
 <script>
     import LeagueTable from "../../components/league-table";
-    import GenericParallax from "../../components/generic-parallax";
+    import GenericParallax from "../../components/generic/generic-parallax";
     import MatchResult from "../../components/match-result";
-    import GenericQuickLinks from "../../components/generic-quick-links";
-    import GenericAboutUs from "../../components/generic-about-us";
+    import GenericQuickLinks from "../../components/generic/generic-quick-links";
+    import AboutUs from "../../components/generic/generic-about-us";
 
     const bannerContent = {
         title: "7s Football League",
@@ -54,7 +54,7 @@
 
     export default {
         components: {
-            GenericAboutUs,
+            AboutUs,
             GenericQuickLinks,
             MatchResult, GenericParallax, LeagueTable
         },

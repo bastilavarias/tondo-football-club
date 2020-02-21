@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: "generic-holder",
+        name: "holder",
 
         props: {
             title: {

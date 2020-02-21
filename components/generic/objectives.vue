@@ -22,8 +22,8 @@
 </template>
 
 <script>
-    import information from "../information";
-    import GenericHolder from "./generic/holder";
+    import information from "../../information";
+    import GenericHolder from "./holder";
 
     export default {
         name: "generic-objectives",

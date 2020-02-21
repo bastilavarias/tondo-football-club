@@ -4,7 +4,7 @@ export default {
   message: {
     title: "Tondo Football Club",
     subtitle: "Welcome to the official website of",
-    image: imageCDN.banner.home1
+    image: imageCDN.banner.landingPage
   },
 
   schedule: {
@@ -124,5 +124,11 @@ export default {
         description: "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consequuntur eos ex inventore laborum minus natus obcaecati totam, vel?\n"
       }
     }
-  ]
+  ],
+
+  quote: {
+    message: "Tondo is known for it’s less positive image. Through the years, our club made an effort to change the image and build a positive impact in our society. Now Tondo is seen as place where football talents are discovered and respected. We will wave this flag in the streets of Tondo with love, pride and glory celebrating the great stories we make.",
+    image: imageCDN.banner.kids,
+    author: "Mark Dennis Balbin"
+  }
 };

@@ -86,13 +86,12 @@
 
 <script>
 
-    import GenericAboutUs from "../../components/generic-about-us";
-    import GenericGallery from "../../components/generic-gallery";
+    import AboutUs from "../../components/generic/generic-about-us";
     import LeagueTable from "../../components/league-table";
     import MatchResult from "../../components/match-result";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
-    import GenericParallax from "../../components/generic-parallax";
+    import GenericParallax from "../../components/generic/generic-parallax";
     import information from "../../information";
     import SupremoLeagueTable from "../../components/supremo-league/league-table";
 
@@ -102,7 +101,7 @@
             SupremoLeagueTable,
             GenericParallax,
             MatchScheduleItemPreview,
-            MatchScheduleItem, MatchResult, LeagueTable, GenericGallery, GenericAboutUs
+            MatchScheduleItem, MatchResult, LeagueTable, AboutUs
         },
 
         data() {

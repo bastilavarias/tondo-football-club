@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: "generic-match-schedules",
+        name: "match-schedules",
 
         props: {
             navigationIconClass: {

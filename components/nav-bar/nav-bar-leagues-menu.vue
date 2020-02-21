@@ -1,6 +1,5 @@
 <template>
   <v-list>
-    <v-subheader>Leagues</v-subheader>
     <template v-for="(route, index) in routes">
       <v-list-item :to="route.to" active-class="nav-bar-menu-button-active" :key="index">
         <v-list-item-content>
@@ -14,13 +13,13 @@
 <script>
     const routes = [
         {
-            to: {name: "fixtures-and-results-7s-football-league"},
+            to: {name: "leagues-7s-football-league"},
             name: "7s Football League"
         }
     ];
 
     export default {
-        name: "nav-bar-fixtures-and-results-menu",
+        name: "nav-bar-leagues-menu",
 
         data() {
             return {

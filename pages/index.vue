@@ -6,33 +6,32 @@
     <article-featured></article-featured>
     <home-players></home-players>
     <generic-objectives></generic-objectives>
-<!--    <home-embeded-video></home-embeded-video>-->
+    <home-quote></home-quote>
   </section>
 </template>
 
 <script>
     import HomeLandingPage from "../components/home/landing-page";
     import HomeUpcomingMatchSchedulesAndResults from "../components/home/upcoming-match-schedules-and-results";
-    import GenericObjectives from "../components/generic-objectives";
-    import GenericGallery from "../components/generic-gallery";
-    import GenericAboutUs from "../components/generic-about-us";
     import HomeFeaturedArticle from "../components/article/featured";
     import ArticleFeatured from "../components/article/featured";
     import HomePlayers from "../components/home/players";
     import HomeRecentArticles from "../components/home/recent-articles";
     import HomeEmbededVideo from "../components/home/embeded-video";
+    import GenericObjectives from "../components/generic/objectives";
+    import HomeQuote from "../components/home/quote";
 
 
     export default {
         name: "home",
         components: {
+            HomeQuote,
             ArticleFeatured,
             HomeEmbededVideo,
             HomeRecentArticles,
             HomePlayers,
             HomeFeaturedArticle,
-            GenericAboutUs,
-            GenericGallery, GenericObjectives, HomeUpcomingMatchSchedulesAndResults, HomeLandingPage
+            GenericObjectives, HomeUpcomingMatchSchedulesAndResults, HomeLandingPage
         }
     };
 </script>
