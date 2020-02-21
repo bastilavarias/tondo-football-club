@@ -6,7 +6,7 @@
     <article-featured></article-featured>
     <home-players></home-players>
     <generic-objectives></generic-objectives>
-    <home-embeded-video></home-embeded-video>
+<!--    <home-embeded-video></home-embeded-video>-->
   </section>
 </template>
 

@@ -365,7 +365,7 @@ export default {
           name: "Tondo F.C",
           category: {
             age: 12,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -385,7 +385,7 @@ export default {
           name: "Baseco",
           category: {
             age: 12,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -405,7 +405,7 @@ export default {
           name: "Sta Ana Football Team",
           category: {
             age: 12,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -425,7 +425,7 @@ export default {
           name: "MRAES",
           category: {
             age: 12,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -445,7 +445,7 @@ export default {
           name: "Manileños United",
           category: {
             age: 12,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -467,7 +467,7 @@ export default {
           name: "Tondo F.C",
           category: {
             age: 10,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -487,7 +487,7 @@ export default {
           name: "Batang Laurel",
           category: {
             age: 10,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -507,7 +507,7 @@ export default {
           name: "Sta Ana Football Team",
           category: {
             age: 10,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -527,7 +527,7 @@ export default {
           name: "Manileños United",
           category: {
             age: 10,
-            gender: "Open"
+            gender: "Mix"
           }
         },
         standing: {
@@ -563,11 +563,11 @@ export default {
       },
       {
         age: 12,
-        gender: "Open"
+        gender: "Mix"
       },
       {
         age: 10,
-        gender: "Open"
+        gender: "Mix"
       },
     ]
   }

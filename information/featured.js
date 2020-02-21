@@ -21,7 +21,7 @@ export default {
           {
             category: {
               age: 10,
-              gender: "Open"
+              gender: "Mix"
             },
             matches: [
               {
@@ -49,7 +49,7 @@ export default {
           {
             category: {
               age: 10,
-              gender: "Open"
+              gender: "Mix"
             },
             matches: [
               {
@@ -90,9 +90,9 @@ export default {
       sevenSFootballLeague: {
         details: {
           name: "7s Football League",
-          date: "Feb 22",
+          date: "February 22, 2020",
           time: "4:30 PM",
-          venue: "Mckinley hills",
+          venue: "Mckinley Hills BGC",
           logo: imageCDN.logo.sevenSFootballLeague
         },
         team: {

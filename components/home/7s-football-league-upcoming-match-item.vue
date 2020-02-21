@@ -7,13 +7,15 @@
         </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-subtitle>
-            <span>Upcoming Match</span>
+            {{details.date}}
           </v-list-item-subtitle>
           <v-list-item-title>
             <span class="title">{{details.name}}</span>
           </v-list-item-title>
           <v-list-item-subtitle>
-            Venue: {{details.venue}}, {{details.date}} - {{details.time}}
+                             <span class="caption white primary--text px-2 py-2">
+                  Venue: {{details.venue}}
+                  </span>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -27,7 +29,9 @@
           </v-avatar>
         </div>
         <div class="vertical-center">
-          <span class="display-1 font-weight-bold text-uppercase white--text mx-2">VS</span>
+          <v-chip x-large color="white" label light>
+            <span class="font-weight-bold primary--text display-1">0 : 0</span>
+          </v-chip>
         </div>
         <div class="vertical-center">
           <v-avatar :size="100" class="">
@@ -47,22 +51,24 @@
 
 <script>
     import information from "../../information";
+    import GenericMatchSchedules from "../generic/match-schedules";
 
     export default {
         name: "home-seven-s-league-upcoming-match-item",
+        components: {GenericMatchSchedules},
         mixins: [information],
 
         computed: {
-            league() {
+            sevenSFootballLeague() {
                 return this.information.featured.schedule.league.sevenSFootballLeague;
             },
 
             details() {
-                return this.league.details;
+                return this.sevenSFootballLeague.details;
             },
 
             team() {
-                return this.league.team;
+                return this.sevenSFootballLeague.team;
             }
         }
     };
