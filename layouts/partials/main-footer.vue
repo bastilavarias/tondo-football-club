@@ -1,73 +1,98 @@
 <template>
-  <footer class="primary white--text" id="main-footer">
-    <v-container>
-      <v-row>
-        <v-col cols="12" md="3">
-          <h1 class="title  white--text">Contact</h1>
-          <v-row align="center" justify="start">
-            <template v-for="(contact, index) in content.contacts">
-              <v-chip color="transparent" text-color="white" :key="index">
-                <v-avatar left>
-                  <v-icon>{{contact.iconName}}</v-icon>
-                </v-avatar>
-                <span>{{contact.name}}</span>
-              </v-chip>
+  <footer class="white--text" id="main-footer">
+    <div class="primary">
+      <v-container>
+        <v-row>
+          <v-col cols="12" md="4">
+            <h1 class="title font-weight-bold white--text text-uppercase">The Tondo Football Club</h1>
+            <p class="white--text body-1">
+              {{about.message}}
+              <v-btn icon dark small>
+                <v-icon small>mdi-chevron-right</v-icon>
+              </v-btn>
+            </p>
+          </v-col>
+          <v-col cols="12" md="4">
+            <h1 class="title font-weight-bold white--text text-uppercase">Contact</h1>
+            <template v-for="(contact, index) in contacts">
+              <span class="white--text body-1 d-block mb-1" :key="index">
+                <v-icon dark class="mr-1">{{contact.iconName}}</v-icon>
+                {{contact.name}}
+              </span>
             </template>
-          </v-row>
-        </v-col>
-        <v-col cols="12" md="2">
-          <h1 class="title  white--text">Follow Us</h1>
-          <template v-for="(link, index) in content.socialLinks">
-            <v-btn icon class="white--text"
-                   :href="link.url"
-                   target="_blank"
-                    :key="index">
-              <v-icon>{{link.iconName}}</v-icon>
-            </v-btn>
-          </template>
-        </v-col>
-      </v-row>
-    </v-container>
+          </v-col>
+          <v-col cols="12" md="4">
+            <vue-gallery :images="featuredPhotos" :index="currentFeaturedPhotoIndex" @close="currentFeaturedPhotoIndex = null"></vue-gallery>
+            <h1 class="title font-weight-bold white--text text-uppercase">Featured Photos</h1>
+            <v-row dense>
+              <template v-for="(photo, index) in featuredPhotos">
+                <v-col cols="3">
+                  <v-img @click="currentFeaturedPhotoIndex = index" :src="photo" :key="index"></v-img>
+                </v-col>
+              </template>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="secondary">
+      <v-container>
+        <v-row justify="space-around" justify-md="space-between" align="center">
+          <span>Lorem ipsum dolor sit.</span>
+          <div>
+            <template v-for="(link, index) in socials">
+              <v-btn icon dark
+                     :href="link.url"
+                     target="_blank"
+                     :key="index">
+                <v-icon>{{link.iconName}}</v-icon>
+              </v-btn>
+            </template>
+          </div>
+        </v-row>
+      </v-container>
+    </div>
   </footer>
 </template>
 
 <script>
-
-    const content = {
-        contacts: [
-            {
-                iconName: "mdi-cellphone",
-                name: "+639368984428"
-            },
-            {
-                iconName: "mdi-email",
-                name: "TondoFutbolClub08@gmail.com"
-            },
-            {
-                iconName: "mdi-map-marker",
-                name: "353N1 Pilapil St. Tondo Manila, Philippines"
-            },
-        ],
-        socialLinks: [
-            {
-                iconName: "mdi-facebook",
-                url: "https://www.facebook.com/Tondo.FC/"
-            },
-            {
-                iconName: "mdi-instagram",
-                url: "https://www.instagram.com/tondo_fc/"
-            },
-        ]
-
-    };
+    import information from "../../information";
 
     export default {
         name: "main-footer",
 
+        mixins: [information],
+
         data() {
-            return {
-                content
-            };
+          return {
+              currentFeaturedPhotoIndex: null
+          }
+        },
+
+        computed: {
+            tondoFootballClub() {
+                return this.information.tondoFootballClub;
+            },
+
+            socials() {
+                return this.tondoFootballClub.socials;
+            },
+
+            contacts() {
+                return this.tondoFootballClub.contacts;
+            },
+
+            about() {
+                return this.tondoFootballClub.about;
+            },
+
+            navigations() {
+                return this.tondoFootballClub.navigations;
+            },
+
+            featuredPhotos() {
+                return this.tondoFootballClub.featuredPhotos;
+            }
         }
     };
 </script>

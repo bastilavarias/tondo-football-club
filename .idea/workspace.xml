@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/recent-articles.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/recent-articles.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/upcoming-match-schedules-and-results.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/upcoming-match-schedules-and-results.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/sevenSFootballLeague.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/sevenSFootballLeague.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/fixtures-and-results/7s-football-league.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/utilities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/tondoFootballClub.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/tondoFootballClub.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/main-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/main-footer.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +117,7 @@
       <workItem from="1582258769468" duration="42000" />
       <workItem from="1582263820902" duration="19756000" />
       <workItem from="1582335648865" duration="12055000" />
-      <workItem from="1582369044272" duration="11490000" />
+      <workItem from="1582369044272" duration="17328000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -350,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582369588924</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added match schedules and results in 7s football league page.">
+      <created>1582381984467</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1582381984467</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +370,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited 7s league page." />
     <MESSAGE value="added Procfile." />
     <MESSAGE value="most of pages redesigned." />
     <MESSAGE value="added team page." />
@@ -395,6 +394,7 @@
     <MESSAGE value="update nuxt modules." />
     <MESSAGE value="added some data." />
     <MESSAGE value="change mode from universal to spa." />
-    <option name="LAST_COMMIT_MESSAGE" value="change mode from universal to spa." />
+    <MESSAGE value="added match schedules and results in 7s football league page." />
+    <option name="LAST_COMMIT_MESSAGE" value="added match schedules and results in 7s football league page." />
   </component>
 </project>
