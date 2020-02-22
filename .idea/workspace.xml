@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tondo-football-club.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tondo-football-club.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +117,7 @@
       <workItem from="1582247066150" duration="6937000" />
       <workItem from="1582258769468" duration="42000" />
       <workItem from="1582263820902" duration="19756000" />
-      <workItem from="1582335648865" duration="2394000" />
+      <workItem from="1582335648865" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -313,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582339421220</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added nuxt modules.">
+      <created>1582339916886</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1582339916887</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +366,8 @@
     <MESSAGE value="added blockquote" />
     <MESSAGE value="updated vuetify." />
     <MESSAGE value="reset .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="reset .gitignore" />
+    <MESSAGE value="added nuxt modules." />
+    <option name="LAST_COMMIT_MESSAGE" value="added nuxt modules." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
