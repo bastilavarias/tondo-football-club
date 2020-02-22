@@ -3,8 +3,8 @@
     <v-container>
       <v-row>
         <template v-for="n in 3">
-          <v-col cols="12" :sm="n === 2 ? '12' : '6'" md="4" :key="n">
-            <article-preview-item></article-preview-item>
+          <v-col cols="12" :sm="n === 3 ? '12' : '6'" md="4" :key="n">
+          <article-preview-item></article-preview-item>
           </v-col>
         </template>
       </v-row>

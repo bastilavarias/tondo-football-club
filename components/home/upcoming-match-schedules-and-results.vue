@@ -2,7 +2,7 @@
   <div class="primary">
     <v-row no-gutters>
       <v-col cols="12" md="6">
-          <home-seven-s-league-upcoming-match-item></home-seven-s-league-upcoming-match-item>
+        <home-seven-s-league-upcoming-match-item></home-seven-s-league-upcoming-match-item>
       </v-col>
       <v-col cols="12" md="6">
         <home-supremo-league-upcoming-matches></home-supremo-league-upcoming-matches>

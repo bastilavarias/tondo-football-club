@@ -6,7 +6,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _2a44277e = () => interopDefault(import('..\\pages\\about-us.vue' /* webpackChunkName: "pages_about-us" */))
 const _1cb8c6f6 = () => interopDefault(import('..\\pages\\articles\\index.vue' /* webpackChunkName: "pages_articles_index" */))
 const _7f3d897d = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages_team" */))
-const _7fd1473b = () => interopDefault(import('..\\pages\\fixtures-and-results\\7s-football-league.vue' /* webpackChunkName: "pages_fixtures-and-results_7s-football-league" */))
 const _77186f12 = () => interopDefault(import('..\\pages\\leagues\\7s-football-league.vue' /* webpackChunkName: "pages_leagues_7s-football-league" */))
 const _c78559cc = () => interopDefault(import('..\\pages\\programs\\supremo-futsal-league.vue' /* webpackChunkName: "pages_programs_supremo-futsal-league" */))
 const _456b7862 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
@@ -39,10 +38,6 @@ export const routerOptions = {
     path: "/team",
     component: _7f3d897d,
     name: "team"
-  }, {
-    path: "/fixtures-and-results/7s-football-league",
-    component: _7fd1473b,
-    name: "fixtures-and-results-7s-football-league"
   }, {
     path: "/leagues/7s-football-league",
     component: _77186f12,
