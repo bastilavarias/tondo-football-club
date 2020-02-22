@@ -17,6 +17,11 @@ export default {
         transformedText = `${text.slice(0, limit)}...`;
       }
       return transformedText;
+    },
+
+    getTeamList({age, gender}, list) {
+      const filteredList = list.filter(team => team.details.category.age === age && team.details.category.gender === gender);
+      return filteredList;
     }
   }
 };

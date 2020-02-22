@@ -33,20 +33,6 @@
 
                  v-on="on"
           >
-            <span>Match Schedules</span>
-            <v-icon :color="isScrolled ? 'primary' : 'white'">mdi-chevron-down</v-icon>
-          </v-btn>
-        </template>
-        <nav-bar-match-schedules-menu></nav-bar-match-schedules-menu>
-      </v-menu>
-      <v-menu offset-y open-on-hover transition="slide-y-transition"
-              bottom
-      >
-        <template v-slot:activator="{ on }">
-          <v-btn depressed :class="`${isScrolled ? 'button-user-scrolled' : 'button-user-not-scrolled'}`" exact
-
-                 v-on="on"
-          >
             <span>Programs</span>
             <v-icon :color="isScrolled ? 'primary' : 'white'">mdi-chevron-down</v-icon>
           </v-btn>
@@ -78,16 +64,14 @@
 </template>
 
 <script>
-    import NavBarMatchSchedulesMenu from "../../components/nav-bar/nav-bar-match-schedules";
-    import NavBarProgramsMenu from "../../components/nav-bar/nav-bar-programs-menu";
-    import NavBarAboutUsMenu from "../../components/nav-bar/nav-bar-about-us-menu";
-    import NavBarLeaguesMenu from "../../components/nav-bar/nav-bar-leagues-menu";
+    import NavBarProgramsMenu from "../../components/nav-bar/programs-menu";
+    import NavBarAboutUsMenu from "../../components/nav-bar/about-us-menu";
+    import NavBarLeaguesMenu from "../../components/nav-bar/leagues-menu";
 
     export default {
         name: "main-nav-bar",
         components: {
 
-            NavBarMatchSchedulesMenu,
             NavBarLeaguesMenu, NavBarAboutUsMenu, NavBarProgramsMenu
         },
 

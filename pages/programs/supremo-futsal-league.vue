@@ -20,31 +20,10 @@
             <v-tabs-items v-model="leagueTableTab">
               <template v-for="(category, index) in categories">
                 <v-tab-item :key="index">
-                  <supremo-league-table :team-list="getTeamList(category)"></supremo-league-table>
+                  <supremo-league-table :team-list="getTeamList(category, team.list)"></supremo-league-table>
                 </v-tab-item>
               </template>
             </v-tabs-items>
-          </v-card>
-        </v-col>
-        <v-col cols="12">
-          <v-card>
-            <v-card-title>Match Results</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
-            </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <match-result></match-result>
-                <match-result></match-result>
-                <match-result></match-result>
-              </v-tab-item>
-            </v-tabs-items>
-            <v-card-actions>
-              <div class="flex-grow-1"></div>
-              <v-btn color="primary" class="text-capitalize">See All</v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
         <v-col cols="12" md="7">
@@ -76,6 +55,27 @@
             </v-card-actions>
           </v-card>
         </v-col>
+        <v-col cols="12">
+          <v-card>
+            <v-card-title>Match Results</v-card-title>
+            <v-tabs v-model="tab" grow>
+              <v-tab>U10</v-tab>
+              <v-tab>U13</v-tab>
+              <v-tab>U17</v-tab>
+            </v-tabs>
+            <v-tabs-items v-model="tab">
+              <v-tab-item>
+                <match-result></match-result>
+                <match-result></match-result>
+                <match-result></match-result>
+              </v-tab-item>
+            </v-tabs-items>
+            <v-card-actions>
+              <div class="flex-grow-1"></div>
+              <v-btn color="primary" class="text-capitalize">See All</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
     <generic-gallery title="League Gallery"
@@ -86,22 +86,26 @@
 
 <script>
 
-    import AboutUs from "../../components/generic/generic-about-us";
+    import GenericAboutUs from "../../components/generic/about-us";
     import LeagueTable from "../../components/league-table";
     import MatchResult from "../../components/match-result";
     import MatchScheduleItem from "../../components/match-schedule-item";
     import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
-    import GenericParallax from "../../components/generic/generic-parallax";
+    import GenericParallax from "../../components/generic/parallax";
     import information from "../../information";
     import SupremoLeagueTable from "../../components/supremo-league/league-table";
+    import GenericGallery from "../../components/generic/gallery";
+    import utilities from "../../plugins/utilities";
 
     export default {
         name: "supremo-league",
         components: {
+            GenericAboutUs,
+            GenericGallery,
             SupremoLeagueTable,
             GenericParallax,
             MatchScheduleItemPreview,
-            MatchScheduleItem, MatchResult, LeagueTable, AboutUs
+            MatchScheduleItem, MatchResult, LeagueTable
         },
 
         data() {
@@ -111,7 +115,7 @@
             };
         },
 
-        mixins: [information],
+        mixins: [information, utilities],
 
         computed: {
             supremoFutsalLeague() {
@@ -128,17 +132,6 @@
 
             categories() {
                 return this.team.categories;
-            },
-
-            selectedCategory() {
-                return this.categories.find((_, index) => index === this.leagueTableTab);
-            }
-        },
-
-        methods: {
-            getTeamList({age, gender}) {
-                const list = this.team.list.filter(team => team.details.category.age === age && team.details.category.gender === gender);
-                return list;
             }
         }
     };

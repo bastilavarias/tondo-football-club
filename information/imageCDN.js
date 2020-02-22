@@ -11,6 +11,8 @@ export default {
     supremoFutsalLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fsupremo-league.png?alt=media&token=6e9c320b-209f-4b76-9a90-7905dfc9d3da",
     superbad: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fsuper-bad.png?alt=media&token=b7637d1b-a3b7-4023-8e4d-30e7f2cd8e6f",
     realAmigos: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Freal-amigos.png?alt=media&token=e7b4b128-8650-443a-beef-71374fe05119",
+    manhur: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fmanhur.png?alt=media&token=ff22d337-92d3-4dbd-b899-e9b83e7b1d77",
+    matsunaga: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fmatsunaga.png?alt=media&token=818ffac1-18bc-483e-84f5-61182996ba93",
     monte: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fmonte.png?alt=media&token=91fdd9e5-faa5-4ace-bb6b-de59e47fc75b",
     mondo: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fmondo.png?alt=media&token=1c4d9e2e-8992-4eab-9da6-ef7ea7d3dc41",
     matu: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fmatu.png?alt=media&token=3d5e9959-23f2-43d9-812a-348b5ab89df6",
@@ -19,6 +21,7 @@ export default {
     ghana: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fghana.png?alt=media&token=b8e037da-86b4-4cbc-8a6d-ea8c860aba13",
     eagles: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Feagles.png?alt=media&token=3876e506-2aff-4482-856f-8c147cdd744c",
     bsc: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fbsc.png?alt=media&token=84e40539-8203-4895-8e12-3fb8749ed31e",
-    sevenSFootballLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2F7s-league.PNG?alt=media&token=9e854d8f-6fd0-4a72-9400-94b1b255e4a0"
+    sevenSFootballLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2F7s-league.PNG?alt=media&token=9e854d8f-6fd0-4a72-9400-94b1b255e4a0",
+    spoly: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fspoly.jpg?alt=media&token=03f40538-acf7-406b-b852-4a00100ae9cc"
   }
 };

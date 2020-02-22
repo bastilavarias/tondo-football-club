@@ -30,10 +30,10 @@
 
 <script>
     import LeagueTable from "../../components/league-table";
-    import GenericParallax from "../../components/generic/generic-parallax";
+    import GenericParallax from "../../components/generic/parallax";
     import MatchResult from "../../components/match-result";
-    import GenericQuickLinks from "../../components/generic/generic-quick-links";
-    import AboutUs from "../../components/generic/generic-about-us";
+    import GenericQuickLinks from "../../components/generic/quick-links";
+    import AboutUs from "../../components/generic/about-us";
 
     const bannerContent = {
         title: "7s Football League",

@@ -13,7 +13,7 @@
 
 <script>
     import information from "../../information";
-    import GenericParallax from "../generic/generic-parallax";
+    import GenericParallax from "../generic/parallax";
 
     export default {
         name: "home-quote",

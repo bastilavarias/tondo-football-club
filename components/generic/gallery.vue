@@ -23,7 +23,7 @@
     import utilities from "../../plugins/utilities";
 
     export default {
-        name: "gallery",
+        name: "generic-gallery",
 
         props: {
             backgroundImage: {

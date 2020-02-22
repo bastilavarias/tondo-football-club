@@ -19,7 +19,7 @@
 <script>
     import PlayerItem from "../components/player-item";
     import utilities from "../plugins/utilities";
-    import GenericParallax from "../components/generic/generic-parallax";
+    import GenericParallax from "../components/generic/parallax";
 
     export default {
         name: "team",

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import GenericParallax from "../../components/generic/generic-parallax";
+    import GenericParallax from "../../components/generic/parallax";
     import ArticleFeatured from "../../components/article/featured";
     import GenericHolder from "../../components/generic/holder";
     import ArticlePreviewItem from "../../components/article/preview-item";

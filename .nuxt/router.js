@@ -8,7 +8,6 @@ const _1cb8c6f6 = () => interopDefault(import('..\\pages\\articles\\index.vue' /
 const _7f3d897d = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages_team" */))
 const _7fd1473b = () => interopDefault(import('..\\pages\\fixtures-and-results\\7s-football-league.vue' /* webpackChunkName: "pages_fixtures-and-results_7s-football-league" */))
 const _77186f12 = () => interopDefault(import('..\\pages\\leagues\\7s-football-league.vue' /* webpackChunkName: "pages_leagues_7s-football-league" */))
-const _08751da2 = () => interopDefault(import('..\\pages\\match-schedules\\7s-football-league.vue' /* webpackChunkName: "pages_match-schedules_7s-football-league" */))
 const _c78559cc = () => interopDefault(import('..\\pages\\programs\\supremo-futsal-league.vue' /* webpackChunkName: "pages_programs_supremo-futsal-league" */))
 const _456b7862 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
@@ -48,10 +47,6 @@ export const routerOptions = {
     path: "/leagues/7s-football-league",
     component: _77186f12,
     name: "leagues-7s-football-league"
-  }, {
-    path: "/match-schedules/7s-football-league",
-    component: _08751da2,
-    name: "match-schedules-7s-football-league"
   }, {
     path: "/programs/supremo-futsal-league",
     component: _c78559cc,

@@ -32,7 +32,7 @@
 <script>
     import MainNavBar from "../layouts/partials/main-nav-bar";
     import utilities from "../plugins/utilities";
-    import GenericParallax from "../components/generic/generic-parallax";
+    import GenericParallax from "../components/generic/parallax";
     import GenericObjectives from "../components/generic/objectives";
     import information from "../information";
 
