@@ -7,6 +7,10 @@ export default {
     image: imageCDN.banner.landingPage
   },
 
+  upcomingMatch: {
+    background: imageCDN.banner.upcomingMatch
+  },
+
   schedule: {
     league: {
       supremoFutsalLeague: {

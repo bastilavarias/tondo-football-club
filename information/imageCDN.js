@@ -3,7 +3,8 @@ export default {
     landingPage: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Flanding%20page%20image.jpg?alt=media&token=c9962750-ef92-4d5a-83c8-561de35a96af",
     sevenSFootballLeague: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-0/p640x640/86860256_658189931389276_5610456430906703872_o.jpg?_nc_cat=111&_nc_oc=AQnYgBw_KJ3DI720lIcvpukhrMzTHaiMUUQ-_DfAm3RPulWE3iLJolhuW_uU1koqRHc&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=6&oh=c26b23a83772a921cce04db6d12d2a48&oe=5EC112A0",
     supremoFutsalLeague: "",
-    kids: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Fkids.jpg?alt=media&token=3d445b71-f94c-4d32-b725-0a9c4900ab83"
+    kids: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Fkids.jpg?alt=media&token=3d445b71-f94c-4d32-b725-0a9c4900ab83",
+    upcomingMatch: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2F7s-football-league.png?alt=media&token=95e16044-6860-4491-825b-8604e544e1e0"
   },
 
   logo: {

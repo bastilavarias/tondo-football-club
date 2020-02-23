@@ -15,8 +15,6 @@ import { createStore } from './store.js'
 import nuxt_plugin_plugin_7bc56376 from 'nuxt_plugin_plugin_7bc56376' // Source: .\\vuetify\\plugin.js (mode: 'all')
 import nuxt_plugin_axios_3a71d2b2 from 'nuxt_plugin_axios_3a71d2b2' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_vuegallery_17c79102 from 'nuxt_plugin_vuegallery_17c79102' // Source: ..\\plugins\\vue-gallery.js (mode: 'client')
-import nuxt_plugin_vuecarousel_e4202ecc from 'nuxt_plugin_vuecarousel_e4202ecc' // Source: ..\\plugins\\vue-carousel.js (mode: 'client')
-import nuxt_plugin_vuemagicgrid_b3e56fd8 from 'nuxt_plugin_vuemagicgrid_b3e56fd8' // Source: ..\\plugins\\vue-magic-grid.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -179,14 +177,6 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_vuegallery_17c79102 === 'function') {
     await nuxt_plugin_vuegallery_17c79102(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_vuecarousel_e4202ecc === 'function') {
-    await nuxt_plugin_vuecarousel_e4202ecc(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_vuemagicgrid_b3e56fd8 === 'function') {
-    await nuxt_plugin_vuemagicgrid_b3e56fd8(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
