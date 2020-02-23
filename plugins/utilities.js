@@ -28,6 +28,14 @@ export default {
       return filteredList;
     },
 
+    getSelectedCategory(categories, inNumber) {
+        return categories.find((_, index) => index === inNumber);
+    },
+
+    getTeamsByCategory(items, {age, gender}) {
+      return items.find(item => item.category.age === age && item.category.gender === gender).teams;
+    },
+
     limitsMatches(matches, limit) {
       return matches.filter((_, index) => index < limit);
     }

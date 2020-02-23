@@ -1,5 +1,5 @@
 <template>
-  <generic-holder :image="require('../../assets/backgrounds/pattern-gray-background.png')" title="Players">
+  <generic-holder :image="background" title="Players">
       <v-container>
         <v-row dense>
           <template v-for="n in 4">
@@ -21,8 +21,22 @@
 <script>
     import GenericHolder from "../generic/holder";
     import PlayerItem from "../player-item";
+    import information from "../../information";
+
     export default {
         name: "home-players",
-        components: {PlayerItem, GenericHolder}
+        components: {PlayerItem, GenericHolder},
+
+        mixins: [information],
+
+        computed: {
+            team() {
+                return this.information.team;
+            },
+
+            background() {
+                return this.team.background;
+            }
+        }
     };
 </script>

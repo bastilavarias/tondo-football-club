@@ -102,7 +102,7 @@ export default {
           },
           b: {
             name: "Matu",
-            logo: imageCDN.logo.matu
+            logo: imageCDN.logo.deportivoMatuFC
           },
         }
       }

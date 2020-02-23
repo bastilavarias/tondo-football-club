@@ -16,7 +16,14 @@
                 </v-tab>
               </template>
             </v-tabs>
-            <seven-s-football-league-table :team-list="[]"></seven-s-football-league-table>
+            <v-tabs-items v-model="leagueTableTab">
+              <template v-for="(_, index) in categories">
+                <v-tab-item :key="index">
+                  <seven-s-football-league-table
+                    :teams="getTeamsByCategory(leagueTableItems, getSelectedCategory(categories, leagueTableTab))"></seven-s-football-league-table>
+                </v-tab-item>
+              </template>
+            </v-tabs-items>
           </v-card>
         </v-col>
         <v-col cols="12" md="10">
@@ -113,6 +120,14 @@
 
             isMatchSchedulesLoading() {
                 return this.schedules.length <= 0;
+            },
+
+            leagueTable() {
+                return this.sevenSFootballLeague.leagueTable;
+            },
+
+            leagueTableItems() {
+                return this.leagueTable.items;
             }
         }
     };

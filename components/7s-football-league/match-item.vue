@@ -13,11 +13,11 @@
             <v-avatar :size="35" v-if="teamA">
               <v-img :src="teamA.logo"></v-img>
             </v-avatar>
-            <span class="subtitle-2 black--text">{{teamA.name}}</span>
+            <span class="subtitle-2 black--text text-uppercase">{{teamA.name}}</span>
           </div>
           <span class="caption mx-2 primary--text font-weight-bold">VS</span>
           <div>
-            <span class="subtitle-2 black--text">{{teamB.name}}</span>
+            <span class="subtitle-2 black--text text-uppercase">{{teamB.name}}</span>
             <v-avatar :size="35" v-if="teamB">
               <v-img :src="teamB.logo"></v-img>
             </v-avatar>
