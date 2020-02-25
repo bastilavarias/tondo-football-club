@@ -78,8 +78,6 @@
         </v-col>
       </v-row>
     </v-container>
-    <generic-gallery title="League Gallery"
-                     :background-image="require('../../assets/backgrounds/background-red.jpg')"></generic-gallery>
   </section>
 
 </template>

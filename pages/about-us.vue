@@ -24,13 +24,12 @@
           </v-card>
         </v-col>
       </v-row>
+      <generic-objectives></generic-objectives>
     </v-container>
-    <generic-objectives></generic-objectives>
   </section>
 </template>
 
 <script>
-    import MainNavBar from "../layouts/partials/main-nav-bar";
     import utilities from "../plugins/utilities";
     import GenericParallax from "../components/generic/parallax";
     import GenericObjectives from "../components/generic/objectives";
@@ -39,7 +38,7 @@
     export default {
         name: "about-us",
 
-        components: {GenericObjectives, GenericParallax, MainNavBar},
+        components: {GenericObjectives, GenericParallax},
 
         mixins: [utilities, information]
     };

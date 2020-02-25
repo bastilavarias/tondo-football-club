@@ -3,13 +3,23 @@
     <div class="landing-content">
       <v-container>
         <div class="text-left">
-          <h1 class="title font-weight-thin text-capitalize d-none d-md-block">{{information.featured.message.subtitle}}</h1>
-          <h1 class="display-3 display-md-4 font-weight-bold mb-5 text-capitalize">{{information.featured.message.title}}</h1>
-          <v-btn class="text-capitalize mr-2" color="primary" x-large depressed>
+          <h1 class="title font-weight-thin text-capitalize d-none d-sm-block">
+            {{information.featured.message.subtitle}}</h1>
+          <h1 class="display-3 display-md-4 font-weight-bold mb-5 text-capitalize">
+            <span class="d-block d-sm-inline-block">{{information.featured.message.title.tondo}}</span>
+            <span class="d-block d-sm-inline-block">{{information.featured.message.title.football}}</span>
+            <span class="d-block d-sm-inline-block">{{information.featured.message.title.club}}</span>
+          </h1>
+          <v-btn :class="`text-capitalize ${ screenBreakPoint.mdAndDown ? 'mb-2' : 'mr-2'}`" color="primary"
+                 :block="screenBreakPoint.mdAndDown"
+                 :large="screenBreakPoint.lgAndDown" :x-large="screenBreakPoint.lgAndUp" depressed
+                 @click="$vuetify.goTo('#home-match-schedules')">
             See More
             <v-icon small>mdi-chevron-right</v-icon>
           </v-btn>
-          <v-btn class="text-capitalize" color="white" x-large outlined large depressed>
+          <v-btn class="text-capitalize" color="white" outlined :block="screenBreakPoint.mdAndDown"
+                 :large="screenBreakPoint.lgAndDown" :x-large="screenBreakPoint.lgAndUp" depressed
+                 :to="{name: 'about-us'}">
             About Us
             <v-icon small>mdi-chevron-right</v-icon>
           </v-btn>
@@ -25,7 +35,7 @@
 <script>
     import "../../assets/css/animation.css";
     import information from "../../information";
-    import imageCDN from "../../information/imageCDN";
+    import utilities from "../../plugins/utilities";
 
     export default {
         name: "home-landing-page",
@@ -37,11 +47,15 @@
             };
         },
 
-        mixins: [information],
+        mixins: [information, utilities],
 
         computed: {
             landingPageImageCDN() {
                 return this.information.featured.message.image;
+            },
+
+            windowHeight() {
+                return window.screen.height;
             }
         }
     };

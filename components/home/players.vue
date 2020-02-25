@@ -8,12 +8,12 @@
             </v-col>
           </template>
         </v-row>
-        <v-row justify="end" align="center">
-          <v-btn color="primary" class="text-capitalize" dark>
+        <div class="text-right">
+          <v-btn color="primary" text class="text-capitalize" dark :block="screenBreakPoint.mdAndDown" :to="{name: 'team'}">
             <span>Visit Team</span>
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
-        </v-row>
+        </div>
       </v-container>
   </generic-holder>
 </template>
@@ -22,12 +22,13 @@
     import GenericHolder from "../generic/holder";
     import PlayerItem from "../player-item";
     import information from "../../information";
+    import utilities from "../../plugins/utilities";
 
     export default {
         name: "home-players",
         components: {PlayerItem, GenericHolder},
 
-        mixins: [information],
+        mixins: [information, utilities],
 
         computed: {
             team() {

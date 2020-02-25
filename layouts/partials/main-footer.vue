@@ -7,7 +7,7 @@
             <h1 class="title font-weight-bold white--text text-uppercase">The Tondo Football Club</h1>
             <p class="white--text body-1">
               {{about.message}}
-              <v-btn icon dark small>
+              <v-btn icon dark small exact :to="{name: 'about-us'}" exact-active-class="d-none">
                 <v-icon small>mdi-chevron-right</v-icon>
               </v-btn>
             </p>

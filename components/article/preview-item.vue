@@ -1,36 +1,82 @@
 <template>
   <v-card>
-    <v-list-item>
-      <v-list-item-avatar color="grey"></v-list-item-avatar>
-      <v-list-item-content>
-        <v-list-item-title class="headline">Our Changing Planet</v-list-item-title>
-        <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
-      </v-list-item-content>
-    </v-list-item>
+    <v-container>
+      <v-row dense>
+        <v-col cols="12" md="5">
+          <v-img
+            width="auto"
+            height="200"
+            class="mx-auto"
+            :src="content.banner"
+          ></v-img>
+        </v-col>
 
-    <v-img
-      src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-      height="194"
-    ></v-img>
-
-    <v-card-text>
-      Visit ten places on our planet that are undergoing the biggest changes today.
-    </v-card-text>
-
-    <v-card-actions>
-      <div class="flex-grow-1"></div>
-      <v-btn
-        text
-        color="primary"
-      >
-        Read
-      </v-btn>
-    </v-card-actions>
+        <v-col
+          cols="12"
+          md="7"
+          class="text-left pl-0"
+        >
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="title text-capitalize">{{title}}</v-list-item-title>
+              <v-list-item-subtitle class="text-capitalize">by {{author.name}}</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+          <v-card-text>
+            <span class="mr-2">{{cutText(content.text, 62)}}</span>
+            <span class="caption grey--text text-capitalize">{{date}}</span>
+          </v-card-text>
+          <v-card-actions>
+            <div class="flex-grow-1"></div>
+            <v-btn color="primary" class="text-capitalize" block
+                   :to="{name: 'articles-slug', params: {slug}}" exact>Read
+            </v-btn>
+          </v-card-actions>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-card>
 </template>
 
 <script>
+    import utilities from "../../plugins/utilities";
+
     export default {
-        name: "article-preview-item"
+        name: "article-preview-item",
+
+        mixins: [utilities],
+
+        props: {
+            title: {
+                type: String,
+                required: true
+            },
+
+            slug: {
+                type: String,
+                required: true
+            },
+
+            date: {
+                type: String,
+                required: true
+            },
+
+            author: {
+                type: Object,
+                required: true
+            },
+
+            content: {
+                type: Object,
+                required: true
+            }
+        },
+
+        data() {
+            return {
+                currentImageIndex: null
+            };
+        }
     };
 </script>

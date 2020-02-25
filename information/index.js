@@ -3,6 +3,7 @@ import tondoFootballClub from "./tondoFootballClub";
 import supremoFutsalLeague from "./supremoFutsalLeague";
 import sevenSFootballLeague from "./sevenSFootballLeague";
 import team from "./team";
+import article from "./article";
 
 export default {
 
@@ -13,7 +14,8 @@ export default {
         tondoFootballClub,
         supremoFutsalLeague,
         sevenSFootballLeague,
-        team
+        team,
+        article
       }
     };
   }

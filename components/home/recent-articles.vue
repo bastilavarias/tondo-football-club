@@ -2,9 +2,10 @@
   <generic-holder title="Recent Articles">
     <v-container>
       <v-row>
-        <template v-for="n in 3">
-          <v-col cols="12" :sm="n === 3 ? '12' : '6'" md="4" :key="n">
-          <article-preview-item></article-preview-item>
+        <template v-for="(article, index) in recentArticles">
+          <v-col cols="12" sm="6" :key="index">
+            <article-preview-item :title="article.title" :slug="article.slug" :date="article.date"
+                                  :author="article.author" :content="article.content"></article-preview-item>
           </v-col>
         </template>
       </v-row>
@@ -13,10 +14,19 @@
 </template>
 
 <script>
-  import GenericHolder from "../generic/holder";
-  import ArticlePreviewItem from "../article/preview-item";
-  export default {
-      name: "home-recent-articles",
-      components: {ArticlePreviewItem, GenericHolder}
-  }
+    import GenericHolder from "../generic/holder";
+    import ArticlePreviewItem from "../article/preview-item";
+    import information from "../../information";
+
+    export default {
+        name: "home-recent-articles",
+        components: {ArticlePreviewItem, GenericHolder},
+        mixins: [information],
+
+        computed: {
+            recentArticles() {
+                return this.information.article.recent;
+            }
+        }
+    };
 </script>

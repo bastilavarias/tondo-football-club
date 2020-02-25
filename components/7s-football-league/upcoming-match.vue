@@ -4,7 +4,6 @@
       <p class="text-center subtitle-1">7s FL - 22/02 - 4:30 PM</p>
       <v-row no-gutters justify="center" align="center">
         <div class="vertical-center">
-          <span class="title font-weight-bold text-uppercase d-none d-sm-inline-block">{{team.a.name}}</span>
           <v-avatar :size="100">
             <v-img :src="team.a.logo"></v-img>
           </v-avatar>
@@ -14,13 +13,16 @@
           <v-avatar :size="100" class="">
             <v-img :src="team.b.logo"></v-img>
           </v-avatar>
-          <span class="title font-weight-bold text-uppercase d-none d-sm-inline-block">{{team.b.name}}</span>
         </div>
       </v-row>
+      <div class="text-center mt-5">
+        <span class="title font-weight-bold text-uppercase">
+          <span>{{team.a.name}}</span>
+          <span class="white--text mx-2">VS</span>
+          <span>{{team.b.name}}</span>
+        </span>
+      </div>
     </v-card-text>
-    <v-card-actions>
-      <v-btn color="white" outlined class="mx-auto">View All Matches</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 

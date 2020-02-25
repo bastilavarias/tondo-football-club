@@ -23,6 +23,10 @@ export default {
       return transformedText;
     },
 
+    isObjectHasItems(object) {
+      return Object.keys(object).length <= 0;
+    },
+
     getTeamList({age, gender}, list) {
       const filteredList = list.filter(team => team.details.category.age === age && team.details.category.gender === gender);
       return filteredList;

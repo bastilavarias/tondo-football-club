@@ -2,19 +2,6 @@
   background-color: #ffffff;
 }
 
-.nav-bar-button {
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-.nav-bar-button::before {
-  color: transparent
-}
-
-.nav-bar-button::after {
-  color: transparent
-}
-
 .separator {
   background-color: #882021;
   width: 4rem;

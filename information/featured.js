@@ -2,7 +2,11 @@ import imageCDN from "./imageCDN";
 
 export default {
   message: {
-    title: "Tondo Football Club",
+    title: {
+      tondo: "Tondo",
+      football: "Football",
+      club: "Club"
+    },
     subtitle: "Welcome to the official website of",
     image: imageCDN.banner.landingPage
   },

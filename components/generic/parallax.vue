@@ -1,10 +1,12 @@
 <template>
-  <div :style="`background-image: url('${image}')`" class="background-image">
+  <div
+    :style="`background-image: url('${image}'); background-position: ${backgroundPosition ? backgroundPosition : 'center'} !important;`"
+    class="background-image">
     <div class="parallax-content">
       <v-container fill-height>
         <div style="padding-top: 15rem;">
-          <h1 class="title font-weight-thin">{{subtitle}}</h1>
-          <h1 class="display-1 font-weight-bold">{{title}}</h1>
+          <h1 class="title font-weight-thin text-capitalize" v-if="subtitle">{{subtitle}}</h1>
+          <h1 class="display-1 font-weight-bold text-capitalize">{{title}}</h1>
         </div>
       </v-container>
     </div>
@@ -25,11 +27,16 @@
 
             subtitle: {
                 type: String,
-                required: true
+                required: false
             },
 
             image: {
                 required: true
+            },
+
+            backgroundPosition: {
+                type: String,
+                required: false
             }
         },
 
@@ -43,7 +50,6 @@
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     color: #ffffff;
   }
 

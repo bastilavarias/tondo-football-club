@@ -15,10 +15,8 @@ import '..\\node_modules\\vuetify\\dist\\vuetify.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
 import _7dcad4b0 from '..\\layouts\\partials\\main-footer.vue'
-import _1c6f1c08 from '..\\layouts\\partials\\main-nav-bar.vue'
-import _0643738c from '..\\layouts\\partials\\main-side-drawer.vue'
 
-const layouts = { "_default": _6f6c098b,"_partials/main-footer": _7dcad4b0,"_partials/main-nav-bar": _1c6f1c08,"_partials/main-side-drawer": _0643738c }
+const layouts = { "_default": _6f6c098b,"_partials/main-footer": _7dcad4b0 }
 
 export default {
   head: {"titleTemplate":"%s - tondo-football-club","title":"tondo-football-club","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My epic Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},

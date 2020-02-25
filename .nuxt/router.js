@@ -8,6 +8,7 @@ const _1cb8c6f6 = () => interopDefault(import('..\\pages\\articles\\index.vue' /
 const _7f3d897d = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages_team" */))
 const _77186f12 = () => interopDefault(import('..\\pages\\leagues\\7s-football-league.vue' /* webpackChunkName: "pages_leagues_7s-football-league" */))
 const _c78559cc = () => interopDefault(import('..\\pages\\programs\\supremo-futsal-league.vue' /* webpackChunkName: "pages_programs_supremo-futsal-league" */))
+const _188caaa5 = () => interopDefault(import('..\\pages\\articles\\_slug\\index.vue' /* webpackChunkName: "pages_articles__slug_index" */))
 const _456b7862 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 // TODO: remove in Nuxt 3
@@ -46,6 +47,10 @@ export const routerOptions = {
     path: "/programs/supremo-futsal-league",
     component: _c78559cc,
     name: "programs-supremo-futsal-league"
+  }, {
+    path: "/articles/:slug",
+    component: _188caaa5,
+    name: "articles-slug"
   }, {
     path: "/",
     component: _456b7862,
