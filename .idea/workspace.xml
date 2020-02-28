@@ -3,35 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article/featured.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/article/featured.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article/preview-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/article/preview-item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/generic/objectives.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/generic/objectives.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/generic/parallax.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/generic/parallax.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/7s-football-league-upcoming-match-item.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/landing-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/landing-page.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/players.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/players.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/7s-football-league/match-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/7s-football-league/match-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/match-result-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/match-result-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/math-results.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/math-results.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home/recent-articles.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/recent-articles.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/nav-bar/about-us-menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/nav-bar/leagues-menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/nav-bar/programs-menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/featured.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/featured.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/imageCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/imageCDN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/main-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/main-footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/main-nav-bar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/main-side-drawer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about-us.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/articles/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/supremoFutsalLeague.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/supremoFutsalLeague.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/utilities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +128,10 @@
       <workItem from="1582425805505" duration="28723000" />
       <workItem from="1582467748075" duration="191000" />
       <workItem from="1582554339477" duration="1681000" />
-      <workItem from="1582599428170" duration="28205000" />
+      <workItem from="1582599428170" duration="29202000" />
+      <workItem from="1582636852283" duration="59000" />
+      <workItem from="1582788286324" duration="3447000" />
+      <workItem from="1582851837952" duration="6721000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -402,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582464943333</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added data to nosi balasi page.">
+      <created>1582629812156</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1582629812156</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="match item changed." />
     <MESSAGE value="added league table." />
     <MESSAGE value="some pages are edited." />
     <MESSAGE value="added home landing page." />
@@ -447,6 +436,7 @@
     <MESSAGE value="added initial footer design." />
     <MESSAGE value="added 7s football league table data." />
     <MESSAGE value="added match results in home." />
-    <option name="LAST_COMMIT_MESSAGE" value="added match results in home." />
+    <MESSAGE value="added data to nosi balasi page." />
+    <option name="LAST_COMMIT_MESSAGE" value="added data to nosi balasi page." />
   </component>
 </project>

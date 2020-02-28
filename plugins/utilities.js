@@ -33,7 +33,17 @@ export default {
     },
 
     getSelectedCategory(categories, inNumber) {
-        return categories.find((_, index) => index === inNumber);
+      return categories.find((_, index) => index === inNumber);
+    },
+
+    getMatchesByCategory(items, {age, gender}) {
+      let matches;
+      try {
+        matches = items.find(item => item.category.age === age && item.category.gender === gender).matches;
+      } catch (errors) {
+        matches = [];
+      }
+      return matches;
     },
 
     getTeamsByCategory(items, {age, gender}) {

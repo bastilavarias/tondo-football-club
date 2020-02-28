@@ -1,5 +1,5 @@
 <template>
-  <v-card width="350" class="ma-2" @click="toggle">
+  <v-card width="300" class="ma-2" @click="toggle">
     <v-card-title>
       <div class="flex-grow-1"></div>
       <v-avatar :size="75" class="text-center d-block" tile>

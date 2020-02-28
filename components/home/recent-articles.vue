@@ -1,16 +1,14 @@
 <template>
-  <generic-holder title="Recent Articles">
-    <v-container>
-      <v-row>
-        <template v-for="(article, index) in recentArticles">
-          <v-col cols="12" sm="6" :key="index">
-            <article-preview-item :title="article.title" :slug="article.slug" :date="article.date"
-                                  :author="article.author" :content="article.content"></article-preview-item>
-          </v-col>
-        </template>
-      </v-row>
-    </v-container>
-  </generic-holder>
+  <v-container>
+    <v-row>
+      <template v-for="(article, index) in recentArticles">
+        <v-col cols="12" sm="6" :key="index">
+          <article-preview-item :title="article.title" :slug="article.slug" :date="article.date"
+                                :author="article.author" :content="article.content"></article-preview-item>
+        </v-col>
+      </template>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -20,7 +18,7 @@
 
     export default {
         name: "home-recent-articles",
-        components: {ArticlePreviewItem, GenericHolder},
+        components: {ArticlePreviewItem},
         mixins: [information],
 
         computed: {

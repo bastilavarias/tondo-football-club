@@ -1,7 +1,6 @@
 <template>
   <v-container>
-    <generic-holder title="Match Results" subtitle="Last week match results."></generic-holder>
-    <v-slide-group show-arrows center-active v-model="model">
+    <v-slide-group show-arrows center-active v-model="model" :show-arrows="false">
       <template v-for="n in 25">
         <v-slide-item
           :key="n"

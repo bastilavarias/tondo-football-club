@@ -26,7 +26,7 @@
       </v-col>
       <v-col cols="12" md="3" align-self="center">
         <div class="text-center">
-          <v-chip label :small="screenBreakPoint.mdAndDown" color="primary" class="mx-0 mx-md-3">{{teamA.score}} :
+          <v-chip label :small="screenBreakPoint.mdAndDown" :color="isWin ? 'success' : 'error'" class="mx-0 mx-md-3">{{teamA.score}} :
                                                                                                  {{teamB.score}}
           </v-chip>
         </div>
@@ -68,7 +68,13 @@
             }
         },
 
-        mixins: [utilities]
+        mixins: [utilities],
+
+        computed: {
+            isWin() {
+                return this.teamA.score > this.teamB.score;
+            }
+        }
 
     };
 </script>

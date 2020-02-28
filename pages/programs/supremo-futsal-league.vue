@@ -26,55 +26,11 @@
             </v-tabs-items>
           </v-card>
         </v-col>
-        <v-col cols="12" md="7">
-          <v-card color="transparent" flat>
-            <v-card-title>Upcoming Match</v-card-title>
-            <v-card-text>
-            </v-card-text>
-          </v-card>
+        <v-col cols="12" md="8">
+          <supremo-league-upcoming-matches></supremo-league-upcoming-matches>
         </v-col>
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>Match Schedules</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
-            </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <match-schedule-item-preview></match-schedule-item-preview>
-                <match-schedule-item-preview></match-schedule-item-preview>
-                <match-schedule-item-preview></match-schedule-item-preview>
-                <match-schedule-item-preview></match-schedule-item-preview>
-                <match-schedule-item-preview></match-schedule-item-preview>
-              </v-tab-item>
-            </v-tabs-items>
-            <v-card-actions>
-              <v-btn block text class="primary--text text-capitalize">View More</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="12">
-          <v-card>
-            <v-card-title>Match Results</v-card-title>
-            <v-tabs v-model="tab" grow>
-              <v-tab>U10</v-tab>
-              <v-tab>U13</v-tab>
-              <v-tab>U17</v-tab>
-            </v-tabs>
-            <v-tabs-items v-model="tab">
-              <v-tab-item>
-                <match-result></match-result>
-                <match-result></match-result>
-                <match-result></match-result>
-              </v-tab-item>
-            </v-tabs-items>
-            <v-card-actions>
-              <div class="flex-grow-1"></div>
-              <v-btn color="primary" class="text-capitalize">See All</v-btn>
-            </v-card-actions>
-          </v-card>
+        <v-col cols="12" md="4">
+          <supremo-league-match-results></supremo-league-match-results>
         </v-col>
       </v-row>
     </v-container>
@@ -94,10 +50,14 @@
     import SupremoLeagueTable from "../../components/supremo-league/league-table";
     import GenericGallery from "../../components/generic/gallery";
     import utilities from "../../plugins/utilities";
+    import SupremoLeagueUpcomingMatches from "../../components/supremo-league/upcoming-matches";
+    import SupremoLeagueMatchResults from "../../components/supremo-league/match-results";
 
     export default {
         name: "supremo-league",
         components: {
+            SupremoLeagueMatchResults,
+            SupremoLeagueUpcomingMatches,
             GenericAboutUs,
             GenericGallery,
             SupremoLeagueTable,

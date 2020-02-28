@@ -546,29 +546,101 @@ export default {
 
     categories: [
       {
-        age: 16,
-        gender: "Boys"
-      },
-      {
-        age: 16,
-        gender: "Girls"
-      },
-      {
-        age: 14,
-        gender: "Boys"
-      },
-      {
-        age: 14,
-        gender: "Girls"
+        age: 10,
+        gender: "Mix"
       },
       {
         age: 12,
         gender: "Mix"
       },
       {
-        age: 10,
-        gender: "Mix"
+        age: 14,
+        gender: "Boys"
       },
+      {
+        age: 14,
+        gender: "Girls"
+      },
+      {
+        age: 16,
+        gender: "Boys"
+      },
+      {
+        age: 16,
+        gender: "Girls"
+      },
+    ]
+  },
+
+
+  schedule: {
+    upcomingMatches: [
+      {
+        category: {
+          age: 10,
+          gender: "Mix"
+        },
+        matches: [
+          {
+            team: {
+              a: "Tondo FC",
+              b: "Batang Laurel"
+            },
+            time: {
+              value: "10:00",
+              ampm: "am"
+            }
+          },
+          {
+            team: {
+              a: "Sta Ana Ft",
+              b: "Manilenos United"
+            },
+            time: {
+              value: "10:45",
+              ampm: "am"
+            }
+          },
+        ]
+      },
+      {
+        category: {
+          age: 12,
+          gender: "Mix"
+        },
+        matches: [
+          {
+            team: {
+              a: "MRAES",
+              b: "Tondo FC"
+            },
+            time: {
+              value: "11:30",
+              ampm: "am"
+            }
+          },
+          {
+            team: {
+              a: "Manilenos United",
+              b: "Baseco"
+            },
+            time: {
+              value: "12:15",
+              ampm: "pm"
+            }
+          },
+          {
+            team: {
+              a: "Tondo FC",
+              b: "Sta Ana FT"
+            },
+            time: {
+              value: "12:50",
+              ampm: "pm"
+            }
+          },
+        ]
+      }
     ]
   }
 };
