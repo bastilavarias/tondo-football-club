@@ -24,7 +24,8 @@ export default {
     superEaglesPH: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Feagles.png?alt=media&token=3876e506-2aff-4482-856f-8c147cdd744c",
     bsc: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fbsc.png?alt=media&token=84e40539-8203-4895-8e12-3fb8749ed31e",
     sevenSFootballLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2F7s-league.PNG?alt=media&token=9e854d8f-6fd0-4a72-9400-94b1b255e4a0",
-    spolyFC: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fspoly.jpg?alt=media&token=03f40538-acf7-406b-b852-4a00100ae9cc"
+    spolyFC: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fspoly.jpg?alt=media&token=03f40538-acf7-406b-b852-4a00100ae9cc",
+    selecta: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fselecta.jpg?alt=media&token=687a7fb7-6690-4268-82ac-19eb0f5db519"
   },
 
   background: {

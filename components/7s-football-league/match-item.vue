@@ -11,7 +11,7 @@
         <v-row justify="center" align="center">
           <div>
             <v-avatar :size="35" v-if="teamA">
-              <v-img :src="teamA.logo"></v-img>
+              <v-img :src="teamA.logo" :lazy-src="teamA.logo"></v-img>
             </v-avatar>
             <span class="subtitle-2 black--text text-uppercase">{{teamA.name}}</span>
           </div>
@@ -19,7 +19,7 @@
           <div>
             <span class="subtitle-2 black--text text-uppercase">{{teamB.name}}</span>
             <v-avatar :size="35" v-if="teamB">
-              <v-img :src="teamB.logo"></v-img>
+              <v-img :src="teamB.logo" :lazy-src="teamB.logo"></v-img>
             </v-avatar>
           </div>
         </v-row>

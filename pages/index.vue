@@ -4,32 +4,34 @@
       <home-landing-page></home-landing-page>
     </section>
     <section id="home-match-schedules">
-      <generic-holder title="Match Schedules">
+      <generic-holder title="Schedules & Results">
         <v-container>
           <v-row dense>
             <v-col cols="12" md="6" order="2" order-md="1">
-              <home-supremo-upcoming-matches></home-supremo-upcoming-matches>
+              <seven-s-football-league-upcoming-match></seven-s-football-league-upcoming-match>
             </v-col>
             <v-col cols="12" md="6" order="1" order-md="2">
-              <seven-s-football-league-upcoming-match></seven-s-football-league-upcoming-match>
+              <home-supremo-upcoming-matches></home-supremo-upcoming-matches>
+            </v-col>
+            <v-col cols="12" order="3">
+              <home-match-results></home-match-results>
             </v-col>
           </v-row>
         </v-container>
       </generic-holder>
     </section>
-    <generic-holder title="Match Results">
-      <home-match-results></home-match-results>
-    </generic-holder>
-    <generic-holder title="Recent Articles">
-      <home-recent-articles></home-recent-articles>
-    </generic-holder>
-    <article-featured></article-featured>
-    <home-players></home-players>
-    <generic-holder title="Objectives">
-      <v-container>
-        <generic-objectives></generic-objectives>
-      </v-container>
-    </generic-holder>
+    <v-container>
+      <generic-holder title="Nosi Balasi">
+        <home-recent-articles></home-recent-articles>
+        <article-featured></article-featured>
+      </generic-holder>
+      <generic-holder title="Team">
+        <home-players></home-players>
+      </generic-holder>
+      <generic-holder title="Sponsor">
+        <generic-sponsors></generic-sponsors>
+      </generic-holder>
+    </v-container>
     <home-quote></home-quote>
   </main>
 </template>
@@ -47,11 +49,13 @@
     import GenericHolder from "../components/generic/holder";
     import utilities from "../plugins/utilities";
     import SevenSFootballLeagueUpcomingMatch from "../components/7s-football-league/upcoming-match";
+    import GenericSponsors from "../components/generic/sponsors";
 
 
     export default {
         name: "home",
         components: {
+            GenericSponsors,
             SevenSFootballLeagueUpcomingMatch,
             GenericHolder,
             HomeSupremoUpcomingMatches,

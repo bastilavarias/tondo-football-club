@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
+    <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="added data to nosi balasi page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/7s-football-league/league-table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/7s-football-league/league-table.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/7s-football-league/match-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/7s-football-league/match-item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/match-result-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/match-result-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/7s-football-league/upcoming-match.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/article/featured.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/article/featured.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home/math-results.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/math-results.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/players.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/players.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home/recent-articles.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/recent-articles.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/supremoFutsalLeague.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/supremoFutsalLeague.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/imageCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/imageCDN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/main-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/main-footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about-us.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/articles/_slug/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/_slug/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/utilities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +54,7 @@
   <component name="ProjectId" id="1XAH0JpE1NqWlB82qv67CP0rGI8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -57,15 +63,15 @@
     <property name="ts.external.directory.path" value="C:\Users\LittleWarMachine\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\192.7142.35\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\pages\articles\_slug" />
       <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\pages\articles" />
       <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\store\modules" />
       <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\store" />
       <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\components\generic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LittleWarMachine\Documents\GitHub\tondo-football-club\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -131,7 +137,11 @@
       <workItem from="1582599428170" duration="29202000" />
       <workItem from="1582636852283" duration="59000" />
       <workItem from="1582788286324" duration="3447000" />
-      <workItem from="1582851837952" duration="6721000" />
+      <workItem from="1582851837952" duration="6883000" />
+      <workItem from="1582945612672" duration="710000" />
+      <workItem from="1582946924255" duration="143000" />
+      <workItem from="1583053733234" duration="234000" />
+      <workItem from="1583487119724" duration="10106000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -392,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582629812156</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added data to nosi balasi page.">
+      <created>1582859751969</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1582859751969</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

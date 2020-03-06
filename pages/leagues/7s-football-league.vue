@@ -56,18 +56,17 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="2">
-          <v-row>
-            <v-col cols="12">
-              <v-card>
-                <v-subheader>Jersey</v-subheader>
-              </v-card>
-            </v-col>
-            <v-col cols="12">
-              <v-card>
-                <v-subheader>Featured Articles</v-subheader>
-              </v-card>
-            </v-col>
-          </v-row>
+          <v-card color="transparent" flat>
+            <v-card-subtitle>Uniforms</v-card-subtitle>
+            <v-row dense>
+              <v-col cols="6" md="12">
+                <v-img :lazy-src="redJersey" :src="redJersey"></v-img>
+              </v-col>
+              <v-col cols="6" md="12">
+                <v-img :lazy-src="whiteJersey" :src="whiteJersey"></v-img>
+              </v-col>
+            </v-row>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -81,6 +80,7 @@
     import SevenSFootballLeagueTable from "../../components/7s-football-league/league-table";
     import utilities from "../../plugins/utilities";
     import SevenSFootballLeagueMatchItem from "../../components/7s-football-league/match-item";
+    import imageCDN from "../../information/imageCDN";
 
     export default {
         components: {
@@ -128,6 +128,14 @@
 
             leagueTableItems() {
                 return this.leagueTable.items;
+            },
+
+            redJersey() {
+                return imageCDN.uniform.kit1;
+            },
+
+            whiteJersey() {
+                return imageCDN.uniform.kit2;
             }
         }
     };

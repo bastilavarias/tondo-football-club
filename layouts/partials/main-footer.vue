@@ -27,7 +27,7 @@
             <v-row dense>
               <template v-for="(photo, index) in featuredPhotos">
                 <v-col cols="3">
-                  <v-img @click="currentFeaturedPhotoIndex = index" :src="photo" :key="index"></v-img>
+                  <v-img @click="currentFeaturedPhotoIndex = index" :src="photo" :lazy-src="photo" :key="index"></v-img>
                 </v-col>
               </template>
             </v-row>

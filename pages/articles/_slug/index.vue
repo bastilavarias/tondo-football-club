@@ -1,19 +1,26 @@
 <template>
   <v-container>
     <div style="margin-bottom: 5rem;"></div>
-    <v-img :src="article.content.banner" width="auto" height="400" class="mx-auto"></v-img>
+    <v-btn light depressed @click="$router.go(-1)" class="mt-5 mb-5">
+      <v-icon class="mr-1">mdi-chevron-left</v-icon>
+      <span>Back</span>
+    </v-btn>
+    <v-img :src="article.content.banner" max-height="200" contain class="mb-10"></v-img>
     <section ref="content">
       <v-row>
-        <v-col cols="12" md="2"></v-col>
-        <v-col cols="12" md="8">
-          <v-btn light depressed @click="$router.go(-1)" class="mt-5 mb-5">
-            <v-icon class="mr-1">mdi-chevron-left</v-icon>
-            <span>Back</span>
-          </v-btn>
-          <h1 class="display-1 font-weight-bold mb-5 text-capitalize">
-            {{article.title}}
-          </h1>
-          <p class="body-1">{{article.content.text}}</p>
+        <v-col cols="12" md="10">
+          <v-card flat color="transparent">
+            <v-list-item>
+              <v-list-item-avatar color="grey"></v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title class="headline">{{article.title}}</v-list-item-title>
+                <v-list-item-subtitle>by Kurt Wagner • Posted on March 3, 2020</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+            <v-card-text>
+              {{article.content.text}}
+            </v-card-text>
+          </v-card>
         </v-col>
         <v-col cols="12" md="2"></v-col>
       </v-row>

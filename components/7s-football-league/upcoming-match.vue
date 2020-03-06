@@ -1,7 +1,7 @@
 <template>
-  <v-card color="primary" min-height="320" dark>
-    <v-card-text class="mb-5">
-      <p class="text-center subtitle-1">7s FL - 22/02 - 4:30 PM</p>
+  <v-card color="primary" min-height="320" dark tile flat>
+    <v-card-text>
+      <p class="text-center subtitle-1 mb-10">7s FL - 22/02 - 4:30 PM</p>
       <v-row no-gutters justify="center" align="center">
         <div class="vertical-center">
           <v-avatar :size="100">
@@ -15,7 +15,7 @@
           </v-avatar>
         </div>
       </v-row>
-      <div class="text-center mt-5">
+      <div class="text-center mt-10">
         <span class="title font-weight-bold text-uppercase">
           <span>{{team.a.name}}</span>
           <span class="white--text mx-2">VS</span>
