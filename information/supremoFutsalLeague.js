@@ -1,6 +1,12 @@
 import imageCDN from "./imageCDN";
 
 export default {
+  banner: {
+    title: "The Supremo Futsal League",
+    subtitle: "#1 Football League In Manila",
+    image: imageCDN.banner.supremoFutsalLeague
+  },
+
   about: {
     message: "A year round football activities that will happen in different basketball courts for Futsal league and in Don Bosco Tondo football field for the football league. \n" +
       "Develop the players capability in playing and will increase the popularity of the sport within Tondo and in Manila. Targeting thousands of community members to participate.",

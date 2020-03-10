@@ -47,6 +47,7 @@
 <style scoped>
   .background-image {
     position: relative;
+    width: 100%;
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;

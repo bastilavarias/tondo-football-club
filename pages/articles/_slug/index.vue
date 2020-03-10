@@ -5,7 +5,7 @@
       <v-icon class="mr-1">mdi-chevron-left</v-icon>
       <span>Back</span>
     </v-btn>
-    <v-img :src="article.content.banner" max-height="200" contain class="mb-10"></v-img>
+    <v-img :src="article.content.banner" max-height="450" contain class="mb-10"></v-img>
     <section ref="content">
       <v-row>
         <v-col cols="12" md="10">

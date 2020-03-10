@@ -33,7 +33,6 @@
 </template>
 
 <script>
-    import "../../assets/css/animation.css";
     import information from "../../information";
     import utilities from "../../plugins/utilities";
 

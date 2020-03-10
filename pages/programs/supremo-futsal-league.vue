@@ -1,7 +1,7 @@
 <template>
   <section>
-    <generic-parallax title="The Supremo Futsal League" subtitle="#1 Football League in Manila"
-                      :image="require('../../assets/banners/photo-of-men-playing-soccer-during-daytime-3651674.jpg')"></generic-parallax>
+    <generic-parallax :title="banner.title" :subtitle="banner.subtitle"
+                      :image="banner.image"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
       <generic-about-us :title="about.title" :message="about.message"
@@ -41,10 +41,6 @@
 <script>
 
     import GenericAboutUs from "../../components/generic/about-us";
-    import LeagueTable from "../../components/league-table";
-    import MatchResult from "../../components/match-result";
-    import MatchScheduleItem from "../../components/match-schedule-item";
-    import MatchScheduleItemPreview from "../../components/match-schedule-item-preview";
     import GenericParallax from "../../components/generic/parallax";
     import information from "../../information";
     import SupremoLeagueTable from "../../components/supremo-league/league-table";
@@ -62,8 +58,6 @@
             GenericGallery,
             SupremoLeagueTable,
             GenericParallax,
-            MatchScheduleItemPreview,
-            MatchScheduleItem, MatchResult, LeagueTable
         },
 
         data() {
@@ -87,6 +81,10 @@
         computed: {
             supremoFutsalLeague() {
                 return this.information.supremoFutsalLeague;
+            },
+
+            banner() {
+                return this.supremoFutsalLeague.banner;
             },
 
             about() {

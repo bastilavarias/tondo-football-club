@@ -1,6 +1,6 @@
 <template>
   <section>
-    <generic-parallax :title="banner.title" :subtitle="banner.subtitle" :image="banner.image"></generic-parallax>
+    <generic-parallax :title="banner.title" :subtitle="banner.subtitle" :image="banner.image" background-position="top"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
       <generic-about-us :title="about.title" :message="about.message"

@@ -4,16 +4,49 @@
     <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nuxt/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/generic/holder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/generic/holder.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/generic/sponsors.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/generic/sponsors.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about-us.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about-us.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/backgrounds/background-red.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/7sLeagueTeam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/aboutUs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/kids.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/photo-of-men-playing-soccer-during-daytime-3651674.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/supremoLeague.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/banners/team.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/items/uniformKit1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/items/uniformKit2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/7sLeague.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/supremoLeague.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamBSC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamEagles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamGhana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamGoldenMango.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamLaro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamMatu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamMondoNedo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamMonte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamRealAmigos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/teamSuperBad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logos/tondoFC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/posters/7sFLUpcomingMatch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/posters/84919703_651988492009420_6689470159758819328_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/posters/86714534_656522648222671_8856517138978963456_n (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/posters/supremoLeagueUpcomingMatch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/team/markDennisBalbin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tondoFootballClubHomeBanner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/7s-league-upcoming-match-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/article-item-view.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/generic/parallax.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/generic/parallax.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/landing-page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/landing-page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/league-table.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/match-result.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/match-schedule-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/imageCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/imageCDN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/supremoFutsalLeague.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/supremoFutsalLeague.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/articles/_slug/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/_slug/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/articles/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/leagues/7s-football-league.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/programs/supremo-futsal-league.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/team.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +174,7 @@
       <workItem from="1583487119724" duration="10249000" />
       <workItem from="1583579942097" duration="31000" />
       <workItem from="1583812157952" duration="1067000" />
-      <workItem from="1583815515722" duration="1541000" />
+      <workItem from="1583815515722" duration="4772000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -416,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583499342966</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added initial seo.">
+      <created>1583817199690</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1583817199690</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some pages are edited." />
     <MESSAGE value="added home landing page." />
     <MESSAGE value="added home upcoming and result matches." />
     <MESSAGE value="added supremo league table information." />
@@ -461,6 +500,7 @@
     <MESSAGE value="added match results in home." />
     <MESSAGE value="added data to nosi balasi page." />
     <MESSAGE value="added some css re touch." />
-    <option name="LAST_COMMIT_MESSAGE" value="added some css re touch." />
+    <MESSAGE value="added initial seo." />
+    <option name="LAST_COMMIT_MESSAGE" value="added initial seo." />
   </component>
 </project>
