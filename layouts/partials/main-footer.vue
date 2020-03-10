@@ -25,11 +25,11 @@
             <vue-gallery :images="featuredPhotos" :index="currentFeaturedPhotoIndex" @close="currentFeaturedPhotoIndex = null"></vue-gallery>
             <h1 class="title font-weight-bold white--text text-uppercase">Featured Photos</h1>
             <v-row dense>
-<!--              <template v-for="(photo, index) in featuredPhotos">-->
-<!--                <v-col cols="3">-->
-<!--                  <v-img @click="currentFeaturedPhotoIndex = index" :src="photo" :lazy-src="photo" :key="index"></v-img>-->
-<!--                </v-col>-->
-<!--              </template>-->
+              <template v-for="(photo, index) in featuredPhotos">
+                <v-col cols="4">
+                  <v-img @click="currentFeaturedPhotoIndex = index" max-height="75" :src="photo" :lazy-src="photo" :key="index"></v-img>
+                </v-col>
+              </template>
             </v-row>
           </v-col>
         </v-row>

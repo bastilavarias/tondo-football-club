@@ -96,12 +96,7 @@ To facilitate workshop and seminars for personal and social development.`
 
   featuredPhotos: [
     "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%201.jpg?alt=media&token=8c903930-9c2e-44dc-8288-0ae6766cd10d",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%202.jpg?alt=media&token=2e6fd5c8-3abd-4127-872e-e57e2575ebe9",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%203.jpg?alt=media&token=8edbd42f-b179-42c7-a0b3-d2250db277f2",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%204.jpg?alt=media&token=31413b40-49e8-4068-8638-86bfd963b443",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%205.jpg?alt=media&token=5909647c-f863-444d-8b6d-0d16c9d38ab3",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%206.jpg?alt=media&token=04cb5168-cfe8-430b-8ba6-02661818f4d7",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%207.jpg?alt=media&token=2225680d-8d26-4145-a7e9-ea5a3ac62849",
-    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%209.jpg?alt=media&token=57835b9d-831e-4627-9078-df95d2282fd1"
+    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%209.jpg?alt=media&token=57835b9d-831e-4627-9078-df95d2282fd1",
+    "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/featured-photos%2Fphoto%207.jpg?alt=media&token=2225680d-8d26-4145-a7e9-ea5a3ac62849"
   ]
 };
