@@ -97,6 +97,12 @@
             };
         },
 
+        head() {
+            return {
+                title: "7s Football League"
+            }
+        },
+
         computed: {
             sevenSFootballLeague() {
                 return this.information.sevenSFootballLeague;

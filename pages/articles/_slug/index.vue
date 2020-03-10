@@ -50,6 +50,12 @@
             }
         },
 
+        head() {
+            return {
+                title: this.article.title
+            }
+        },
+
         created() {
             setTimeout(() => this.$vuetify.goTo(this.$refs.content.offsetTop), 500);
         }

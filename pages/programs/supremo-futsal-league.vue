@@ -73,6 +73,15 @@
             };
         },
 
+        head() {
+            return {
+                title: this.about.title,
+                meta: [
+                    {hid: "description", name: "description", content: this.about.message}
+                ]
+            };
+        },
+
         mixins: [information, utilities],
 
         computed: {

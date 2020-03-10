@@ -27,6 +27,12 @@
 
         components: {GenericParallax, PlayerItem},
 
+        head() {
+            return {
+                title: "Tondo FC Team"
+            }
+        },
+
         mixins: [utilities, information],
 
         computed: {

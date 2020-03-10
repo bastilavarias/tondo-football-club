@@ -58,6 +58,12 @@
 
         components: {GenericObjectives, GenericParallax},
 
+        head() {
+            return {
+                title: "About Us"
+            }
+        },
+
         mixins: [utilities, information]
     };
 </script>

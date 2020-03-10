@@ -31,6 +31,12 @@
 
         mixins: [information],
 
+        head() {
+            return {
+                title: "Nosi Balasi"
+            }
+        },
+
         computed: {
             article() {
                 return this.information.article;

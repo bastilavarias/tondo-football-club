@@ -1,5 +1,5 @@
 <template>
-  <div class="holder py-10" :style="image ? `background-image: url('${image}');` : `background-color: #fffff;`">
+  <div :class="`holder py-10 ${className}`" :style="image ? `background-image: url('${image}');` : `background-color: #fffff;`">
     <h1 class="display-1 font-weight-bold d-block text-center text-capitalize">
       {{title}}
     </h1>
@@ -28,6 +28,11 @@
             },
 
             image: {
+                required: false
+            },
+
+            className: {
+                type: String,
                 required: false
             }
         }

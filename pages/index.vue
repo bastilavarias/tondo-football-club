@@ -68,6 +68,12 @@
             GenericObjectives, HomeLandingPage
         },
 
-        mixins: [utilities]
+        mixins: [utilities],
+
+        head() {
+            return {
+                title: "Tondo Football Club"
+            }
+        }
     };
 </script>
