@@ -37,11 +37,6 @@
             <generic-objectives></generic-objectives>
           </v-card>
         </v-col>
-        <v-col cols="12">
-          <v-card color="transparent" flat>
-            <v-card-title class="font-weight-bold">Sponsors</v-card-title>
-          </v-card>
-        </v-col>
       </v-row>
     </v-container>
   </section>

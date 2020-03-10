@@ -1,37 +1,34 @@
 <template>
   <v-card color="transparent" flat>
     <v-card-subtitle class="pb-0">
-      February 15, 2020
+      {{upcomingMatch.date}}
     </v-card-subtitle>
     <v-card-title>
       Upcoming Matches
       <div class="flex-grow-1"></div>
     </v-card-title>
     <v-card-subtitle>
-      Venue: <span class="font-weight-bold">Brgy 118 Tondo Manila</span>
+      Venue: <span class="font-weight-bold">{{upcomingMatch.venue}}</span>
     </v-card-subtitle>
-    <v-tabs v-model="tab" grow show-arrows>
-      <template v-for="(category, index) in categories">
-        <v-tab :key="index">
-          <span class="text-uppercase">U{{category.age}} {{category.gender}}</span>
-        </v-tab>
+    <v-row justify="end" align="center">
+      <v-btn color="primary" icon @click="schedulesIndex--" :disabled="schedulesIndex === 0">
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+      <v-btn color="primary" icon @click="schedulesIndex++" :disabled="schedulesIndex === supremoFutsalLeague.upcomingMatch.matches.length - 1">
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+    </v-row>
+    <v-carousel hide-delimiters :show-arrows="false" v-model="schedulesIndex" height="auto">
+      <template v-for="(event, index) in supremoFutsalLeague.upcomingMatch.matches">
+        <v-carousel-item :key="index">
+          <p class="subtitle-2 font-weight-bold mb-0 secondary--text text-capitalize">{{event.category}}</p>
+          <template v-for="(match, index) in event.teams">
+            <supremo-league-upcoming-match-item :key="index" :team-a="match.team.a" :team-b="match.team.b"
+                                                :time="match.time"></supremo-league-upcoming-match-item>
+          </template>
+        </v-carousel-item>
       </template>
-    </v-tabs>
-    <v-tabs-items v-model="tab">
-      <template v-for="(_, outerIndex) in categories">
-        <v-tab-item :key="outerIndex">
-          <v-card-text>
-            <template
-              v-for="(match, innerIndex) in categorizedMatches" v-if="categorizedMatches.length > 0">
-              <supremo-league-upcoming-match-item :team-a="match.team.a" :team-b="match.team.b"
-                                                  :time="match.time"
-                                                  :key="innerIndex"></supremo-league-upcoming-match-item>
-            </template>
-            <span class="d-block text-center" v-if="categorizedMatches.length === 0">No Matches</span>
-          </v-card-text>
-        </v-tab-item>
-      </template>
-    </v-tabs-items>
+    </v-carousel>
   </v-card>
 </template>
 
@@ -45,7 +42,8 @@
         components: {SupremoLeagueUpcomingMatchItem},
         data() {
             return {
-                tab: 0
+                tab: 0,
+                schedulesIndex: 0
             };
         },
 
@@ -60,12 +58,12 @@
                 return this.supremoFutsalLeague.schedule.upcomingMatches;
             },
 
-            categories() {
-                return this.supremoFutsalLeague.categories;
+            upcomingMatch() {
+                return this.supremoFutsalLeague.upcomingMatch;
             },
 
-            categorizedMatches() {
-                return this.getMatchesByCategory(this.upcomingMatches, this.getSelectedCategory(this.categories, this.tab));
+            categories() {
+                return this.supremoFutsalLeague.categories;
             }
         }
 

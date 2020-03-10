@@ -22,76 +22,40 @@ export default {
           name: "Supremo Futsal League",
           description: "#1 Futsal League in Manila",
           logo: imageCDN.logo.supremoFutsalLeague,
-          venue: "Brgy 118 Chesa St. Tondo Manila",
-          date: "February 15, 2020"
+          venue: "To be announce",
+          date: "March 15, 2020"
         },
         events: [
           {
-            category: {
-              age: 10,
-              gender: "Mix"
-            },
+            category: "U10 Mix Championship",
             matches: [
               {
                 team: {
-                  a: "Tondo FC",
-                  b: "Batang Laurel"
+                  a: "Batang Laurel",
+                  b: "Sta Ana FT"
                 },
                 time: {
                   value: "10:00",
                   ampm: "am"
                 }
-              },
-              {
-                team: {
-                  a: "Sta Ana Ft",
-                  b: "Manilenos United"
-                },
-                time: {
-                  value: "10:45",
-                  ampm: "am"
-                }
-              },
+              }
             ]
           },
           {
-            category: {
-              age: 10,
-              gender: "Mix"
-            },
+            category: "U12 Mix Championship",
             matches: [
-              {
-                team: {
-                  a: "MRAES",
-                  b: "Tondo FC"
-                },
-                time: {
-                  value: "11:30",
-                  ampm: "am"
-                }
-              },
-              {
-                team: {
-                  a: "Manilenos United",
-                  b: "Baseco"
-                },
-                time: {
-                  value: "12:15",
-                  ampm: "pm"
-                }
-              },
               {
                 team: {
                   a: "Tondo FC",
                   b: "Sta Ana FT"
                 },
                 time: {
-                  value: "12:50",
-                  ampm: "pm"
+                  value: "11:00",
+                  ampm: "am"
                 }
-              },
+              }
             ]
-          },
+          }
         ]
       },
 
@@ -221,5 +185,23 @@ export default {
     message: "Tondo is known for it’s less positive image. Through the years, our club made an effort to change the image and build a positive impact in our society. Now Tondo is seen as place where football talents are discovered and respected. We will wave this flag in the streets of Tondo with love, pride and glory celebrating the great stories we make.",
     image: imageCDN.banner.kids,
     author: "Mark Dennis Balbin"
-  }
+  },
+
+  players: [
+    {
+      name: "Mark Dennis Balbin",
+      image: imageCDN.players.markDennisCropped,
+      position: "Head Coach / Manager"
+    },
+    {
+      name: "Chester Danay",
+      image: imageCDN.players.chesterDanay,
+      position: "Midfielder"
+    },
+    {
+      name: "Jovert Ayuban",
+      image: imageCDN.players.jovertAyuban,
+      position: "Defender"
+    }
+  ]
 };

@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-row dense>
-      <template v-for="n in 4">
-        <v-col cols="12" sm="6" md="3" :key="n">
-          <player-item></player-item>
+      <template v-for="(player, index) in players">
+        <v-col cols="6" md="4" :key="index">
+          <player-item :name="player.name" :image="player.image" :position="player.position"></player-item>
         </v-col>
       </template>
     </v-row>
@@ -29,8 +29,12 @@
         mixins: [information, utilities],
 
         computed: {
-            team() {
-                return this.information.team;
+            featured() {
+                return this.information.featured;
+            },
+
+            players() {
+                return this.featured.players;
             }
         }
     };

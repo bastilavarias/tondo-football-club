@@ -1,13 +1,12 @@
 <template>
-  <div style="width: 100%; height: auto;">
-    <v-img
-      src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></v-img>
+  <v-card style="width: 100%; height: auto;" tile color="transparent" flat>
+    <div :style="`background-image: url('${image}')`" class="image-holder"></div>
     <div class="mb-1"></div>
     <div class="text-center px-1 py-1">
-      <h1 class="title">Sebastian Curtis T. Lavarias</h1>
-      <p class="body-2 text-uppercase font-weight-bold">Keeper</p>
+      <h1 class="title">{{name}}</h1>
+      <p class="body-2 text-uppercase font-weight-bold">{{position}}</p>
     </div>
-  </div>
+  </v-card>
 </template>
 
 <script>
@@ -16,6 +15,32 @@
     export default {
         name: "player-item",
 
-        mixins: [utilities]
+        mixins: [utilities],
+
+        props: {
+            name: {
+                type: String,
+                required: true
+            },
+
+            image: {
+                type: String,
+                required: true
+            },
+
+            position: {
+                type: String,
+                required: true
+            },
+        }
     };
 </script>
+
+<style scoped>
+  .image-holder {
+    background-position: top;
+    background-size: contain;
+    min-height: 18rem;
+    background-repeat: no-repeat;
+  }
+</style>

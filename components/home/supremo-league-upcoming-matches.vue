@@ -19,18 +19,17 @@
       </v-list-item-content>
     </v-list-item>
     <v-row justify="end" align="center">
-      <v-btn color="primary" icon @click="schedulesIndex--">
+      <v-btn color="primary" icon @click="schedulesIndex--" :disabled="schedulesIndex === 0">
         <v-icon>mdi-chevron-left</v-icon>
       </v-btn>
-      <v-btn color="primary" icon @click="schedulesIndex++">
+      <v-btn color="primary" icon @click="schedulesIndex++" :disabled="schedulesIndex === supremoFutsalLeague.events.length - 1">
         <v-icon>mdi-chevron-right</v-icon>
       </v-btn>
     </v-row>
     <v-carousel hide-delimiters :show-arrows="false" v-model="schedulesIndex" height="auto">
       <template v-for="(event, index) in supremoFutsalLeague.events">
         <v-carousel-item :key="index">
-          <p class="subtitle-2 font-weight-bold mb-0 secondary--text text-capitalize">U{{event.category.age}}
-                                                                                      {{event.category.gender}}</p>
+          <p class="subtitle-2 font-weight-bold mb-0 secondary--text text-capitalize">{{event.category}}</p>
           <template v-for="(match, index) in event.matches">
             <supremo-league-upcoming-match-item :key="index" :team-a="match.team.a" :team-b="match.team.b"
                                                 :time="match.time"></supremo-league-upcoming-match-item>

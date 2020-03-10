@@ -666,6 +666,7 @@ export default {
     ]
   }, // Change Latter
 
+
   matchResults: [
     // U10 Mix
     {
@@ -1148,8 +1149,40 @@ export default {
     }
   ],
 
-  upcomingMatches: {
-    date: "",
-
+  upcomingMatch: {
+    date: "March 15, 2020",
+    venue: "To be announce",
+    matches: [
+      {
+        category: "U10 Mix Championship",
+        teams: [
+          {
+            team: {
+              a: "Batang Laurel",
+              b: "Sta Ana FT"
+            },
+            time: {
+              value: "10:00",
+              ampm: "am"
+            }
+          }
+        ]
+      },
+      {
+        category: "U12 Mix Championship",
+        teams: [
+          {
+            team: {
+              a: "Tondo FC",
+              b: "Sta Ana FT"
+            },
+            time: {
+              value: "11:00",
+              ampm: "am"
+            }
+          }
+        ]
+      }
+    ]
   }
 };

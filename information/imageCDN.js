@@ -1,7 +1,7 @@
 export default {
   banner: {
     landingPage: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Flanding%20page%20image.jpg?alt=media&token=c9962750-ef92-4d5a-83c8-561de35a96af",
-    sevenSFootballLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2F7sFootballLeague.jpg?alt=media&token=190c4f83-bc67-4a43-9da1-2519d24dfd18",
+    sevenSFootballLeague: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-0/p640x640/86411321_658190898055846_4442005561508102144_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeExsHWvAd6qtM99M1MDFSm3dSOaTCeD31ym7-4Lr6Isualf2mBhWkpAomQoR4mMGOuDSAyP8aY2H3RkFjS4WkYwEcTghaYCmIezeZpeOqlmfw&_nc_oc=AQnRcD0zd-TuDQc1NINVyZldFGgeVwMxrORWe2QMgFfZDBnZsIUizGd3f6oDyC5hNQ4&_nc_pt=1&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=6&oh=3a6cff96e1cf3090204ca70a71961246&oe=5E8DFFF0",
     supremoFutsalLeague: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/s960x960/85120661_652859991922270_2237456452572676096_o.jpg?_nc_cat=110&_nc_sid=a61e81&_nc_eui2=AeFBQUTNt2QBKf9P2n0DVZvz189F496e9Ncb9_-7S-NABr8JSKcRLHDUTqGqQsEkl3jghPpZFuiXeZBo_Ho8FngpWtEAicqWJ2q8mx6qRgr65Q&_nc_oc=AQncuPm8ugJo_7KAC1WXybPNdxUzkVbQDG6pIMoFgKr-UzZ9DGTwtiv-bXbNBfN-fno&_nc_pt=1&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=7&oh=87e32ff1a9157d04c5161e2834772f61&oe=5EFC7889",
     kids: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Fkids.jpg?alt=media&token=3d445b71-f94c-4d32-b725-0a9c4900ab83",
     upcomingMatch: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2F7s-football-league.png?alt=media&token=95e16044-6860-4491-825b-8604e544e1e0",
@@ -38,5 +38,17 @@ export default {
   uniform: {
     kit1: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/uniforms%2Fkit1.jpg?alt=media&token=40c0d091-97ac-4f19-9031-5ce119aadd61",
     kit2: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/uniforms%2Fkit2.jpg?alt=media&token=392eb83a-b5f5-4f36-adef-5c4bcdce7452"
+  },
+
+  players: {
+    chesterDanay: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FChester%20Danay.jpg?alt=media&token=d21032fb-7ded-4af9-977c-8ecc98775854",
+    jazperJimenez: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FJazper%20Jimenez.jpg?alt=media&token=66244a21-af70-4a81-8e14-550ff36f2909",
+    jonelDelaCruz: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FJonel%20Dela%20Cruz.jpg?alt=media&token=9debb75a-776f-423c-a818-e822265ebf35",
+    jovertAyuban: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FJovert%20Ayuban.jpg?alt=media&token=6ad2a2e3-3904-411e-af3f-04c852be72b8",
+    luxterArsenio: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FLuxter%20Arsenio.jpg?alt=media&token=baf65307-e2b4-4628-8033-8077490c9488",
+    morrisonMonte: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FMorrison%20Monte.jpg?alt=media&token=ad59b7ce-256a-4791-aece-d7d0c58c6387",
+    rogerBatuigas: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FRoger%20Batuigas.jpg?alt=media&token=c6408cc2-8c28-4bd2-8657-9de0e45bed38",
+    markDennis: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FMark%20Dennis.jpg?alt=media&token=34b16717-b22a-449b-82cf-b6f62d78d52c",
+    markDennisCropped: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/players%2FMark%20Dennis%20(Cropped).jpg?alt=media&token=9f38eb6b-fb02-4ebe-a602-7fe3486503f1"
   }
 };
