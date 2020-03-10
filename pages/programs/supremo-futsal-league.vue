@@ -10,6 +10,7 @@
         <v-col cols="12">
           <v-card>
             <v-card-title>League Table</v-card-title>
+            <v-card-subtitle class="font-weight-bold">Season 1</v-card-subtitle>
             <v-tabs v-model="leagueTableTab" grow show-arrows>
               <template v-for="(category, index) in categories">
                 <v-tab :key="index">
