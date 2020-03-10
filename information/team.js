@@ -54,11 +54,6 @@ export default {
       name: "Roger Batuigas",
       image: imageCDN.players.rogerBatuigas,
       position: "Defender"
-    },
-    {
-      name: "Mark Dennis Balbin",
-      image: imageCDN.players.markDennisCropped,
-      position: "Head Coach / Manager"
     }
   ]
 };

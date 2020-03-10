@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15fffa1e-eb12-4ffd-b13a-b7f3f10b8c54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/tondoFootballClub.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/tondoFootballClub.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/main-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/main-footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/information/team.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +31,11 @@
         <option value="Sebastian Curtis T. Lavarias &lt;denzilbao@gmail.com&gt;" />
         <option value="es" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mvp" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -135,7 +139,8 @@
       <workItem from="1583812157952" duration="1067000" />
       <workItem from="1583815515722" duration="21736000" />
       <workItem from="1583839414568" duration="21000" />
-      <workItem from="1583840121329" duration="11935000" />
+      <workItem from="1583840121329" duration="12625000" />
+      <workItem from="1583854578342" duration="1172000" />
     </task>
     <task id="LOCAL-00001" summary="added featured articles section.">
       <created>1580749364554</created>
@@ -445,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583852077958</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="addded featured photos.">
+      <created>1583852312801</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1583852312801</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="main-nav-bar color set to transparent." />
     <MESSAGE value="tree shake to false." />
     <MESSAGE value="added article items." />
     <MESSAGE value="added article page." />
@@ -490,7 +501,8 @@
     <MESSAGE value="supremo futsal league table updated." />
     <MESSAGE value="added home match results." />
     <MESSAGE value="featured photos nalang kulang" />
-    <option name="LAST_COMMIT_MESSAGE" value="featured photos nalang kulang" />
+    <MESSAGE value="addded featured photos." />
+    <option name="LAST_COMMIT_MESSAGE" value="addded featured photos." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
