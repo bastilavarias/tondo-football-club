@@ -5,7 +5,9 @@ export default {
     supremoFutsalLeague: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/s960x960/85120661_652859991922270_2237456452572676096_o.jpg?_nc_cat=110&_nc_sid=a61e81&_nc_eui2=AeFBQUTNt2QBKf9P2n0DVZvz189F496e9Ncb9_-7S-NABr8JSKcRLHDUTqGqQsEkl3jghPpZFuiXeZBo_Ho8FngpWtEAicqWJ2q8mx6qRgr65Q&_nc_oc=AQncuPm8ugJo_7KAC1WXybPNdxUzkVbQDG6pIMoFgKr-UzZ9DGTwtiv-bXbNBfN-fno&_nc_pt=1&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=7&oh=87e32ff1a9157d04c5161e2834772f61&oe=5EFC7889",
     kids: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Fkids.jpg?alt=media&token=3d445b71-f94c-4d32-b725-0a9c4900ab83",
     upcomingMatch: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2F7s-football-league.png?alt=media&token=95e16044-6860-4491-825b-8604e544e1e0",
-    nosiBalasi: "https://pinoyfootball.com/wp-content/uploads/2019/04/53495638_441904156351189_7933436797718102016_n-960x509.jpg"
+    nosiBalasi: "https://pinoyfootball.com/wp-content/uploads/2019/04/53495638_441904156351189_7933436797718102016_n-960x509.jpg",
+    team: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2Fteam.jpg?alt=media&token=e0e3d3cf-d787-400d-a737-a215a10d38ac",
+    aboutUs: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/banners%2FaboutUs.jpg?alt=media&token=8e098d16-d2e2-4c6b-9294-adb03ec63b9a"
   },
 
   logo: {
@@ -25,7 +27,8 @@ export default {
     bsc: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fbsc.png?alt=media&token=84e40539-8203-4895-8e12-3fb8749ed31e",
     sevenSFootballLeague: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2F7s-league.PNG?alt=media&token=9e854d8f-6fd0-4a72-9400-94b1b255e4a0",
     spolyFC: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fspoly.jpg?alt=media&token=03f40538-acf7-406b-b852-4a00100ae9cc",
-    selecta: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fselecta.jpg?alt=media&token=687a7fb7-6690-4268-82ac-19eb0f5db519"
+    selecta: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2FSelecta%20FFM%20Green.png?alt=media&token=c04a19a4-0421-474b-8a9b-e097567770fb",
+    dmsc: "https://firebasestorage.googleapis.com/v0/b/tondo-football-club-website.appspot.com/o/logos%2Fdmsc.png?alt=media&token=0d161e52-e6ba-44ec-81c5-d58fc7f33cee"
   },
 
   background: {

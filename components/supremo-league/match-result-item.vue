@@ -1,36 +1,55 @@
 <template>
-  <v-row no-gutters>
-    <v-col cols="2" lg="1">
-      <div class="box brown--background">
-        <span class="subtitle-1 font-weight-bold black--text">0</span>
-      </div>
-    </v-col>
-    <v-col cols="8" lg="10">
-      <div style="position: relative;">
-        <v-row no-gutters>
-          <v-col cols="6">
-            <div class="box text-truncate secondary white--text font-weight-medium mr-1 text-uppercase">Team A</div>
-          </v-col>
-          <v-col cols="6">
-            <div class="box text-truncate primary white--text font-weight-medium ml-1 text-uppercase">Team B</div>
-          </v-col>
-        </v-row>
-        <div class="brown--background circle-vs">
-          <span class="caption font-weight-bold black--text">VS</span>
+  <div :class="`${className}`">
+    <v-row no-gutters>
+      <v-col cols="2" lg="1">
+        <div class="box brown--background">
+          <span class="subtitle-1 font-weight-bold black--text">{{teamA.score}}</span>
         </div>
-      </div>
-    </v-col>
-    <v-col cols="2" lg="1">
-      <div class="box brown--background">
-        <span class="subtitle-1 font-weight-bold black--text">0</span>
-      </div>
-    </v-col>
-  </v-row>
+      </v-col>
+      <v-col cols="8" lg="10">
+        <div style="position: relative;">
+          <v-row no-gutters>
+            <v-col cols="6">
+              <div class="box text-truncate secondary white--text font-weight-medium mr-1 text-uppercase">{{teamA.name}}</div>
+            </v-col>
+            <v-col cols="6">
+              <div class="box text-truncate primary white--text font-weight-medium ml-1 text-uppercase">{{teamB.name}}</div>
+            </v-col>
+          </v-row>
+          <div class="brown--background circle-vs">
+            <span class="caption font-weight-bold black--text">VS</span>
+          </div>
+        </div>
+      </v-col>
+      <v-col cols="2" lg="1">
+        <div class="box brown--background">
+          <span class="subtitle-1 font-weight-bold black--text">{{teamB.score}}</span>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
   export default {
-      name: "supremo-league-match-result-item"
+      name: "supremo-league-match-result-item",
+
+      props: {
+          teamA: {
+              type: Object,
+              required: true
+          },
+
+          teamB: {
+              type: Object,
+              required: true
+          },
+
+          className: {
+              type: String,
+              required: false
+          }
+      }
   }
 </script>
 

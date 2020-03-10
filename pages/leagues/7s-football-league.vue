@@ -47,7 +47,7 @@
                       <seven-s-football-league-match-item :date="match.date" :time="match.time"
                                                           :team-a="match.teamA" :team-b="match.teamB"
                                                           :venue="match.venue"
-                                                          :key="innerIndex"></seven-s-football-league-match-item>
+                                                          :key="innerIndex" :is-done="match.isDone"></seven-s-football-league-match-item>
                     </template>
                   </v-tab-item>
                 </template>

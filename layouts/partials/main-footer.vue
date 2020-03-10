@@ -38,7 +38,7 @@
     <div class="secondary">
       <v-container>
         <v-row justify="space-around" justify-md="space-between" align="center">
-          <span>Lorem ipsum dolor sit.</span>
+          <span>Tondo Football Club  © {{currentYear}}</span>
           <div>
             <template v-for="(link, index) in socials">
               <v-btn icon dark
@@ -65,7 +65,8 @@
 
         data() {
           return {
-              currentFeaturedPhotoIndex: null
+              currentFeaturedPhotoIndex: null,
+              featuredPhotos: []
           }
         },
 
@@ -90,9 +91,13 @@
                 return this.tondoFootballClub.navigations;
             },
 
-            featuredPhotos() {
-                return this.tondoFootballClub.featuredPhotos;
+            currentYear() {
+                return new Date().getFullYear();
             }
+        },
+
+        created() {
+            this.featuredPhotos = this.tondoFootballClub.featuredPhotos;
         }
     };
 </script>

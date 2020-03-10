@@ -3,7 +3,10 @@
     <v-card-subtitle class="pb-0">
       February 15, 2020
     </v-card-subtitle>
-    <v-card-title>Upcoming Matches</v-card-title>
+    <v-card-title>
+      Upcoming Matches
+      <div class="flex-grow-1"></div>
+    </v-card-title>
     <v-card-subtitle>
       Venue: <span class="font-weight-bold">Brgy 118 Tondo Manila</span>
     </v-card-subtitle>
@@ -15,7 +18,7 @@
       </template>
     </v-tabs>
     <v-tabs-items v-model="tab">
-      <template v-for="(_, outerIndex) in categories" )>
+      <template v-for="(_, outerIndex) in categories">
         <v-tab-item :key="outerIndex">
           <v-card-text>
             <template
@@ -24,7 +27,7 @@
                                                   :time="match.time"
                                                   :key="innerIndex"></supremo-league-upcoming-match-item>
             </template>
-            <span class="d-block text-center" v-if="categorizedMatches.length === 0" :key="innerIndex">No Matches</span>
+            <span class="d-block text-center" v-if="categorizedMatches.length === 0">No Matches</span>
           </v-card-text>
         </v-tab-item>
       </template>
@@ -58,7 +61,7 @@
             },
 
             categories() {
-                return this.supremoFutsalLeague.team.categories;
+                return this.supremoFutsalLeague.categories;
             },
 
             categorizedMatches() {

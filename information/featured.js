@@ -97,11 +97,8 @@ export default {
 
       sevenSFootballLeague: {
         details: {
-          name: "7s Football League",
-          date: "February 22, 2020",
-          time: "4:30 PM",
-          venue: "Mckinley Hills BGC",
-          logo: imageCDN.logo.sevenSFootballLeague
+          date: "22/03",
+          time: "6:30 PM"
         },
         team: {
           a: {
@@ -109,28 +106,114 @@ export default {
             logo: imageCDN.logo.tondoFC
           },
           b: {
-            name: "Matu",
-            logo: imageCDN.logo.deportivoMatuFC
+            name: "Mondo",
+            logo: imageCDN.logo.mondoInternationalFC
           },
         }
       }
     }
   },
 
-  announcements: [
+  matchResults: [
     {
-      poster: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-0/p640x640/86746708_658190478055888_1404674152282980352_o.jpg?_nc_cat=102&_nc_eui2=AeH92ZqUQ7x7iO7yIpZdEZ0aIPqbJb4K7miKZm2JU8drWOjP1SEwrBuz0lVszDUSzQPMsmvZZye-0VX2GS5fEsRE_194EPK8pIg5sXPq00Musg&_nc_oc=AQmSrOrZI207RI2kH7iGbOBNHQfIcJJoQtWtniiukmCYtk_IfpMV7_ESE0H4--K3kuk&_nc_pt=1&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=6&oh=513694fd8b2361545a5a9166b6f7b5d1&oe=5EC9B04D",
-      content: {
-        title: "Tondo FC Won!",
-        description: "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consequuntur eos ex inventore laborum minus natus obcaecati totam, vel?\n"
-      }
+      league: {
+        name: "7s Football League",
+        logo: imageCDN.logo.sevenSFootballLeague
+      },
+      category: "Men's Open",
+      date: "Mar 22, 2020",
+      team: {
+        a: {
+          name: "Tondo FC",
+          logo: imageCDN.logo.tondoFC,
+          score: 3
+        },
+        b: {
+          name: "Laro FC",
+          logo: imageCDN.logo.laroFC,
+          score: 1
+        }
+      },
     },
     {
-      poster: "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-0/p640x640/86746708_658190478055888_1404674152282980352_o.jpg?_nc_cat=102&_nc_eui2=AeH92ZqUQ7x7iO7yIpZdEZ0aIPqbJb4K7miKZm2JU8drWOjP1SEwrBuz0lVszDUSzQPMsmvZZye-0VX2GS5fEsRE_194EPK8pIg5sXPq00Musg&_nc_oc=AQmSrOrZI207RI2kH7iGbOBNHQfIcJJoQtWtniiukmCYtk_IfpMV7_ESE0H4--K3kuk&_nc_pt=1&_nc_ht=scontent.fmnl5-1.fna&_nc_tp=6&oh=513694fd8b2361545a5a9166b6f7b5d1&oe=5EC9B04D",
-      content: {
-        title: "Tondo FC Won!",
-        description: "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consequuntur eos ex inventore laborum minus natus obcaecati totam, vel?\n"
-      }
+      league: {
+        name: "Supremo Futsal League",
+        logo: imageCDN.logo.supremoFutsalLeague
+      },
+      category: "U14 Boys",
+      date: "Mar 7, 2020",
+      team: {
+        a: {
+          name: "Tondo FC",
+          logo: "no-logo",
+          score: 3
+        },
+        b: {
+          name: "Sta Ana FT",
+          logo: "no-logo",
+          score: 7
+        }
+      },
+    },
+    {
+      league: {
+        name: "Supremo Futsal League",
+        logo: imageCDN.logo.supremoFutsalLeague
+      },
+      category: "U14 Boys",
+      date: "Mar 7, 2020",
+      team: {
+        a: {
+          name: "Tondo FC",
+          logo: "no-logo",
+          score: 18
+        },
+        b: {
+          name: "Valenzuelanos FC",
+          logo: "no-logo",
+          score: 0
+        }
+      },
+    },
+    {
+      league: {
+        name: "Supremo Futsal League",
+        logo: imageCDN.logo.supremoFutsalLeague
+      },
+      category: "U14 Girls",
+      date: "Mar 7, 2020",
+      team: {
+        a: {
+          name: "Tondo FC",
+          logo: "no-logo",
+          score: 8
+        },
+        b: {
+          name: "Valenzuelanos FC",
+          logo: "no-logo",
+          score: 2
+        }
+      },
+    },
+    {
+      league: {
+        name: "Supremo Futsal League",
+        logo: imageCDN.logo.supremoFutsalLeague
+      },
+      category: "U14 Girls",
+      date: "Mar 7, 2020",
+      team: {
+        a: {
+          name: "Tondo FC",
+          logo: "no-logo",
+          score: 4
+        },
+        b: {
+          name: "Manila Team",
+          logo: "no-logo",
+          score: 2
+        }
+      },
     }
   ],
 

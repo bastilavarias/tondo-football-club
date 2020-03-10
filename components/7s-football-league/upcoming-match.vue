@@ -1,7 +1,7 @@
 <template>
   <v-card color="primary" min-height="320" dark tile flat>
     <v-card-text>
-      <p class="text-center subtitle-1 mb-10">7s FL - 22/02 - 4:30 PM</p>
+      <p class="text-center subtitle-1 mb-10">7s FL - {{details.date}}-{{details.time}}</p>
       <v-row no-gutters justify="center" align="center">
         <div class="vertical-center">
           <v-avatar :size="100">

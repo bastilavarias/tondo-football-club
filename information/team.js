@@ -1,6 +1,9 @@
 import imageCDN from "./imageCDN";
 
 export default {
-
-  background: imageCDN.background.gray
-}
+  banner: {
+    title: "Team",
+    subtitle: "Know More About The\n",
+    image: imageCDN.banner.team
+  },
+};

@@ -50,11 +50,9 @@ export default {
         text: "Points",
         value: "points"
       }
-    ]
-  },
+    ],
 
-  team: {
-    list: [
+    items: [
 
       // U10 Mix
       {
@@ -426,7 +424,7 @@ export default {
         points: 3
       },
       {
-          details: {
+        details: {
           name: "Baseco",
           category: {
             age: 16,
@@ -450,7 +448,7 @@ export default {
           name: "FC United",
           category: {
             age: 16,
-              gender: "Boys"
+            gender: "Boys"
           }
         },
         standing: {
@@ -567,36 +565,35 @@ export default {
         },
         points: 2
       }
-    ],
-
-    categories: [
-      {
-        age: 10,
-        gender: "Mix"
-      },
-      {
-        age: 12,
-        gender: "Mix"
-      },
-      {
-        age: 14,
-        gender: "Boys"
-      },
-      {
-        age: 14,
-        gender: "Girls"
-      },
-      {
-        age: 16,
-        gender: "Boys"
-      },
-      {
-        age: 16,
-        gender: "Girls"
-      },
     ]
   },
 
+  categories: [
+    {
+      age: 10,
+      gender: "Mix"
+    },
+    {
+      age: 12,
+      gender: "Mix"
+    },
+    {
+      age: 14,
+      gender: "Boys"
+    },
+    {
+      age: 14,
+      gender: "Girls"
+    },
+    {
+      age: 16,
+      gender: "Boys"
+    },
+    {
+      age: 16,
+      gender: "Girls"
+    },
+  ],
 
   schedule: {
     upcomingMatches: [
@@ -667,5 +664,492 @@ export default {
         ]
       }
     ]
+  }, // Change Latter
+
+  matchResults: [
+    // U10 Mix
+    {
+      category: {
+        age: 10,
+        gender: "Mix"
+      },
+      details: [
+        {
+          date: "February 15, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 3
+              },
+              b: {
+                name: "Bat. Laurel",
+                score: 2
+              }
+            },
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 6
+              },
+              b: {
+                name: "Man. United",
+                score: 1
+              }
+            }
+          ]
+        },
+        {
+          date: "February 22, 2020",
+          teams: [
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 3
+              },
+              b: {
+                name: "Bat. Laurel",
+                score: 4
+              }
+            },
+            {
+              a: {
+                name: "Man. United",
+                score: 0
+              },
+              b: {
+                name: "Tondo FC",
+                score: 5
+              }
+            }
+          ]
+        },
+        {
+          date: "February 29, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 1
+              },
+              b: {
+                name: "Sta Ana FT",
+                score: 3
+              }
+            },
+            {
+              a: {
+                name: "Baseco",
+                score: 1
+              },
+              b: {
+                name: "Sta Ana FT",
+                score: 3
+              }
+            }
+          ]
+        },
+      ]
+    },
+
+    // U12 Mix
+    {
+      category: {
+        age: 12,
+        gender: "Mix"
+      },
+      details: [
+        {
+          date: "February 15, 2020",
+          teams: [
+            {
+              a: {
+                name: "MRAES",
+                score: 3
+              },
+              b: {
+                name: "Tondo FC",
+                score: 4
+              }
+            },
+            {
+              a: {
+                name: "Man. United",
+                score: 4
+              },
+              b: {
+                name: "Baseco",
+                score: 6
+              }
+            },
+            {
+              a: {
+                name: "Tondo FC",
+                score: 7
+              },
+              b: {
+                name: "Sta Ana FT",
+                score: 2
+              }
+            },
+          ]
+        },
+        {
+          date: "February 22, 2020",
+          teams: [
+            {
+              a: {
+                name: "Baseco",
+                score: 3
+              },
+              b: {
+                name: "MRAES",
+                score: 0
+              }
+            },
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 2
+              },
+              b: {
+                name: "Man. United",
+                score: 0
+              }
+            },
+            {
+              a: {
+                name: "Baseco",
+                score: 0
+              },
+              b: {
+                name: "Tondo FC",
+                score: 1
+              }
+            },
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 7
+              },
+              b: {
+                name: "MRAES",
+                score: 4
+              }
+            },
+          ]
+        },
+        {
+          date: "February 29, 2020",
+          teams: [
+            {
+              a: {
+                name: "Baseco",
+                score: 1
+              },
+              b: {
+                name: "Sta Ana FT",
+                score: 3
+              }
+            }
+          ]
+        },
+      ]
+    },
+
+    //  U14 Boys
+    {
+      category: {
+        age: 14,
+        gender: "Boys"
+      },
+      details: [
+        {
+          date: "February 15, 2020",
+          teams: [
+            {
+              a: {
+                name: "FC United",
+                score: 7
+              },
+              b: {
+                name: "Valenz. FC",
+                score: 2
+              }
+            },
+            {
+              a: {
+                name: "Tondo FC",
+                score: 5
+              },
+              b: {
+                name: "Man. United",
+                score: 0
+              }
+            },
+          ]
+        },
+        {
+          date: "February 22, 2020",
+          teams: [
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 13
+              },
+              b: {
+                name: "Valenz. FC",
+                score: 0
+              }
+            },
+            {
+              a: {
+                name: "Sta Ana FT",
+                score: 7
+              },
+              b: {
+                name: "MRAES",
+                score: 4
+              }
+            }
+          ]
+        },
+        {
+          date: "March 7, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 3
+              },
+              b: {
+                name: "Sta Ana FT",
+                score: 7
+              }
+            },
+            {
+              a: {
+                name: "Tondo FC",
+                score: 18
+              },
+              b: {
+                name: "Valenz. FC",
+                score: 0
+              }
+            },
+          ]
+        },
+      ]
+    },
+
+    //  U14 Girls
+    {
+      category: {
+        age: 14,
+        gender: "Girls"
+      },
+      details: [
+        {
+          date: "February 15, 2020",
+          teams: [
+            {
+              a: {
+                name: "Valenz. FC",
+                score: 2
+              },
+              b: {
+                name: "Manila Team",
+                score: 1
+              }
+            },
+            {
+              a: {
+                name: "Manila Team",
+                score: 1
+              },
+              b: {
+                name: "Tondo FC",
+                score: 2
+              }
+            },
+          ]
+        },
+        {
+          date: "February 29, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 6
+              },
+              b: {
+                name: "Valenz. FC",
+                score: 3
+              }
+            },
+            {
+              a: {
+                name: "Valenz. FC",
+                score: 3
+              },
+              b: {
+                name: "Manila Team",
+                score: 3
+              }
+            },
+          ]
+        },
+        {
+          date: "March 7, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 8
+              },
+              b: {
+                name: "Valenz. FC",
+                score: 2
+              }
+            },
+            {
+              a: {
+                name: "Tondo FC",
+                score: 4
+              },
+              b: {
+                name: "Manila",
+                score: 2
+              }
+            }
+          ]
+        },
+      ]
+    },
+
+    //  U16 Boys
+    {
+      category: {
+        age: 16,
+        gender: "Boys"
+      },
+      details: [
+        {
+          date: "February 15, 2020",
+          teams: [
+            {
+              a: {
+                name: "FC United",
+                score: 5
+              },
+              b: {
+                name: "Tondos United",
+                score: 1
+              }
+            },
+            {
+              a: {
+                name: "Baseco",
+                score: 4
+              },
+              b: {
+                name: "Tondo FC",
+                score: 4
+              }
+            },
+          ]
+        },
+        {
+          date: "February 29, 2020",
+          teams: [
+            {
+              a: {
+                name: "Baseco",
+                score: 1
+              },
+              b: {
+                name: "FC United",
+                score: 5
+              }
+            },
+            {
+              a: {
+                name: "Tondos United",
+                score: 4
+              },
+              b: {
+                name: "Tondo FC",
+                score: 5
+              }
+            },
+          ]
+        },
+      ]
+    },
+
+    //  U16 Girls
+    {
+      category: {
+        age: 16,
+        gender: "Girls"
+      },
+      details: [
+        {
+          date: "February 8, 2020",
+          teams: [
+            {
+              a: {
+                name: "Tondo FC",
+                score: 1
+              },
+              b: {
+                name: "FC United",
+                score: 3
+              }
+            },
+            {
+              a: {
+                name: "Baseco",
+                score: 4
+              },
+              b: {
+                name: "Tondos United",
+                score: 4
+              }
+            },
+          ]
+        },
+        {
+          date: "February  29, 2020",
+          teams: [
+            {
+              a: {
+                name: "FC United",
+                score: 3
+              },
+              b: {
+                name: "Baseco",
+                score: 2
+              }
+            },
+            {
+              a: {
+                name: "Tondo FC",
+                score: 0
+              },
+              b: {
+                name: "Tondos United",
+                score: 0
+              }
+            },
+          ]
+        },
+      ]
+    }
+  ],
+
+  upcomingMatches: {
+    date: "",
+
   }
 };

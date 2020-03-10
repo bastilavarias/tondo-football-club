@@ -50,8 +50,18 @@ export default {
       return items.find(item => item.category.age === age && item.category.gender === gender).teams;
     },
 
-    limitsMatches(matches, limit) {
-      return matches.filter((_, index) => index < limit);
+    getMatchesResultsByCategory(items, {age, gender}) {
+      let matchResults;
+      try {
+        matchResults = items.filter(item => item.category.age === age && item.category.gender === gender);
+      } catch (errors) {
+        matchResults = [];
+      }
+      return matchResults;
+    },
+
+    getMatchResultsDetailsByDate(items, date) {
+      return items.filter(item => item.date === date);
     }
   }
 };

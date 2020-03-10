@@ -28,7 +28,7 @@
       <generic-holder title="Team">
         <home-players></home-players>
       </generic-holder>
-      <generic-holder title="Sponsor">
+      <generic-holder title="Sponsors">
         <generic-sponsors></generic-sponsors>
       </generic-holder>
     </v-container>
@@ -44,7 +44,7 @@
     import HomeRecentArticles from "../components/home/recent-articles";
     import GenericObjectives from "../components/generic/objectives";
     import HomeQuote from "../components/home/quote";
-    import HomeMatchResults from "../components/home/math-results";
+    import HomeMatchResults from "../components/home/match-results";
     import HomeSupremoUpcomingMatches from "../components/home/supremo-league-upcoming-matches";
     import GenericHolder from "../components/generic/holder";
     import utilities from "../plugins/utilities";

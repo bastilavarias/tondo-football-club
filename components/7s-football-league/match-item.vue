@@ -26,9 +26,10 @@
       </v-col>
       <v-col cols="12" md="3" align-self="center">
         <div class="text-center">
-          <v-chip label :small="screenBreakPoint.mdAndDown" :color="isWin ? 'success' : 'error'" class="mx-0 mx-md-3">{{teamA.score}} :
+          <v-chip label :small="screenBreakPoint.mdAndDown" :color="isWin ? 'success' : 'error'" class="mx-0 mx-md-3" v-if="isDone">{{teamA.score}} :
                                                                                                  {{teamB.score}}
           </v-chip>
+          <span class="caption font-italic" v-else>TBA</span>
         </div>
       </v-col>
     </v-row>
@@ -42,6 +43,11 @@
         name: "seven-s-football-league-match-item",
 
         props: {
+            isDone: {
+                type: Boolean,
+                required: true
+            },
+
             date: {
                 type: String,
                 required: true

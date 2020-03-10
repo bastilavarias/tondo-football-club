@@ -21,7 +21,7 @@
             <v-tabs-items v-model="leagueTableTab">
               <template v-for="(category, index) in categories">
                 <v-tab-item :key="index">
-                  <supremo-league-table :team-list="getTeamList(category, team.list)"></supremo-league-table>
+                  <supremo-league-table :team-list="getTeamList(category, leagueTableItems)"></supremo-league-table>
                 </v-tab-item>
               </template>
             </v-tabs-items>
@@ -92,12 +92,12 @@
                 return this.supremoFutsalLeague.about;
             },
 
-            team() {
-                return this.supremoFutsalLeague.team;
+            categories() {
+                return this.supremoFutsalLeague.categories;
             },
 
-            categories() {
-                return this.team.categories;
+            leagueTableItems() {
+                return this.supremoFutsalLeague.leagueTable.items;
             }
         }
     };

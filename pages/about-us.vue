@@ -1,7 +1,7 @@
 <template>
   <section>
-    <generic-parallax title="Tondo Football Club" subtitle="About us"
-                      :image="require('../assets/banners/aboutUs.jpg')"></generic-parallax>
+    <generic-parallax :title="banner.title" :subtitle="banner.subtitle"
+                      :image="banner.image"></generic-parallax>
     <div class="mb-10"></div>
     <v-container>
       <v-row>
@@ -64,7 +64,17 @@
             }
         },
 
-        mixins: [utilities, information]
+        mixins: [utilities, information],
+
+        computed: {
+            tondoFootballClub() {
+                return this.information.tondoFootballClub;
+            },
+
+            banner() {
+                return this.tondoFootballClub.banner;
+            }
+        }
     };
 </script>
 

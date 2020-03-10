@@ -1,7 +1,7 @@
 <template>
   <section>
-    <generic-parallax title="Team" subtitle="Know more about the"
-                      :image="require('../assets/banners/aboutUs.jpg')"></generic-parallax>
+    <generic-parallax :title="banner.title" :subtitle="banner.subtitle"
+                      :image="banner.image"></generic-parallax>
     <div :style="`background-image: url('${background}')`">
       <v-container>
         <v-row dense>
@@ -29,7 +29,7 @@
 
         head() {
             return {
-                title: "Tondo FC Team"
+                title: "Tondo Football Club Team"
             }
         },
 
@@ -42,6 +42,10 @@
 
             background() {
                 return this.team.background;
+            },
+
+            banner() {
+                return this.team.banner;
             }
         }
     };

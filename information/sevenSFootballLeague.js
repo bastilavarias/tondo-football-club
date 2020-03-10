@@ -21,6 +21,7 @@ export default {
       },
       matches: [
         {
+          isDone: true,
           date: "Feb 16, 2020",
           time: "8:30 PM",
           teamA: {
@@ -33,54 +34,58 @@ export default {
             logo: imageCDN.logo.deportivoMatuFC,
             score: 2
           },
-          venue: "McKinley Hills Stadium"
+          venue: "McKinley Hills Stadium",
         },
         {
+          isDone: true,
           date: "Feb 23, 2020",
           time: "3:00 PM",
           teamA: {
             name: "Tondo FC",
             logo: imageCDN.logo.tondoFC,
-            score: 0
+            score: 2
           },
           teamB: {
             name: "D. Matsunaga FC",
             logo: imageCDN.logo.dMatsunagaFA,
-            score: 0
+            score: 4
           },
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: true,
           date: "Mar 01, 2020",
           time: "4:30 PM",
           teamA: {
             name: "Tondo FC",
             logo: imageCDN.logo.tondoFC,
-            score: 0
+            score: 1
           },
           teamB: {
             name: "Spoly FC",
             logo: imageCDN.logo.spolyFC,
-            score: 0
+            score: 3
           },
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: true,
           date: "Mar 08, 2020",
           time: "3:00 PM",
           teamA: {
             name: "Tondo FC",
             logo: imageCDN.logo.tondoFC,
-            score: 0
+            score: 3
           },
           teamB: {
             name: "Laro FC",
             logo: imageCDN.logo.laroFC,
-            score: 0
+            score: 1
           },
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "Mar 22, 2020",
           time: "6:30 PM",
           teamA: {
@@ -96,6 +101,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "Mar 29, 2020",
           time: "7:30 PM",
           teamA: {
@@ -111,6 +117,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "Apr 19, 2020",
           time: "8:30 PM",
           teamA: {
@@ -126,6 +133,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "Apr 26, 2020",
           time: "8:30 PM",
           teamA: {
@@ -141,6 +149,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "May 03, 2020",
           time: "7:30 PM",
           teamA: {
@@ -156,6 +165,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "May 10, 2020",
           time: "6:30 PM",
           teamA: {
@@ -171,6 +181,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "May 17, 2020",
           time: "6:30 PM",
           teamA: {
@@ -186,6 +197,7 @@ export default {
           venue: "McKinley Hills Stadium"
         },
         {
+          isDone: false,
           date: "May 24, 2020",
           time: "4:30 PM",
           teamA: {
@@ -228,10 +240,6 @@ export default {
         value: "standing.win"
       },
       {
-        text: "Draw",
-        value: "standing.draw"
-      },
-      {
         text: "Loss",
         value: "standing.loss"
       },
@@ -268,18 +276,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 10,
-              ga: 1,
+              gp: 4,
+              gf: 15,
+              ga: 6,
               gd: 9
             },
 
             standing: {
-              win: 2,
-              loss: 0
+              win: 3,
+              loss: 1
             },
 
-            points: 6
+            points: 9
           },
           {
             details: {
@@ -288,18 +296,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 6,
-              ga: 3,
-              gd: 3
+              gp: 5,
+              gf: 20,
+              ga: 10,
+              gd: 10
             },
 
             standing: {
-              win: 2,
-              loss: 0
+              win: 3,
+              loss: 2
             },
 
-            points: 6
+            points: 9
           },
           {
             details: {
@@ -308,18 +316,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 9,
-              ga: 7,
-              gd: 2
+              gp: 5,
+              gf: 16,
+              ga: 10,
+              gd: 6
             },
 
             standing: {
-              win: 2,
+              win: 5,
               loss: 0
             },
 
-            points: 6
+            points: 15
           },
           {
             details: {
@@ -328,18 +336,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 8,
-              ga: 4,
-              gd: 4
+              gp: 5,
+              gf: 20,
+              ga: 8,
+              gd: 12
             },
 
             standing: {
-              win: 1,
+              win: 4,
               loss: 1
             },
 
-            points: 3
+            points: 12
           },
           {
             details: {
@@ -348,15 +356,15 @@ export default {
             },
 
             statistic: {
-              gp: 2,
+              gp: 4,
               gf: 8,
-              ga: 4,
-              gd: 4
+              ga: 9,
+              gd: -1
             },
 
             standing: {
               win: 1,
-              loss: 1
+              loss: 3
             },
 
             points: 3
@@ -368,18 +376,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 4,
-              ga: 2,
-              gd: 2
+              gp: 5,
+              gf: 9,
+              ga: 10,
+              gd: -1
             },
 
             standing: {
-              win: 1,
-              loss: 1
+              win: 2,
+              loss: 3
             },
 
-            points: 3
+            points: 6
           },
           {
             details: {
@@ -388,18 +396,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 4,
-              ga: 3,
+              gp: 5,
+              gf: 9,
+              ga: 8,
               gd: 1
             },
 
             standing: {
-              win: 1,
-              loss: 1
+              win: 3,
+              loss: 2
             },
 
-            points: 3
+            points: 9
           },
           {
             details: {
@@ -408,18 +416,18 @@ export default {
             },
 
             statistic: {
-              gp: 1,
-              gf: 3,
-              ga: 2,
-              gd: 1
+              gp: 4,
+              gf: 9,
+              ga: 10,
+              gd: -1
             },
 
             standing: {
-              win: 1,
-              loss: 0
+              win: 2,
+              loss: 2
             },
 
-            points: 3
+            points: 6
           },
           {
             details: {
@@ -428,18 +436,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 2,
-              ga: 5,
-              gd: -3
+              gp: 5,
+              gf: 8,
+              ga: 12,
+              gd: -4
             },
 
             standing: {
-              win: 1,
-              loss: 1
+              win: 2,
+              loss: 3
             },
 
-            points: 3
+            points: 6
           },
           {
             details: {
@@ -448,18 +456,18 @@ export default {
             },
 
             statistic: {
-              gp: 1,
-              gf: 5,
-              ga: 6,
-              gd: -1
+              gp: 4,
+              gf: 18,
+              ga: 9,
+              gd: 9
             },
 
             standing: {
-              win: 0,
-              loss: 1
+              win: 2,
+              loss: 2
             },
 
-            points: 0
+            points: 6
           },
           {
             details: {
@@ -468,18 +476,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 2,
-              ga: 4,
-              gd: -2
+              gp: 5,
+              gf: 11,
+              ga: 9,
+              gd: 2
             },
 
             standing: {
-              win: 0,
-              loss: 2
+              win: 2,
+              loss: 3
             },
 
-            points: 0
+            points: 6
           },
           {
             details: {
@@ -488,18 +496,18 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 1,
-              ga: 11,
-              gd: -10
+              gp: 5,
+              gf: 5,
+              ga: 18,
+              gd: -13
             },
 
             standing: {
-              win: 0,
-              loss: 2
+              win: 1,
+              loss: 4
             },
 
-            points: 0
+            points: 3
           },
           {
             details: {
@@ -508,15 +516,15 @@ export default {
             },
 
             statistic: {
-              gp: 2,
-              gf: 1,
-              ga: 11,
-              gd: -10
+              gp: 4,
+              gf: 2,
+              ga: 31,
+              gd: -29
             },
 
             standing: {
               win: 0,
-              loss: 2
+              loss: 4
             },
 
             points: 0
